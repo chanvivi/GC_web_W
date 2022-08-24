@@ -516,7 +516,8 @@ a {
                         align-items: center;
                         display: flex;
                         flex-direction: column;
-                        padding: 2.3vw 5vw;
+                        // padding: 2.3vw 5vw;
+                        padding: 2.3vw 3vw;
                         margin-right: 6vw;
 
                         // padding-left: 0;
@@ -574,6 +575,7 @@ a {
                         // 內文
                         p {
                             color: $white_color;
+                            font-size: 14px;
                         }
 
                         .more {
@@ -587,6 +589,7 @@ a {
                             p {
                                 color: $gold_color;
                                 position: relative;
+                                font-size: 15px;
                             }
 
                             a {
@@ -613,7 +616,6 @@ a {
                                 }
 
                                 p {
-                                    font-size: var(--min-p);
                                     margin: 0;
                                     padding: 0;
                                 }
