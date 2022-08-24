@@ -269,7 +269,7 @@ img {
 }
 .about .col_1 .title_item {
   width: 25vw;
-  background-color: rgba(32, 23, 22, 0.95);
+  background-color: #271C1B;
   color: #dcb078;
   margin: 18.5vw auto;
   margin-bottom: 0;
@@ -677,7 +677,7 @@ img {
 .about .col_3 .range .txt_item .range_box .item svg {
   position: absolute;
   left: 20%;
-  bottom: 57%;
+  bottom: 59%;
   width: 60%;
   height: 60%;
 }
@@ -770,7 +770,7 @@ img {
 }
 .about .col_3 .range .txt_item .range_box .txt_box {
   margin: 0 2vw 5vw;
-  width: 87%;
+  width: 93%;
 }
 .about .col_3 .range .txt_item .range_box .txt_box P::nth-child(1) {
   margin-bottom: 10%;

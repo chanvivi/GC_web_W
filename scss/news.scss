@@ -137,7 +137,7 @@ a {
         // 咖啡色塊文字
         .title_item {
             width: 25vw;
-            background-color: $content_bg_color;
+            background-color: $banner_bg_color;
             color: $gold_color;
             // 讓畫面滿版
             margin: 18.5vw auto;
@@ -407,9 +407,10 @@ a {
 
                     p {
                         color: $gold_color;
-                        // margin: 2vw 0;
                         padding: 0 2vw;
                         position: relative;
+                        font-size: 16px;
+                        letter-spacing: 4px;
                     }
 
                     p:nth-child(1) {}
@@ -571,7 +572,9 @@ a {
                         }
 
                         // 內文
-                        p {}
+                        p {
+                            color: $white_color;
+                        }
 
                         .more {
                             width: 100%;
@@ -583,33 +586,7 @@ a {
 
                             p {
                                 color: $gold_color;
-                                font-size: var(--min-p);
-                                line-height: 1.8;
-                                padding: 0 0.5vw;
                                 position: relative;
-                            }
-
-                            // 短線
-                            .line:nth-child(1) {
-                                display: block;
-                                color: $gold_color;
-                                width: var(--line-height);
-                                height: 1vw;
-                                position: absolute;
-                                content: "";
-                                left: 1.2%;
-                                top: 61%;
-                            }
-
-                            .line:nth-child(3) {
-                                display: block;
-                                color: $gold_color;
-                                width: var(--line-height);
-                                height: 1vw;
-                                position: absolute;
-                                content: "";
-                                left: 26%;
-                                top: 61%;
                             }
 
                             a {
@@ -685,6 +662,7 @@ a {
                     padding-top: 3vw;
                     // 讓每個卡片一樣大
                     height: 18vw;
+                    margin: 0 1vw;
 
                     .title_box {
                         display: flex;
@@ -738,14 +716,12 @@ a {
                     }
 
                     .box {
-                        margin: 0 2.5vw;
-
                         // 內文
                         p {
-                            font-size: var(--min-p);
                             padding: 0.5vw 0;
                             // 讓每個卡片一樣大
                             height: 6vw;
+                            color: $white_color;
                         }
 
                         .more {
@@ -760,9 +736,6 @@ a {
 
                                 p {
                                     color: $gold_color;
-                                    margin-right: 0.5vw;
-                                    font-size: var(--min-p);
-                                    line-height: 1.8;
                                 }
                             }
 
@@ -788,7 +761,7 @@ a {
                                 }
 
                                 p {
-                                    font-size: var(--min-p);
+                                    color: $gold_color;
                                     margin: 0;
                                 }
                             }

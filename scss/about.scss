@@ -150,7 +150,7 @@ img {
         // 咖啡色塊文字
         .title_item {
             width: 25vw;
-            background-color: $content_bg_color;
+            background-color: $banner_bg_color;
             color: $gold_color;
             // 讓畫面滿版
             margin: 18.5vw auto;
@@ -569,7 +569,7 @@ img {
                         svg {
                             position: absolute;
                             left: 20%;
-                            bottom: 57%;
+                            bottom: 59%;
                             width: 60%;
                             height: 60%;
 
@@ -672,7 +672,7 @@ img {
                     //內文
                     .txt_box {
                         margin: 0 2vw 5vw;
-                        width: 87%;
+                        width: 93%;
 
                         P::nth-child(1) {
                             margin-bottom: 10%;
