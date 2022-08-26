@@ -30,11 +30,6 @@
     --anm-delay--square_3D: 0s; //var(--anm-delay--square_3D)
     // }
 
-    // 字體陰影
-    --title-E--txt--p: 34px; //var(--title-E--txt--p)
-    --txt-shadow: 0.1em 0.1em 0.2em #000000d1; //var(--txt-shadow)
-    --min--txt--p: 8px; //var(--min--txt--p)
-
         //卡片式
     // 圖片大小
     --card--width:25vw;//var(--card--width)
@@ -112,7 +107,7 @@ img {
     }
 }
 .contact{
-    background-image: url(../img/about/1x/banner1.jpg);
+    background-image: url(../img/contact/1x/banner.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -155,7 +150,7 @@ img {
                 background-color: $banner_bg_color;
                 color: $gold_color;
                 // 讓畫面滿版
-                margin: 19.5vw auto;
+                margin: 20.5vw auto;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -173,7 +168,6 @@ img {
     
                     h1 {
                         margin: 0;
-                        text-shadow: var(--txt-shadow);
                     }
                 }
     
@@ -228,18 +222,20 @@ img {
             .range{
                 display: flex;
                 justify-content: space-evenly;
-                padding: 6vw 10vw 4vw;
+                padding: 11vw 10vw;
                 // 地圖
                 .map_box{
                     padding: 1vw;
+                    width: 50%;
                 }
                 // 文字區
                 .txt_item{
-                    margin-left: 5vw;
+                    width: 50%;
+                    margin-left: 1vw;
                     .form-box{
                         display: flex;
                         align-items: center;
-                        justify-content: space-around;
+                        // justify-content: space-around;
                         .txt_box{
                         p{
                             color: $gold_color;
@@ -273,7 +269,7 @@ img {
                         }
                         // 送出btn
                         .btn_box {
-                            width: 100%;
+                            width: 50%;
                             height: 100%;
                             display: flex;
                             justify-content: center;

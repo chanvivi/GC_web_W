@@ -31,11 +31,6 @@
     --anm-delay--square_3D: 0s; //var(--anm-delay--square_3D)
     // }
 
-    // 字體陰影
-    --title-E--txt--p: 34px; //var(--title-E--txt--p)
-    --txt-shadow: 0.1em 0.1em 0.2em #000000d1; //var(--txt-shadow)
-    --min--txt--p: 8px; //var(--min--txt--p)
-
     //卡片式
     // 圖片大小
     --card--width: 25vw; //var(--card--width)
@@ -158,7 +153,7 @@ img {
             background-color: $banner_bg_color;
             color: $gold_color;
             // 讓畫面滿版
-            margin: 18.5vw auto;
+            margin: 20.5vw auto;
             margin-bottom: 0;
             display: flex;
             flex-direction: column;
@@ -177,7 +172,6 @@ img {
 
                 h1 {
                     margin: 0;
-                    text-shadow: var(--txt-shadow);
                 }
             }
 
@@ -227,7 +221,7 @@ img {
 
         // CLASSIC ART
         .txt_item {
-            padding: 5% 0 0vw 4%;
+            padding: 3% 0 1% 4%;
             position: relative;
 
             svg {
@@ -404,10 +398,8 @@ img {
                 // 線圖 菱形 --定位
                 svg {
                     position: absolute;
-                    left: 74px;
-                    top: -11%;                
-                    // width: 18%;
-                    // height: 100%;
+                    right: 63%;
+                    top: 0%; 
 
 
                     // 第一圖 
@@ -505,10 +497,7 @@ img {
                 .txt_box {
                     margin-left: 2vw;
 
-                    p {
-                        // font-size: var(--min--txt--p);
-                        // font-size: $content_font_size;
-                    }
+                    p {}
                 }
             }
 
@@ -537,7 +526,7 @@ img {
         .range {
             display: flex;
             // margin: 9vw 3vw;
-            margin: 12vw 3vw 0vw 3vw;
+            margin: 9vw 3vw 0vw 3vw;
 
             // 文字區 --CRIFT
             .txt_item {
@@ -566,7 +555,7 @@ img {
                         svg {
                             position: absolute;
                             left: 20%;
-                            bottom: 59%;
+                            bottom: 55%;
                             width: 60%;
                             height: 60%;
 
@@ -728,16 +717,12 @@ img {
 
                         h3:nth-child(1) {
                             margin: 0;
-                            color: $gold_color;
-                            font-weight: 500;
-                            font-family: $title_font_family;
 
                         }
 
                         P:nth-child(2) {
                             margin: 0;
                             color: $gold_color;
-                            line-height: 1.5;
                             margin-bottom: 15%;
                             font-family: $en_font_family;
 
@@ -748,8 +733,8 @@ img {
                     // 分別設定//
                     .g1 {
                         position: absolute;
-                        top: -10%;
-                        left: 38.5%;
+                        top: 2%;
+                        left: 40.5%;
                     }
 
                     .g1::after {
@@ -859,7 +844,7 @@ img {
                     // ======藝
                     .g4 {
                         position: absolute;
-                        bottom: -8%;
+                        bottom: 6%;
                         left: 47%;
                     }
 
