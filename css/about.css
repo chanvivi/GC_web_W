@@ -462,7 +462,6 @@ img {
   width: 40%;
 }
 .about .col_1 .txt_item .txt_box h2 {
-  font-size: var(--title-E--txt--p);
   font-family: "Playfair Display", serif;
   color: #fff;
   margin-left: 2.5vw;
@@ -605,7 +604,6 @@ img {
 .about .col_2 .txt_item .item .box h2 {
   letter-spacing: 0.2vw;
   margin-top: 4vw;
-  font-size: var(--title-E--txt--p);
   font-family: "Playfair Display", serif;
   color: #fff;
 }
@@ -751,7 +749,6 @@ img {
 }
 .about .col_3 .range .txt_item .range_box .item .box h2 {
   letter-spacing: 0.2vw;
-  font-size: var(--title-E--txt--p);
   margin-top: 4vw;
   font-family: "Playfair Display", serif;
   color: #fff;
@@ -824,7 +821,6 @@ img {
   text-align: center;
 }
 .about .col_3 .range .img_item .range_box .ecma h3:nth-child(1) {
-  font-size: var(--title-E--txt--p);
   margin: 0;
   color: #dcb078;
   font-weight: 500;

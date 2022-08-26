@@ -323,7 +323,6 @@ img {
 
                 // 跟菱形對齊
                 h2 {
-                    font-size: var(--title-E--txt--p);
                     font-family: $en_font_family;
                     color: $white_color;
                     margin-left: 2.5vw;
@@ -492,7 +491,6 @@ img {
                     h2 {
                         letter-spacing: 0.2vw;
                         margin-top: 4vw;
-                        font-size: var(--title-E--txt--p);
                         font-family: $en_font_family;
                         color: $white_color;
 
@@ -654,7 +652,6 @@ img {
                             // 跟菱形對齊
                             h2 {
                                 letter-spacing: 0.2vw;
-                                font-size: var(--title-E--txt--p);
                                 margin-top: 4vw;
                                 font-family: $en_font_family;
                                 color: $white_color;
@@ -730,7 +727,6 @@ img {
                         text-align: center;
 
                         h3:nth-child(1) {
-                            font-size: var(--title-E--txt--p);
                             margin: 0;
                             color: $gold_color;
                             font-weight: 500;
