@@ -8,9 +8,9 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 100;
+  font-family: "Microsoft JhengHei";
   font-size: 15px;
+  font-weight: 400;
   letter-spacing: 2px;
   line-height: 1.8;
   color: #fff;
@@ -138,8 +138,7 @@ footer {
   color: #dcb078;
 }
 footer span {
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 300;
+  font-family: "Microsoft JhengHei";
   letter-spacing: 2px;
   padding: 0 10px;
   font-size: 15px;
@@ -157,6 +156,7 @@ footer span {
   --title-E--txt--p: 34px;
   --txt-shadow: 0.1em 0.1em 0.2em #000000d1;
   --min--txt--p: 8px;
+  --card--width: 25vw;
   --cell-line-height: 0.3vw;
   --cell-line-top-width: 13vw;
   --cell-line-bottom-width: 20vw;
@@ -269,7 +269,7 @@ img {
 }
 .about .col_1 .title_item {
   width: 25vw;
-  background-color: #271C1B;
+  background-color: rgba(39, 28, 27, 0.8784313725);
   color: #dcb078;
   margin: 18.5vw auto;
   margin-bottom: 0;
@@ -302,16 +302,11 @@ img {
           align-items: center;
 }
 .about .col_1 .title_item .txt_box p {
-  color: #dcb078;
   margin-bottom: 0;
 }
 .about .col_1 .title_item .txt_box h1 {
   margin: 0;
-  letter-spacing: 0.2vw;
-  color: #dcb078;
   text-shadow: var(--txt-shadow);
-  font-size: var(--title-E--txt--p);
-  font-family: "Playfair Display", serif;
 }
 .about .col_1 .title_item .img_box {
   display: -webkit-box;
@@ -370,10 +365,11 @@ img {
   height: 91%;
 }
 .about .col_1 .txt_item svg .box {
+  position: absolute;
   top: -33%;
   left: -0.5%;
 }
-.about .col_1 .txt_item svg .box:nth-child(1) {
+.about .col_1 .txt_item svg .g1 {
   position: absolute;
   -webkit-transform: rotate(173deg);
           transform: rotate(173deg);
@@ -396,7 +392,7 @@ img {
             transform: rotate(360deg);
   }
 }
-.about .col_1 .txt_item svg .box:nth-child(1) .square1 {
+.about .col_1 .txt_item svg .g1 .square1 {
   stroke-dashoffset: 2000;
   stroke-dasharray: 2000;
   transform-box: fill-box;
@@ -425,7 +421,7 @@ img {
     stroke-dashoffset: 0;
   }
 }
-.about .col_1 .txt_item svg .box:nth-child(2) {
+.about .col_1 .txt_item svg .g2 {
   position: absolute;
   -webkit-transform: rotate(97deg);
           transform: rotate(97deg);
@@ -433,8 +429,8 @@ img {
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: rotate 20s linear 6s infinite;
-          animation: rotate 20s linear 6s infinite;
+  -webkit-animation: rotate 10s linear 4.5s infinite;
+          animation: rotate 10s linear 4.5s infinite;
 }
 @keyframes rotate {
   100% {
@@ -442,16 +438,16 @@ img {
             transform: rotate(360deg);
   }
 }
-.about .col_1 .txt_item svg .box:nth-child(2) .square2 {
+.about .col_1 .txt_item svg .g2 .square2 {
   stroke-dashoffset: 2000;
   stroke-dasharray: 2000;
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: rotate(56deg);
-          transform: rotate(56deg);
-  -webkit-animation: drawSquare 8s linear 2s forwards;
-          animation: drawSquare 8s linear 2s forwards;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+  -webkit-animation: drawSquare 8s linear forwards;
+          animation: drawSquare 8s linear forwards;
 }
 @keyframes drawSquare {
   0% {
@@ -530,11 +526,9 @@ img {
 .about .col_2 .txt_item .item svg {
   position: absolute;
   left: 74px;
-  bottom: 13%;
-  width: 18%;
-  height: 100%;
+  top: -11%;
 }
-.about .col_2 .txt_item .item svg .box:nth-child(1) {
+.about .col_2 .txt_item .item svg .g1 {
   position: absolute;
   -webkit-transform: rotate(173deg);
           transform: rotate(173deg);
@@ -551,7 +545,7 @@ img {
             transform: rotate(360deg);
   }
 }
-.about .col_2 .txt_item .item svg .box:nth-child(1) .square1 {
+.about .col_2 .txt_item .item svg .g1 .square1 {
   stroke-dashoffset: 2000;
   stroke-dasharray: 2000;
   transform-box: fill-box;
@@ -571,7 +565,7 @@ img {
     stroke-dashoffset: 0;
   }
 }
-.about .col_2 .txt_item .item svg .box:nth-child(2) {
+.about .col_2 .txt_item .item svg .g2 {
   position: absolute;
   -webkit-transform: rotate(97deg);
           transform: rotate(97deg);
@@ -579,8 +573,8 @@ img {
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: rotate 20s linear 6s infinite;
-          animation: rotate 20s linear 6s infinite;
+  -webkit-animation: rotate 10s linear 4.5s infinite;
+          animation: rotate 10s linear 4.5s infinite;
 }
 @keyframes rotate {
   100% {
@@ -588,16 +582,16 @@ img {
             transform: rotate(360deg);
   }
 }
-.about .col_2 .txt_item .item svg .box:nth-child(2) .square2 {
+.about .col_2 .txt_item .item svg .g2 .square2 {
   stroke-dashoffset: 2000;
   stroke-dasharray: 2000;
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: rotate(56deg);
-          transform: rotate(56deg);
-  -webkit-animation: drawSquare 8s linear 2s forwards;
-          animation: drawSquare 8s linear 2s forwards;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+  -webkit-animation: drawSquare 8s linear forwards;
+          animation: drawSquare 8s linear forwards;
 }
 @keyframes drawSquare {
   0% {
@@ -616,13 +610,10 @@ img {
   color: #fff;
 }
 .about .col_2 .txt_item .item .box p {
-  font-weight: "Noto Sans TC", sans-serif;
+  font-weight: "Microsoft JhengHei";
 }
 .about .col_2 .txt_item .item .txt_box {
   margin-left: 2vw;
-}
-.about .col_2 .txt_item .item .txt_box p {
-  font-size: 15px;
 }
 .about .col_2 .tree_img_box {
   position: absolute;
@@ -726,8 +717,8 @@ img {
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-animation: rotate 20s linear 6s infinite;
-          animation: rotate 20s linear 6s infinite;
+  -webkit-animation: rotate 10s linear 4.5s infinite;
+          animation: rotate 10s linear 4.5s infinite;
 }
 @keyframes rotate {
   100% {
@@ -741,10 +732,10 @@ img {
   transform-box: fill-box;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: rotate(56deg);
-          transform: rotate(56deg);
-  -webkit-animation: drawSquare 8s linear 2s forwards;
-          animation: drawSquare 8s linear 2s forwards;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+  -webkit-animation: drawSquare 8s linear forwards;
+          animation: drawSquare 8s linear forwards;
 }
 @keyframes drawSquare {
   0% {
@@ -766,7 +757,7 @@ img {
   color: #fff;
 }
 .about .col_3 .range .txt_item .range_box .item .box p {
-  font-weight: "Noto Sans TC", sans-serif;
+  font-weight: "Microsoft JhengHei";
 }
 .about .col_3 .range .txt_item .range_box .txt_box {
   margin: 0 2vw 5vw;
@@ -802,31 +793,30 @@ img {
   top: 24%;
   left: 25.5%;
   width: 49%;
-}
-.about .col_3 .range .img_item .range_box svg .cls-2 {
-  -webkit-animation: move 3s linear 1;
-          animation: move 3s linear 1;
+  stroke-dashoffset: 2000;
+  stroke-dasharray: 2000;
+  transform-box: fill-box;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: move 5s linear 1s forwards;
+          animation: move 5s linear 1s forwards;
 }
 @-webkit-keyframes move {
   0% {
-    stroke-dasharray: 0, 1000px;
-  }
-  20% {
-    stroke-dasharray: 0, 1000px;
+    stroke-dashoffset: 2000;
+    stroke-dasharray: 2000;
   }
   100% {
-    stroke-dasharray: 900px, 0;
+    stroke-dashoffset: 0;
   }
 }
 @keyframes move {
   0% {
-    stroke-dasharray: 0, 1000px;
-  }
-  20% {
-    stroke-dasharray: 0, 1000px;
+    stroke-dashoffset: 2000;
+    stroke-dasharray: 2000;
   }
   100% {
-    stroke-dasharray: 900px, 0;
+    stroke-dashoffset: 0;
   }
 }
 .about .col_3 .range .img_item .range_box .ecma {
@@ -849,8 +839,8 @@ img {
 }
 .about .col_3 .range .img_item .range_box .g1 {
   position: absolute;
-  top: 0;
-  left: 40.5%;
+  top: -10%;
+  left: 38.5%;
 }
 .about .col_3 .range .img_item .range_box .g1::after {
   content: "";
@@ -984,14 +974,14 @@ img {
 }
 .about .col_3 .range .img_item .range_box .g4 {
   position: absolute;
-  bottom: 0;
+  bottom: -8%;
   left: 47%;
 }
 .about .col_3 .range .img_item .range_box .g4::after {
   content: "";
   position: absolute;
   display: block;
-  left: 46%;
+  left: 40%;
   top: -45%;
   background-color: #dcb078;
   width: 0.5%;

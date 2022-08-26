@@ -13,7 +13,7 @@
 
     // 色塊顏色//
     --line: #dcb17873; // var(--line)
-
+    --pale--line: #dcb1782e; // var(--pale--line)
     //粗細 //
     --line-height: 0.01vw; //var(--line-height)
     // 長度
@@ -35,10 +35,10 @@
     --title-E--txt--p: 34px; //var(--title-E--txt--p)
     --txt-shadow: 0.1em 0.1em 0.2em #000000d1; //var(--txt-shadow)
     --min--txt--p: 8px; //var(--min--txt--p)
-    --min-p: 12px; //var(--min-p)
 
-    // 圖片圓角
-    --border-radius-img: 2vw 0 2vw 0; //var(--border-radius-img)
+    //卡片式
+    // 圖片大小
+    --card--width: 25vw; //var(--card--width)
 
     // ===========手機====
 
@@ -137,7 +137,7 @@ a {
         // 咖啡色塊文字
         .title_item {
             width: 25vw;
-            background-color: $content_bg_color;
+            background-color: $banner_bg_color;
             color: $gold_color;
             // 讓畫面滿版
             margin: 18.5vw auto;
@@ -154,17 +154,12 @@ a {
                 align-items: center;
 
                 p {
-                    color: $gold_color;
                     margin-bottom: 0;
                 }
 
                 h1 {
                     margin: 0;
-                    letter-spacing: 0.2vw;
-                    color: $gold_color;
                     text-shadow: var(--txt-shadow);
-                    font-size: var(--title-E--txt--p);
-                    font-family: $en_font_family;
                 }
             }
 
@@ -214,7 +209,7 @@ a {
 
         // CLASSIC ART
         .txt_item {
-            padding: 5% 0 4%;
+            padding: 5% 0 0vw 4%;
             position: relative;
 
             svg {
@@ -429,12 +424,10 @@ a {
 
                     h4 {
                         padding-bottom: 2vw;
-                        font-weight: 100;
                     }
 
                     p {
-                        font-weight: 100;
-                        font-size: 14px;
+                        // font-weight: 100;
                     }
                 }
             }
@@ -457,7 +450,7 @@ a {
 
     .btn_box {
         background-color: $content_bg_color;
-        width: 100%;
+        width: 109%;
         height: 100%;
         display: flex;
         justify-content: center;
@@ -496,7 +489,9 @@ a {
             left: 11%;
             width: 78%;
             height: var(--line-height);
-            background-color: #dcb078;
+            // background-color:$gold_color;
+            // 調整明度線太粗
+            background-color: var(--pale--line);
         }
     }
 
@@ -509,7 +504,9 @@ a {
         .range {
             display: flex;
             justify-content: center;
-            margin: 8vw auto;
+            // 加起來8
+            margin: 3vw auto;
+            margin-bottom: 9vw;
             padding: 3vw 0;
 
             .card {
@@ -523,7 +520,7 @@ a {
 
                 // 圖片
                 .card_img_box {
-                    width: 22vw;
+                    width: var(--card--width);
 
                     img {
                         border-radius: var(--border-radius-img);
@@ -535,7 +532,6 @@ a {
                     align-items: center;
                     display: flex;
                     flex-direction: column;
-                    padding-top: 4.5vw;
                     // 讓每個卡片一樣大
                     height: 18vw;
                     margin: 0 1vw;
@@ -548,6 +544,8 @@ a {
 
                         h4 {
                             margin-bottom: 0;
+                            // 折行
+                            letter-spacing: 1px;
                         }
 
                         // 設定區塊
@@ -567,7 +565,7 @@ a {
 
                                 // 上線
                                 .line:nth-child(1) {
-                                    width: 5.5vw;
+                                    width: 8vw;
                                     height: var(--line-height);
                                     background: var(--line);
                                     margin: 0 0 0.2vw 0;
@@ -592,13 +590,14 @@ a {
                     }
 
                     .box {
+                        width: 100%;
+                        height: 100%;
+
                         // 內文
-                        p {
-                            padding: 1.5vw 0;
+                        .col_1_p {
                             // 讓每個卡片一樣大
                             height: 10vw;
                             color: $white_color;
-                            color: #fff;
                             padding-bottom: 0;
                         }
 
@@ -653,9 +652,10 @@ a {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    height: 124%;
+                    height: 120%;
                     width: var(--line-height);
-                    background-color: var(--line);
+                    // 調整明度線太粗
+                    background-color: var(--pale--line);
                 }
             }
         }

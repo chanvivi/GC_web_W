@@ -13,6 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap"
         rel="stylesheet">
+    <!-- wow -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +29,7 @@
             <a href="" class="ch_text">新作鑑賞<span class="en_text">PORTFOLIO</span></a>
             <a href="" class="ch_text">鉅璽札記<span class="en_text">BLOG</span></a>
             <a href="news.html" class="ch_text">最新消息<span class="en_text">NEWS</span></a>
-            <a href="" class="ch_text">聯絡我們<span class="en_text">CONTACT</span></a>
+            <a href="contact.html" class="ch_text">聯絡我們<span class="en_text">CONTACT</span></a>
         </div>
     </div>
     <!-- MENU END -->
@@ -35,9 +38,9 @@
         <section class="col_1">
             <!-- 咖啡色塊文字 -->
             <div class="title_item wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                <div class="txt_box wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
-                    <p>最新消息</p>
-                    <h1>NEWS</h1>
+                <div class="txt_box title_top wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                    <p class="ch_txt">最新消息</p>
+                    <h1 class="en_txt">NEWS</h1>
                 </div>
                 <!-- 設定線用 -->
                 <div class="img_box wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
@@ -94,11 +97,10 @@
                             <div class="line"></div>
                         </div>
                     </div>
-                    <!-- menu_font被P覆寫所以直接寫進去沒有套用class="menu_font" -->
-                    <div class="txt_box">
-                        <p>全部訊息</p>
-                        <p>房產訊息</p>
-                        <p>藝文訊息</p>
+                    <div class="menu_txt_box news_blog">
+                        <p class="menu_font">全部訊息</p>
+                        <p class="menu_font">房產訊息</p>
+                        <p class="menu_font">藝文訊息</p>
                     </div>
                     <div class="img_box">
                         <!-- line -->
@@ -111,7 +113,7 @@
                 <!-- 內容 -->
                 <div class="txt_item">
                     <!-- 外線框 -->
-                    <div class="line_Box">
+                    <div class="line_Box wow fadeInUp" data-wow-duration="1s">
                         <svg id="out_line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 550">
                             <polyline points="0,0 850,0 1000,90 1000,550 0,550 0,0" stroke="#dcb17870"
                                 fill="transparent" stroke-width="1.5">
@@ -120,13 +122,13 @@
                     </div>
                     <div class="txt_range">
                         <!-- 大圖 -->
-                        <div class="con_img_box">
+                        <div class="con_img_box wow fadeInUp" data-wow-duration="1s">
                             <img src="img/news/1x/news_img.jpg" alt="news_img">
                         </div>
                         <!-- 內文 -->
                         <div class="txt_box news_blog">
-                            <div class="title_box">
-                                <h4 class="p_font">「相即美學」對焦空間設計</h4>
+                            <div class="title_box wow fadeIn" data-wow-duration="4s" data-wow-delay="1s">
+                                <h4 class="title_font">「相即美學」對焦空間設計</h4>
                                 <!-- 設定線用 -->
                                 <div class="img_box">
                                     <!-- line -->
@@ -144,11 +146,11 @@
                                 </div>
                             </div>
                             <!-- 內文 -->
-                            <p class="p_font">以「相即美學」滿足每位客戶的商業需求，
+                            <p class="p_font wow fadeIn" data-wow-duration="4s" data-wow-delay="1.2s">以「相即美學」滿足每位客戶的商業需求，
                                 從中發現每個完美的個體無與倫比的設計面
                                 貌，展現美好空間生活體驗。
                             </p>
-                            <div class="more">
+                            <div class="more wow fadeIn" data-wow-duration="4s" data-wow-delay="1.2s">
                                 <p class="small_p_font">| 藝文訊息 | 2022-7-26</p>
                                 <a href="news_page.html">
                                     <div class="as_box">
@@ -217,7 +219,7 @@
                     </div>
                     <div class="txt_box news_blog">
                         <div class="title_box">
-                            <h4 class="p_font">築美學 光之旅程</h4>
+                            <h4 class="title_font">築美學 光之旅程</h4>
                             <!-- 設定線用 -->
                             <div class="img_box">
                                 <!-- line -->
@@ -236,7 +238,7 @@
                         </div>
                         <div class="box">
                             <!-- 內文 -->
-                            <p class="p_font">在鉅砌 最美的享受，是午後坐在屋頂露台，
+                            <p class="col_1_p p_font">在鉅砌 最美的享受，是午後坐在屋頂露台，
                                 欣賞從斜面造型牆、格柵縫隙間流淌下的光，
                                 邊啜飲下午茶，欣赏側牆如舞台般的光影。</p>
                             <div class="more">
@@ -306,8 +308,8 @@
                         <img src="./img/news/1x/news_img_03.jpg" alt="news_img_03">
                     </div>
                     <div class="txt_box news_blog">
-                        <div class="title_box p_font">
-                            <h4 class="p_font">藏家的品味，是來自對事物的鍾情</h4>
+                        <div class="title_box">
+                            <h4 class="title_font">藏家的品味，是來自對事物的鍾情</h4>
                             <!-- 設定線用 -->
                             <div class="img_box">
                                 <!-- line -->
@@ -326,7 +328,7 @@
                         </div>
                         <div class="box">
                             <!-- 內文 -->
-                            <p class="p_font">從美學、藝術、建築、車子、稀石、珍實..等
+                            <p class="col_1_p p_font">從美學、藝術、建築、車子、稀石、珍實..等
                                 收藏著自已獨到的品味，又或者是一生的往</p>
                             <div class="more">
                                 <div class="p_box">
@@ -396,7 +398,7 @@
                     </div>
                     <div class="txt_box news_blog">
                         <div class="title_box">
-                            <h4 class="p_font">大器，是生活態度，也是永恆價值。</h4>
+                            <h4 class="title_font">大器，是生活態度，也是永恆價值。</h4>
                             <!-- 設定線用 -->
                             <div class="img_box">
                                 <!-- line -->
@@ -415,7 +417,7 @@
                         </div>
                         <div class="box">
                             <!-- 內文 -->
-                            <p class="p_font">【鉅砌】雕塑出自「尋朴建築師事務所」魏相
+                            <p class="col_1_p p_font">【鉅砌】雕塑出自「尋朴建築師事務所」魏相
                                 嘩建築大師之手。透過自然岩材與光影變化
                                 傳達山形建築的朗閱壯麗...</p>
                             <div class="more">
@@ -489,6 +491,10 @@
         <span>TEL： 04-2380-1886</span>
     </footer>
     <!-- footer END -->
+
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

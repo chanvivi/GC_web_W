@@ -8,9 +8,9 @@ h1, h2, h3, h4, h5 {
 }
 
 p {
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 100;
+  font-family: "Microsoft JhengHei";
   font-size: 15px;
+  font-weight: 400;
   letter-spacing: 2px;
   line-height: 1.8;
   color: #fff;
@@ -138,8 +138,7 @@ footer {
   color: #dcb078;
 }
 footer span {
-  font-family: "Noto Sans TC", sans-serif;
-  font-weight: 300;
+  font-family: "Microsoft JhengHei";
   letter-spacing: 2px;
   padding: 0 10px;
   font-size: 15px;
