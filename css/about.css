@@ -28,7 +28,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 2vw 5vw;
+  padding: 2vw 5vw 0vw 5vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -66,6 +66,7 @@ p {
 }
 
 .banner_box .ch_title_font {
+  font-family: "Noto Serif TC", serif;
   font-size: 42px;
   color: #fff;
   font-weight: 500;
@@ -89,15 +90,19 @@ p {
   font-weight: 500;
   font-size: 45px;
   line-height: 1.2;
+  letter-spacing: 5px;
   color: #dcb078;
 }
 .title_top .ch_txt {
+  font-family: "Noto Serif TC", serif;
   font-weight: 500;
   font-size: 18px;
+  letter-spacing: 8px;
   color: #dcb078;
 }
 
 .news_blog .title_font {
+  font-family: "Noto Serif TC", serif;
   font-weight: 500;
   font-size: 21px;
   letter-spacing: 4px;
@@ -113,11 +118,13 @@ p {
   color: #dcb078;
 }
 .news_blog .menu_font {
+  font-family: "Noto Serif TC", serif;
   font-size: 16px;
   letter-spacing: 4px;
   color: #dcb078;
 }
 .news_blog .dt_title_font {
+  font-family: "Noto Serif TC", serif;
   font-weight: 500;
   font-size: 30px;
   letter-spacing: 5px;
@@ -153,9 +160,6 @@ footer span {
   --square_3D--line: 38%;
   --anm-duration--square_3D: 3.8s;
   --anm-delay--square_3D: 0s;
-  --title-E--txt--p: 34px;
-  --txt-shadow: 0.1em 0.1em 0.2em #000000d1;
-  --min--txt--p: 8px;
   --card--width: 25vw;
   --cell-line-height: 0.3vw;
   --cell-line-top-width: 13vw;
@@ -271,7 +275,7 @@ img {
   width: 25vw;
   background-color: rgba(39, 28, 27, 0.8784313725);
   color: #dcb078;
-  margin: 18.5vw auto;
+  margin: 20.5vw auto;
   margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -306,7 +310,6 @@ img {
 }
 .about .col_1 .title_item .txt_box h1 {
   margin: 0;
-  text-shadow: var(--txt-shadow);
 }
 .about .col_1 .title_item .img_box {
   display: -webkit-box;
@@ -354,7 +357,7 @@ img {
           align-items: flex-start;
 }
 .about .col_1 .txt_item {
-  padding: 5% 0 0vw 4%;
+  padding: 3% 0 1% 4%;
   position: relative;
 }
 .about .col_1 .txt_item svg {
@@ -524,8 +527,8 @@ img {
 }
 .about .col_2 .txt_item .item svg {
   position: absolute;
-  left: 74px;
-  top: -11%;
+  right: 63%;
+  top: 0%;
 }
 .about .col_2 .txt_item .item svg .g1 {
   position: absolute;
@@ -632,7 +635,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 12vw 3vw 0vw 3vw;
+  margin: 9vw 3vw 0vw 3vw;
 }
 .about .col_3 .range .txt_item {
   width: 50%;
@@ -666,7 +669,7 @@ img {
 .about .col_3 .range .txt_item .range_box .item svg {
   position: absolute;
   left: 20%;
-  bottom: 59%;
+  bottom: 55%;
   width: 60%;
   height: 60%;
 }
@@ -822,21 +825,17 @@ img {
 }
 .about .col_3 .range .img_item .range_box .ecma h3:nth-child(1) {
   margin: 0;
-  color: #dcb078;
-  font-weight: 500;
-  font-family: "Noto Serif TC", serif;
 }
 .about .col_3 .range .img_item .range_box .ecma P:nth-child(2) {
   margin: 0;
   color: #dcb078;
-  line-height: 1.5;
   margin-bottom: 15%;
   font-family: "Playfair Display", serif;
 }
 .about .col_3 .range .img_item .range_box .g1 {
   position: absolute;
-  top: -10%;
-  left: 38.5%;
+  top: 2%;
+  left: 40.5%;
 }
 .about .col_3 .range .img_item .range_box .g1::after {
   content: "";
@@ -970,7 +969,7 @@ img {
 }
 .about .col_3 .range .img_item .range_box .g4 {
   position: absolute;
-  bottom: -8%;
+  bottom: 6%;
   left: 47%;
 }
 .about .col_3 .range .img_item .range_box .g4::after {

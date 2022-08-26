@@ -607,6 +607,34 @@ a {
                                     padding: 0;
                                 }
                             }
+
+                            // 箭頭效果
+                            a:hover {
+                                .arrow {
+                                    animation: arrow 2.5s ease-in-out infinite;
+
+                                    @keyframes arrow {
+                                        0% {
+                                            transform: translateX(0);
+                                        }
+
+                                        20% {
+                                            transform: translateX(5px);
+
+                                        }
+
+                                        40% {
+                                            transform: translateX(-5px);
+
+                                        }
+
+                                        60% {
+                                            transform: translateX(5px);
+
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -760,6 +788,7 @@ a {
                                     padding: 0;
                                 }
                             }
+
                             // 箭頭效果
                             a:hover {
                                 .arrow {
@@ -769,24 +798,22 @@ a {
                                         0% {
                                             transform: translateX(0);
                                         }
+
                                         20% {
-                                            transform: translateX(10px);
-                                            // opacity: 0;
+                                            transform: translateX(5px);
+
                                         }
+
                                         40% {
-                                            transform: translateX(-10px);
+                                            transform: translateX(-5px);
+
                                         }
+
                                         60% {
-                                            transform: translateX(10px);
-                                        }
-                                        80% {
-                                            transform: translateX(-10px);
-                                        }
-                                        100% {
-                                            transform: translateX(10);
+                                            transform: translateX(5px);
+
                                         }
                                     }
-
                                 }
                             }
                         }
