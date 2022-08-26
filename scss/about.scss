@@ -384,7 +384,7 @@ img {
         .txt_item {
             width: 100%;
             margin: 0 auto;
-            padding: 3vw 0;
+            padding: 2vw 0;
             // 兩個菱形對其
             // position: relative;
             // 菱形位子
@@ -478,7 +478,7 @@ img {
                 // 英文文字
                 .box {
                     // margin-left: 2vw;
-
+                    padding-left: 3%;
                     // 跟菱形對齊
                     h2 {
                         letter-spacing: 0.2vw;
@@ -495,7 +495,8 @@ img {
 
                 // 內文
                 .txt_box {
-                    margin-left: 2vw;
+                    margin-left: 9vw;
+                    width: 51%;
 
                     p {}
                 }

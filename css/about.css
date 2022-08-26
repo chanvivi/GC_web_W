@@ -513,7 +513,7 @@ img {
 .about .col_2 .txt_item {
   width: 100%;
   margin: 0 auto;
-  padding: 3vw 0;
+  padding: 2vw 0;
   position: relative;
 }
 .about .col_2 .txt_item .item {
@@ -604,6 +604,9 @@ img {
     stroke-dashoffset: 0;
   }
 }
+.about .col_2 .txt_item .item .box {
+  padding-left: 3%;
+}
 .about .col_2 .txt_item .item .box h2 {
   letter-spacing: 0.2vw;
   margin-top: 4vw;
@@ -614,7 +617,8 @@ img {
   font-weight: "Microsoft JhengHei";
 }
 .about .col_2 .txt_item .item .txt_box {
-  margin-left: 2vw;
+  margin-left: 9vw;
+  width: 51%;
 }
 .about .col_2 .tree_img_box {
   position: absolute;
