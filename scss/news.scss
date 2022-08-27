@@ -37,7 +37,7 @@
 
     //卡片式
     // 圖片大小
-    --card--width: 25vw; //var(--card--width)
+    --card--width: 23vw; //var(--card--width)
     // ===========手機====
 
     // 菱形線條 
@@ -218,14 +218,15 @@ a {
 
                 // 線圖 菱形
                 .box {
+                    position: absolute;
                     top: -33%;
                     left: -0.5%;
                 }
 
                 // 第一圖 
-                .box:nth-child(1) {
+                .g1 {
                     position: absolute;
-                    transform: rotate(173deg);
+                    // transform: rotate(173deg);
                     width: var(--square-line-width);
                     transform-box: fill-box;
                     transform-origin: center;
@@ -259,14 +260,13 @@ a {
                 }
 
                 // 第二圖 
-                .box:nth-child(2) {
+                .g2 {
                     position: absolute;
-                    transform: rotate(97deg);
+                    // transform: rotate(97deg);
                     width: var(--square-line-width);
-                    // top: -35%;
                     transform-box: fill-box;
                     transform-origin: center;
-                    animation: rotate 20s linear 6s infinite;
+                    animation: rotate 10s linear 4.5s infinite;
 
                     @keyframes rotate {
                         100% {
@@ -327,8 +327,8 @@ a {
 
         .range {
             padding: 0 8vw;
-            margin: 0 auto;
-            margin-top: 6vw;
+            margin: 3vw auto;
+            margin-top: 9vw;
 
             // 標題
             .title_item {
@@ -491,10 +491,10 @@ a {
 
                     .con_img_box {
                         position: relative;
-                        left: 8%;
+                        left: 5%;
 
                         img {
-                            // width: 100%;
+                            width: 106%;
                             border-radius: var(--border-radius-img);
                         }
                     }
@@ -536,7 +536,7 @@ a {
 
                                     // 上線
                                     .line:nth-child(1) {
-                                        width: 5.5vw;
+                                        width: 6.5vw;
                                         height: var(--line-height);
                                         background: var(--line);
                                         margin: 0 0 0.2vw 0;
@@ -562,7 +562,8 @@ a {
 
                         // 內文
                         p {
-                            // color: $white_color;
+                            // 文字與上面標題對其
+                            margin-left: 0.4vw;
                         }
 
                         .more {
@@ -576,7 +577,9 @@ a {
                             p {
                                 color: $gold_color;
                                 position: relative;
-                                // font-size: 15px;
+                                // 對其內文
+                                margin-left: 0;
+                                margin-right: 0.5vw;
                             }
 
                             a {
@@ -652,9 +655,10 @@ a {
             display: flex;
             justify-content: center;
             // 加起來8
-            margin: 3vw auto;
-            margin-bottom: 9vw;
-            padding: 3vw 0;
+            // margin: 3vw auto;
+            // margin-bottom: 9vw;
+            // padding: 3vw 0;
+            margin: 8vw 9vw;
 
             .card {
                 display: flex;
@@ -691,6 +695,7 @@ a {
 
                         h4 {
                             margin-bottom: 0;
+                            margin-top: 4vw;
                         }
 
                         // 設定區塊
@@ -699,6 +704,7 @@ a {
                             justify-content: center;
                             // 對其
                             margin-left: 0.5vw;
+                            margin-bottom: 1vw;
 
                             // 右邊線
                             .line_box {
@@ -710,7 +716,7 @@ a {
 
                                 // 上線
                                 .line:nth-child(1) {
-                                    width: 8vw;
+                                    width: 6.4vw;
                                     height: var(--line-height);
                                     background: var(--line);
                                     margin: 0 0 0.2vw 0;
@@ -741,20 +747,24 @@ a {
                         // 內文
                         .col_1_p {
                             // 讓每個卡片一樣大
-                            height: 10vw;
-                            color: $white_color;
+                            height: 7vw;
+                            color: #fff;
                             padding-bottom: 0;
+                            width: 93%;
+                            margin: 0 auto;
                         }
 
                         .more {
-                            width: 100%;
+                            width: 99%;
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            margin-top: 2vw;
+                            // margin-top: 2vw;
 
                             .p_box {
                                 display: flex;
+                                // 內文對其
+                                padding-left: 1vw;
 
                                 p {
                                     color: $gold_color;
@@ -825,7 +835,7 @@ a {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    height: 120%;
+                    height: 103%;
                     width: var(--line-height);
                     // 調整明度線太粗
                     background-color: var(--pale--line);

@@ -37,7 +37,7 @@
 
     //卡片式
     // 圖片大小
-    --card--width: 25vw; //var(--card--width)
+    --card--width: 23vw; //var(--card--width)
     // ===========手機====
 
     // 菱形線條 
@@ -218,14 +218,15 @@ a {
 
                 // 線圖 菱形
                 .box {
+                    position: absolute;
                     top: -33%;
                     left: -0.5%;
                 }
 
                 // 第一圖 
-                .box:nth-child(1) {
+                .g1 {
                     position: absolute;
-                    transform: rotate(173deg);
+                    // transform: rotate(173deg);
                     width: var(--square-line-width);
                     transform-box: fill-box;
                     transform-origin: center;
@@ -259,14 +260,13 @@ a {
                 }
 
                 // 第二圖 
-                .box:nth-child(2) {
+                .g2 {
                     position: absolute;
-                    transform: rotate(97deg);
+                    // transform: rotate(97deg);
                     width: var(--square-line-width);
-                    // top: -35%;
                     transform-box: fill-box;
                     transform-origin: center;
-                    animation: rotate 20s linear 6s infinite;
+                    animation: rotate 10s linear 4.5s infinite;
 
                     @keyframes rotate {
                         100% {
@@ -331,7 +331,7 @@ a {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 8vw 0 3vw 0;
+            padding: 3vw 0 3vw 0;
 
             h2 {
                 margin-bottom: 0;
@@ -355,7 +355,7 @@ a {
 
                     // 上線
                     .line:nth-child(1) {
-                        width: 10vw;
+                        width: 7vw;
                         height: var(--line-height);
                         background: var(--line);
                         margin: 0 0 0.2vw 0;
@@ -381,7 +381,7 @@ a {
 
         // 圖片
         .pig_img_box {
-            width: 78vw;
+            width: 80vw;
             margin: 0 auto;
 
             img {
@@ -397,7 +397,7 @@ a {
         height: 100%;
 
         .range {
-            padding: 0 10vw;
+            padding: 0 11vw;
             margin: 0 auto;
             margin-top: 6vw;
 
@@ -407,7 +407,7 @@ a {
                 // margin: 9vw 0;
 
                 .img_box {
-                    width: 46vw;
+                    width: 59vw;
                 }
 
                 .txt_box {
@@ -416,7 +416,7 @@ a {
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
-                    padding: 2vw 3vw 2vw 4vw;
+                    padding: 2vw 4vw 2vw 3vw;
 
                     h4 {
                         padding-bottom: 2vw;
@@ -501,9 +501,10 @@ a {
             display: flex;
             justify-content: center;
             // 加起來8
-            margin: 3vw auto;
-            margin-bottom: 9vw;
-            padding: 3vw 0;
+            // margin: 3vw auto;
+            // margin-bottom: 9vw;
+            // padding: 3vw 0;
+            margin: 8vw 9vw;
 
             .card {
                 display: flex;
@@ -540,6 +541,7 @@ a {
 
                         h4 {
                             margin-bottom: 0;
+                            margin-top: 4vw;
                         }
 
                         // 設定區塊
@@ -548,6 +550,7 @@ a {
                             justify-content: center;
                             // 對其
                             margin-left: 0.5vw;
+                            margin-bottom: 1vw;
 
                             // 右邊線
                             .line_box {
@@ -559,7 +562,7 @@ a {
 
                                 // 上線
                                 .line:nth-child(1) {
-                                    width: 8vw;
+                                    width: 6.4vw;
                                     height: var(--line-height);
                                     background: var(--line);
                                     margin: 0 0 0.2vw 0;
@@ -590,20 +593,24 @@ a {
                         // 內文
                         .col_1_p {
                             // 讓每個卡片一樣大
-                            height: 10vw;
-                            color: $white_color;
+                            height: 7vw;
+                            color: #fff;
                             padding-bottom: 0;
+                            width: 93%;
+                            margin: 0 auto;
                         }
 
                         .more {
-                            width: 100%;
+                            width: 99%;
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
-                            margin-top: 2vw;
+                            // margin-top: 2vw;
 
                             .p_box {
                                 display: flex;
+                                // 內文對其
+                                padding-left: 1vw;
 
                                 p {
                                     color: $gold_color;
@@ -613,8 +620,8 @@ a {
 
                             a {
                                 display: flex;
-                                // align-items: center;
 
+                                // align-items: center;
                                 .as_box {
                                     position: relative;
 
@@ -650,20 +657,19 @@ a {
 
                                         20% {
                                             transform: translateX(5px);
-                                            
+
                                         }
 
                                         40% {
                                             transform: translateX(-5px);
-                                            
+
                                         }
 
                                         60% {
                                             transform: translateX(5px);
-                                            
+
                                         }
                                     }
-
                                 }
                             }
                         }
@@ -675,7 +681,7 @@ a {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    height: 120%;
+                    height: 103%;
                     width: var(--line-height);
                     // 調整明度線太粗
                     background-color: var(--pale--line);

@@ -30,9 +30,9 @@
     --anm-delay--square_3D: 0s; //var(--anm-delay--square_3D)
     // }
 
-        //卡片式
+    //卡片式
     // 圖片大小
-    --card--width:25vw;//var(--card--width)
+    --card--width: 25vw; //var(--card--width)
 
     // ===========手機====
 
@@ -106,7 +106,8 @@ img {
         }
     }
 }
-.contact{
+
+.contact {
     background-image: url(../img/contact/1x/banner.jpg);
     background-size: cover;
     background-position: center;
@@ -140,122 +141,121 @@ img {
         }
 
     }
-        //  col_1 第一卡大banner
-        .col_1 {
-            width: 100%;
-    
-            // 咖啡色塊文字
-            .title_item {
-                width: 25vw;
-                background-color: $banner_bg_color;
-                color: $gold_color;
-                // 讓畫面滿版
-                margin: 20.5vw auto;
+
+    //  col_1 第一卡大banner
+    .col_1 {
+        width: 100%;
+
+        // 咖啡色塊文字
+        .title_item {
+            width: 25vw;
+            background-color: $banner_bg_color;
+            color: $gold_color;
+            // 讓畫面滿版
+            margin: 20.5vw auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+
+            .txt_box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                h1 {
+                    margin: 0;
+                }
+            }
+
+            // 設定區塊
+            .img_box {
+                display: flex;
                 justify-content: center;
-                align-content: center;
-    
-                .txt_box {
+
+                // 右邊線
+                .line_box {
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
-    
-                    p {
-                        margin-bottom: 0;
+                    justify-content: center;
+                    align-items: flex-end;
+                    margin: 1vw;
+
+                    // 上線
+                    .line:nth-child(1) {
+                        width: var(--line-top-width);
+                        height: var(--line-height);
+                        background: var(--line);
+                        margin: 0 0 0.2vw 0;
                     }
-    
-                    h1 {
-                        margin: 0;
+
+                    // 下線
+                    .line:nth-child(2) {
+                        width: var(--line-bottom-width);
+                        height: var(--line-height);
+                        background: var(--line);
+                        top: 2vw;
                     }
                 }
-    
-                // 設定區塊
-                .img_box {
-                    display: flex;
-                    justify-content: center;
-    
-                    // 右邊線
-                    .line_box {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: flex-end;
-                        margin: 1vw;
-    
-                        // 上線
-                        .line:nth-child(1) {
-                            width: var(--line-top-width);
-                            height: var(--line-height);
-                            background: var(--line);
-                            margin: 0 0 0.2vw 0;
-                        }
-    
-                        // 下線
-                        .line:nth-child(2) {
-                            width: var(--line-bottom-width);
-                            height: var(--line-height);
-                            background: var(--line);
-                            top: 2vw;
-                        }
-                    }
-    
-                    // 菱形
-                    .square {
-                        // 菱形大小
-                        padding: 1vw 0;
-                        width: var(--square-line-width);
-                    }
-    
-                    // 左邊線
-                    .line_box:nth-child(3) {
-                        align-items: flex-start;
-                    }
+
+                // 菱形
+                .square {
+                    // 菱形大小
+                    padding: 1vw 0;
+                    width: var(--square-line-width);
+                }
+
+                // 左邊線
+                .line_box:nth-child(3) {
+                    align-items: flex-start;
                 }
             }
         }
-// 地圖
-        .col_2{
-            width: 100%;
-            background-color: $content_bg_color;
-            .range{
-                display: flex;
-                justify-content: space-evenly;
-                padding: 11vw 10vw;
-                // 地圖
-                .map_box{
-                    padding: 1vw;
-                    width: 50%;
-                }
-                // 文字區
-                .txt_item{
-                    width: 50%;
-                    margin-left: 1vw;
-                    .form-box{
-                        display: flex;
-                        align-items: center;
-                        // justify-content: space-around;
-                        .txt_box{
-                        p{
+    }
+
+    // 地圖
+    .col_2 {
+        width: 100%;
+        background-color: $content_bg_color;
+
+        .range {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 11vw 10vw;
+
+            // 地圖
+            .map_box {
+                padding: 1vw;
+                width: 70%;
+            }
+
+            // 文字區
+            .txt_item {
+                width: 30%;
+                margin-left: 1vw;
+
+                .form-box {
+                    display: flex;
+                    align-items: center;
+
+                    // justify-content: space-around;
+                    .txt_box {
+                        p {
                             color: $gold_color;
                             letter-spacing: 1em;
-                        }}
-                        .input_box{
-                            width: 70%;
-                            .message{
-                                textarea{
-                                    width: 100%;
-                                    background-color: transparent;
-                                    border: none;
-                                    border-bottom: 1px solid $gold_color;
-                                    color: $gold_color;
-                                    outline: none;
-                                    line-height: 3;
-                                    overflow: visible;
-                                }
-                            }
-                            input{
+                        }
+                    }
+
+                    .input_box {
+                        width: 80%;
+
+                        .message {
+                            textarea {
                                 width: 100%;
                                 background-color: transparent;
                                 border: none;
@@ -263,48 +263,68 @@ img {
                                 color: $gold_color;
                                 outline: none;
                                 line-height: 3;
+                                margin-top: 3.5vw;
                                 overflow: visible;
-                                
                             }
                         }
-                        // 送出btn
-                        .btn_box {
-                            width: 50%;
-                            height: 100%;
-                            display: flex;
-                            justify-content: center;
-                            padding: 5vw 0;
-                            position: relative;
-                            a {
-                                width: 60%;
-                                text-decoration: none;
-                                display: block;
-                                border: 1px solid #b48d5355;
-                                padding-left: 2em;
-                                padding-right: 2em;
-                                transition: all 0.5s;
-                                z-index: 9;
-                    
-                                .btn {
-                                    line-height: 2;
-                                    margin: 0 auto;
-                                    color: $gold_color;
-                                    text-align: center;
-                                }
+
+                        input {
+                            width: 100%;
+                            background-color: transparent;
+                            border: none;
+                            border-bottom: 1px solid $gold_color;
+                            color: $gold_color;
+                            outline: none;
+                            line-height: 3;
+                            overflow: visible;
+
+                        }
+                    }
+
+                    // 送出btn
+                    .btn_box {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        padding: 5vw 0;
+                        position: relative;
+
+                        a {
+                            width: 60%;
+                            text-decoration: none;
+                            display: block;
+                            border: 1px solid #b48d5355;
+                            padding-left: 2em;
+                            padding-right: 2em;
+                            transition: all 0.5s;
+                            z-index: 9;
+
+                            .btn {
+                                line-height: 2;
+                                margin: 0 auto;
+                                color: $gold_color;
+                                text-align: center;
                             }
-                    
-                            a:hover {
-                                background: $gold_color;
+                        }
+
+                        a:hover {
+                            background: $gold_color;
+                            transition: all 0.5s;
+
+                            .btn {
+                                color: $white_color;
                                 transition: all 0.5s;
-                    
-                                .btn {
-                                    color: $white_color;
-                                    transition: all 0.5s;
-                                }
                             }
                         }
                     }
                 }
+
+                .form-box:nth-child(6) {
+                    justify-content: center;
+                    margin: 0 1.5vw 0 3vw;
+                }
             }
         }
+    }
 }
