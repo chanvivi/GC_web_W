@@ -302,13 +302,9 @@ a {
 
                 // 跟菱形對齊
                 h2 {
-                    font-family: $en_font_family;
-                    color: $white_color;
                     margin-left: 2.5vw;
-                    letter-spacing: 0.2vw;
                     margin-bottom: 0;
                     // 不夠長??
-
                 }
 
                 p {
@@ -467,8 +463,7 @@ a {
 
             // 內容
             .txt_item {
-                padding: 5vw 0;
-                margin-bottom: 2vw;
+                margin: 5vw 0 7vw 0;
                 // 外框線定位
                 position: relative;
 
@@ -492,23 +487,24 @@ a {
                     .con_img_box {
                         position: relative;
                         left: 5%;
-
+                        margin-top: 7%;
+                        width: 91%;
                         img {
-                            width: 106%;
+                            // width: 106%;
                             border-radius: var(--border-radius-img);
                         }
                     }
 
                     .txt_box {
-                        width: 50%;
+                        width: 100%;
                         align-items: center;
                         display: flex;
                         flex-direction: column;
-                        // padding: 2.3vw 5vw;
-                        padding: 2.3vw 4vw 4vw 16vw;
-                        margin-right: 6vw;
+                        // padding: 2.3vw 6vw 4vw 16vw;
+                        // margin-right: 6vw;
+                        position: relative;
+                        // left: 5vw;
 
-                        // padding-left: 0;
                         .title_box {
                             display: flex;
                             flex-direction: column;
@@ -561,18 +557,20 @@ a {
                         }
 
                         // 內文
-                        p {
+                        p:nth-child(2){
                             // 文字與上面標題對其
                             margin-left: 0.4vw;
+                            width: 44%;
                         }
 
                         .more {
                             width: 100%;
                             display: flex;
                             align-items: center;
-                            justify-content: space-around;
+                            justify-content: center;
                             padding-top: 2vw;
                             position: relative;
+                            // width: 67%;
 
                             p {
                                 color: $gold_color;
@@ -587,11 +585,12 @@ a {
                                 align-items: center;
 
                                 // 對其
-                                width: 42%;
-                                justify-content: space-around;
+                                // width: 42%;
+                                // justify-content: space-around;
 
                                 .as_box {
                                     position: relative;
+                                    margin: 0 1vw;
 
                                     .arrow {
                                         position: absolute;
@@ -608,32 +607,36 @@ a {
                                 p {
                                     margin: 0;
                                     padding: 0;
+                                    width: 100%;
                                 }
                             }
 
                             // 箭頭效果
                             a:hover {
                                 .arrow {
-                                    animation: arrow 2.5s ease-in-out infinite;
+                                    animation: arrow .8s linear infinite;
 
                                     @keyframes arrow {
                                         0% {
                                             transform: translateX(0);
                                         }
 
-                                        20% {
-                                            transform: translateX(5px);
-
-                                        }
-
-                                        40% {
+                                        25% {
                                             transform: translateX(-5px);
 
                                         }
 
-                                        60% {
+                                        50% {
+                                            transform: translateX(0);
+
+                                        }
+
+                                        75% {
                                             transform: translateX(5px);
 
+                                        }
+                                        100%{
+                                            transform: translateX(0);
                                         }
                                     }
                                 }
@@ -802,26 +805,29 @@ a {
                             // 箭頭效果
                             a:hover {
                                 .arrow {
-                                    animation: arrow 2.5s ease-in-out infinite;
+                                    animation: arrow .8s linear infinite;
 
                                     @keyframes arrow {
                                         0% {
                                             transform: translateX(0);
                                         }
 
-                                        20% {
-                                            transform: translateX(5px);
-
-                                        }
-
-                                        40% {
+                                        25% {
                                             transform: translateX(-5px);
 
                                         }
 
-                                        60% {
+                                        50% {
+                                            transform: translateX(0);
+
+                                        }
+
+                                        75% {
                                             transform: translateX(5px);
 
+                                        }
+                                        100%{
+                                            transform: translateX(0);
                                         }
                                     }
                                 }

@@ -302,13 +302,9 @@ a {
 
                 // 跟菱形對齊
                 h2 {
-                    font-family: $en_font_family;
-                    color: $white_color;
                     margin-left: 2.5vw;
-                    letter-spacing: 0.2vw;
                     margin-bottom: 0;
                     // 不夠長??
-
                 }
 
                 p {
@@ -648,26 +644,29 @@ a {
                             // 箭頭效果
                             a:hover {
                                 .arrow {
-                                    animation: arrow 2.5s ease-in-out infinite;
+                                    animation: arrow .8s linear infinite;
 
                                     @keyframes arrow {
                                         0% {
                                             transform: translateX(0);
                                         }
 
-                                        20% {
-                                            transform: translateX(5px);
-
-                                        }
-
-                                        40% {
+                                        25% {
                                             transform: translateX(-5px);
 
                                         }
 
-                                        60% {
+                                        50% {
+                                            transform: translateX(0);
+
+                                        }
+
+                                        75% {
                                             transform: translateX(5px);
 
+                                        }
+                                        100%{
+                                            transform: translateX(0);
                                         }
                                     }
                                 }
