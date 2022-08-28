@@ -1123,7 +1123,7 @@ a {
   height: 7vw;
   color: #fff;
   padding-bottom: 0;
-  width: 93%;
+  max-width: 93%;
   margin: 0 auto;
 }
 .news .col_3 .range .card .txt_box .box .more {
