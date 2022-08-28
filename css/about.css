@@ -462,10 +462,7 @@ img {
   width: 40%;
 }
 .about .col_1 .txt_item .txt_box h2 {
-  font-family: "Playfair Display", serif;
-  color: #fff;
   margin-left: 2.5vw;
-  letter-spacing: 0.2vw;
   margin-bottom: 0;
 }
 .about .col_1 .txt_item .txt_box p {
@@ -601,10 +598,7 @@ img {
   padding-top: 3vw;
 }
 .about .col_2 .txt_item .item .box h2 {
-  letter-spacing: 0.2vw;
   margin-top: 4vw;
-  font-family: "Playfair Display", serif;
-  color: #fff;
 }
 .about .col_2 .txt_item .item .box p {
   font-weight: "Microsoft JhengHei";
@@ -743,13 +737,11 @@ img {
   }
 }
 .about .col_3 .range .txt_item .range_box .item .box {
-  padding: 2vw 16vw 3vw;
+  padding: 2vw 16vw;
+  margin-bottom: 1vw;
 }
 .about .col_3 .range .txt_item .range_box .item .box h2 {
-  letter-spacing: 0.2vw;
   margin-top: 4vw;
-  font-family: "Playfair Display", serif;
-  color: #fff;
 }
 .about .col_3 .range .txt_item .range_box .item .box p {
   font-weight: "Microsoft JhengHei";
