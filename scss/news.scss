@@ -1,6 +1,7 @@
 @import 'all';
 @import 'grid';
 
+
 // 全區css
 :root {
     // ===========電腦====
@@ -69,6 +70,30 @@ a {
 }
 
 // ===========電腦版==============//
+// 過場動畫(咖啡)
+.Inner {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // z-index: 999;
+}
+.news {
+    .col_1 {
+        .bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+}
+
+// 上陰影
 .bginner::before {
     content: "";
     position: absolute;
@@ -81,40 +106,7 @@ a {
     @keyframes bginner {
         0% {
             opacity: 0;
-            background-size: 130% auto;
-        }
-
-        30% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 1;
-            background-size: 110% auto;
-        }
-    }
-}
-
-.news {
-    background-image: url(../img/news/1x/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    animation: mini 10s ease-out forwards;
-
-    @keyframes mini {
-        0% {
-            opacity: 0;
-            background-size: 130% auto;
+            background-size: 100% auto;
         }
 
         30% {
@@ -125,8 +117,60 @@ a {
             opacity: 1;
             background-size: 100% auto;
         }
-
     }
+}
+// 下陰影
+.news {
+    .col_1 {
+        .black {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20vw;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.856) 10%, rgba(0, 0, 0, 0) 100%);
+
+            @keyframes bginner {
+                0% {
+                    opacity: 0;
+                    background-size: 100% auto;
+                }
+
+                30% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                    background-size: 100% auto;
+                }
+            }
+        }
+    }
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    animation: mini 10s ease-out forwards;
+
+    // @keyframes mini {
+    //     0% {
+    //         opacity: 0;
+    //         background-size: 130% auto;
+    //     }
+
+    //     30% {
+    //         opacity: 1;
+    //     }
+
+    //     100% {
+    //         opacity: 1;
+    //         background-size: 100% auto;
+    //     }
+
+    // }
 
     //  col_1 第一卡大banner
     .col_1 {
@@ -164,6 +208,10 @@ a {
             .img_box {
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                align-content: center;
+                // 對其
+                margin-right: 2%;
 
                 // 右邊線
                 .line_box {
@@ -244,7 +292,7 @@ a {
                         transform-box: fill-box;
                         transform-origin: center;
                         transform: rotate(43deg);
-                        animation: drawSquare 8s linear forwards;
+                        animation: drawSquare 8s linear infinite;
 
                         @keyframes drawSquare {
                             0% {
@@ -280,7 +328,7 @@ a {
                         transform-box: fill-box;
                         transform-origin: center;
                         transform: rotate(56deg);
-                        animation: drawSquare 8s linear 2s forwards;
+                        animation: drawSquare 8s linear 2s infinite;
 
                         @keyframes drawSquare {
                             0% {
@@ -317,10 +365,8 @@ a {
 
     // col_2
     .col_2 {
-        background-color: $content_bg_color;
         width: 100%;
         height: 100%;
-
         .range {
             padding: 0 8vw;
             margin: 3vw auto;
@@ -652,10 +698,8 @@ a {
 
     //col_3
     .col_3 {
-        background-color: $content_bg_color;
         width: 100%;
         height: 100%;
-
         .range {
             display: flex;
             justify-content: center;
@@ -674,14 +718,24 @@ a {
                 // margin: 1vw;
                 // 白線定位
                 position: relative;
+                // height: 80vh;
+                overflow: hidden;
                 height: 80vh;
 
                 // 圖片
-                .card_img_box {
-                    width: var(--card--width);
-                    height: 30%;
-                    img {
-                        border-radius: var(--border-radius-img);
+                .card_img_item {
+                    height: 30vh;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    align-content: center;
+
+                    .card_img_box {
+                        width: var(--card--width);
+
+                        img {
+                            border-radius: var(--border-radius-img);
+                        }
                     }
                 }
 
@@ -693,20 +747,21 @@ a {
                     justify-content: center;
                     // 讓每個卡片一樣大
                     // height: 18vw;
-                    height: 70%;
+                    height: 50vh;
+                    justify-content: space-evenly;
                     // margin: 0 1vw;
 
                     .title_box {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        justify-content: center;
-                        height: 15%;
+                        justify-content: flex-end;
+                        height: 20vh;
 
                         h4 {
                             margin-bottom: 0;
                             // margin-top: 4vw;
-                            min-width: 138%;
+                            // min-width: 138%;
                             display: flex;
                             justify-content: center;
                         }
@@ -752,93 +807,98 @@ a {
                             }
                         }
                     }
-                        // 內文
-                        .col_1_p {
-                            // 讓每個卡片一樣大                    
-                            height: 40%;
-                            color: #fff;
-                            padding-bottom: 0;
-                            max-width: 73%;
-                            margin: 0 auto;
+
+                    // 內文
+                    .col_1_p {
+                        // 讓每個卡片一樣大                    
+                        height: 30vh;
+                        color: #fff;
+                        // padding-bottom: 0;
+                        max-width: 73%;
+                        margin: 0 auto;
+                        // padding: 7% 15%;
+                        // height: 35vh;
+                        // padding: 13%;
+                    }
+
+                    .more {
+                        height: 15vh;
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        // margin-top: 2vw;
+
+                        .p_box {
+                            display: flex;
+                            // 內文對其
+                            // padding-left: 1vw;
+
+                            p {
+                                color: $gold_color;
+                                padding: 0;
+                            }
                         }
 
-                        .more {
-                            height: 15%;
-                            width: 77%;
+                        a {
                             display: flex;
                             align-items: center;
-                            justify-content: space-between;
-                            // margin-top: 2vw;
 
-                            .p_box {
-                                display: flex;
-                                // 內文對其
-                                // padding-left: 1vw;
+                            .as_box {
+                                position: relative;
 
-                                p {
-                                    color: $gold_color;
-                                    padding: 0;
-                                }
-                            }
-
-                            a {
-                                display: flex;
-                                align-items: center;
-                                .as_box {
-                                    position: relative;
-
-                                    .arrow {
-                                        position: absolute;
-                                        width: 2vw;
-                                        left: -32%;
-                                        top: 32%;
-                                    }
-
-                                    .square {
-                                        width: 2vw;
-                                        margin-right: 0.5vw;
-                                        margin-top: 0.5vw;
-                                    }
-                                }
-
-                                p {
-                                    color: $gold_color;
-                                    padding: 0;
-                                }
-                            }
-
-                            // 箭頭效果
-                            a:hover {
                                 .arrow {
-                                    animation: arrow .8s linear infinite;
+                                    position: absolute;
+                                    width: 2vw;
+                                    left: -32%;
+                                    top: 32%;
+                                }
 
-                                    @keyframes arrow {
-                                        0% {
-                                            transform: translateX(0);
-                                        }
+                                .square {
+                                    width: 2vw;
+                                    margin-right: 0.5vw;
+                                    margin-top: 0.5vw;
+                                }
+                            }
 
-                                        25% {
-                                            transform: translateX(-5px);
+                            p {
+                                color: $gold_color;
+                                padding: 0;
+                            }
+                        }
 
-                                        }
+                        // 箭頭效果
+                        a:hover {
+                            .arrow {
+                                animation: arrow .8s linear infinite;
 
-                                        50% {
-                                            transform: translateX(0);
+                                @keyframes arrow {
+                                    0% {
+                                        transform: translateX(0);
+                                    }
 
-                                        }
+                                    25% {
+                                        transform: translateX(-5px);
 
-                                        75% {
-                                            transform: translateX(5px);
+                                    }
 
-                                        }
+                                    50% {
+                                        transform: translateX(0);
 
-                                        100% {
-                                            transform: translateX(0);
-                                        }
+                                    }
+
+                                    75% {
+                                        transform: translateX(5px);
+
+                                    }
+
+                                    100% {
+                                        transform: translateX(0);
                                     }
                                 }
                             }
                         }
+                    }
                 }
 
                 //白線

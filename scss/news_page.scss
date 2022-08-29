@@ -1,6 +1,7 @@
 @import 'all';
 @import 'grid';
 
+
 // 全區css
 :root {
     // ===========電腦====
@@ -69,6 +70,30 @@ a {
 }
 
 // ===========電腦版==============//
+// 過場動畫(咖啡)
+.Inner {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // z-index: 999;
+}
+.news_page {
+    .col_1 {
+        .bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+}
+
+// 上陰影
 .bginner::before {
     content: "";
     position: absolute;
@@ -81,40 +106,7 @@ a {
     @keyframes bginner {
         0% {
             opacity: 0;
-            background-size: 130% auto;
-        }
-
-        30% {
-            opacity: 1;
-        }
-
-        100% {
-            opacity: 1;
-            background-size: 110% auto;
-        }
-    }
-}
-
-.news_page {
-    background-image: url(../img/news/1x/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    animation: mini 10s ease-out forwards;
-
-    @keyframes mini {
-        0% {
-            opacity: 0;
-            background-size: 130% auto;
+            background-size: 100% auto;
         }
 
         30% {
@@ -125,8 +117,66 @@ a {
             opacity: 1;
             background-size: 100% auto;
         }
-
     }
+}
+// 下陰影
+.news_page {
+    .col_1 {
+        .black {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20vw;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.856) 10%, rgba(0, 0, 0, 0) 100%);
+
+            @keyframes bginner {
+                0% {
+                    opacity: 0;
+                    background-size: 100% auto;
+                }
+
+                30% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                    background-size: 100% auto;
+                }
+            }
+        }
+    }
+}
+
+.news_page {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    animation: mini 10s ease-out forwards;
+
+    // @keyframes mini {
+    //     0% {
+    //         opacity: 0;
+    //         background-size: 130% auto;
+    //     }
+
+    //     30% {
+    //         opacity: 1;
+    //     }
+
+    //     100% {
+    //         opacity: 1;
+    //         background-size: 100% auto;
+    //     }
+
+    // }
 
     //  col_1 第一卡大banner
     .col_1 {
@@ -164,6 +214,9 @@ a {
             .img_box {
                 display: flex;
                 justify-content: center;
+                align-items: center;
+                align-content: center;
+                margin-right: 2%;
 
                 // 右邊線
                 .line_box {
@@ -244,7 +297,7 @@ a {
                         transform-box: fill-box;
                         transform-origin: center;
                         transform: rotate(43deg);
-                        animation: drawSquare 8s linear forwards;
+                        animation: drawSquare 8s linear infinite;
 
                         @keyframes drawSquare {
                             0% {
@@ -280,7 +333,7 @@ a {
                         transform-box: fill-box;
                         transform-origin: center;
                         transform: rotate(56deg);
-                        animation: drawSquare 8s linear 2s forwards;
+                        animation: drawSquare 8s linear 2s infinite;
 
                         @keyframes drawSquare {
                             0% {
@@ -317,10 +370,9 @@ a {
 
     // col_2
     .col_2 {
-        background-color: $content_bg_color;
         width: 100%;
         height: 100%;
-
+        z-index: 1;
         // title 小標題 相即美學
         .title_box {
             display: flex;
@@ -388,10 +440,9 @@ a {
 
     // col_3 內容
     .col_3 {
-        background-color: $content_bg_color;
         width: 100%;
         height: 100%;
-
+        z-index: 1;
         .range {
             padding: 0 10vw;
             margin: 0 auto;
@@ -450,14 +501,13 @@ a {
     }
 
     .btn_box {
-        background-color: $content_bg_color;
-        width: 109%;
-        height: 100%;
+        // background-color: $content_bg_color;
+        // width: 109%;
+        // height: 100%;
         display: flex;
         justify-content: center;
         padding: 5vw 0;
         position: relative;
-
         // 回上一頁
         a {
             display: block;
@@ -498,10 +548,9 @@ a {
 
     // col_4
     .col_4 {
-        background-color: $content_bg_color;
         width: 100%;
         height: 100%;
-
+        z-index: 1;
         .range {
             display: flex;
             justify-content: center;

@@ -61,26 +61,32 @@ img {
 }
 
 // ===========電腦版==============//
-// .innerContainer::before {
-//     content: " ";
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-//     background-color: $banner_bg_color;
-//     opacity: 0;
-//     transition: all 1s;
-//     pointer-events: none;
-// }
+// 過場動畫(咖啡)
+.Inner {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // z-index: 999;
+}
 
-// .innerContainer {
-//     width: 100%;
-//     height: 100%;
-//     position: relative;
-// }
-// .innerContainer.move::before{
-//     opacity: 0.8;
-// }
+.contact {
+    .col_1 {
+        .bg {
+            background-image: url(../img/contact/1x/banner1.jpg);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+    }
+}
 
+// 上陰影
 .bginner::before {
     content: "";
     position: absolute;
@@ -93,7 +99,7 @@ img {
     @keyframes bginner {
         0% {
             opacity: 0;
-            background-size: 130% auto;
+            background-size: 100% auto;
         }
 
         30% {
@@ -102,17 +108,43 @@ img {
 
         100% {
             opacity: 1;
-            background-size: 110% auto;
+            background-size: 100% auto;
+        }
+    }
+}
+
+// 下陰影
+.contact {
+    .col_1 {
+        .black {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 20vw;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.856) 10%, rgba(0, 0, 0, 0) 100%);
+
+            @keyframes bginner {
+                0% {
+                    opacity: 0;
+                    background-size: 100% auto;
+                }
+
+                30% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                    background-size: 100% auto;
+                }
+            }
         }
     }
 }
 
 .contact {
-    background-image: url(../img/contact/1x/banner.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     align-content: center;
     align-items: center;
@@ -125,22 +157,22 @@ img {
     flex-direction: column;
     animation: mini 10s ease-out forwards;
 
-    @keyframes mini {
-        0% {
-            opacity: 0;
-            background-size: 130% auto;
-        }
+    // @keyframes mini {
+    //     0% {
+    //         opacity: 0;
+    //         background-size: 130% auto;
+    //     }
 
-        30% {
-            opacity: 1;
-        }
+    //     30% {
+    //         opacity: 1;
+    //     }
 
-        100% {
-            opacity: 1;
-            background-size: 100% auto;
-        }
+    //     100% {
+    //         opacity: 1;
+    //         background-size: 100% auto;
+    //     }
 
-    }
+    // }
 
     //  col_1 第一卡大banner
     .col_1 {
@@ -221,8 +253,7 @@ img {
     // 地圖
     .col_2 {
         width: 100%;
-        background-color: $content_bg_color;
-
+        z-index: 2;
         .range {
             display: flex;
             justify-content: space-evenly;
@@ -248,6 +279,7 @@ img {
                         p {
                             color: $gold_color;
                             letter-spacing: 1em;
+                            font-family: 'Noto Serif TC', serif;
                         }
                     }
 

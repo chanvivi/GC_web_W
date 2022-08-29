@@ -164,6 +164,7 @@ footer span {
 }
 
 [class*=col-] {
+  padding: 0px 0.5vw;
   /* 不用算尺寸 */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -377,6 +378,25 @@ a {
   text-decoration: none;
 }
 
+.Inner {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.news_page .col_1 .bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .bginner::before {
   content: "";
   position: absolute;
@@ -390,36 +410,55 @@ a {
 @-webkit-keyframes bginner {
   0% {
     opacity: 0;
-    background-size: 130% auto;
+    background-size: 100% auto;
   }
   30% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    background-size: 110% auto;
+    background-size: 100% auto;
   }
 }
 @keyframes bginner {
   0% {
     opacity: 0;
-    background-size: 130% auto;
+    background-size: 100% auto;
   }
   30% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    background-size: 110% auto;
+    background-size: 100% auto;
+  }
+}
+
+.news_page .col_1 .black {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20vw;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, rgba(0, 0, 0, 0.856)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.856) 10%, rgba(0, 0, 0, 0) 100%);
+}
+@keyframes bginner {
+  0% {
+    opacity: 0;
+    background-size: 100% auto;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    background-size: 100% auto;
   }
 }
 
 .news_page {
-  background-image: url(../img/news/1x/banner.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -437,32 +476,6 @@ a {
           flex-direction: column;
   -webkit-animation: mini 10s ease-out forwards;
           animation: mini 10s ease-out forwards;
-}
-@-webkit-keyframes mini {
-  0% {
-    opacity: 0;
-    background-size: 130% auto;
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    background-size: 100% auto;
-  }
-}
-@keyframes mini {
-  0% {
-    opacity: 0;
-    background-size: 130% auto;
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    background-size: 100% auto;
-  }
 }
 .news_page .col_1 {
   width: 100%;
@@ -514,6 +527,12 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-right: 2%;
 }
 .news_page .col_1 .title_item .img_box .line_box {
   display: -webkit-box;
@@ -597,8 +616,8 @@ a {
           transform-origin: center;
   -webkit-transform: rotate(43deg);
           transform: rotate(43deg);
-  -webkit-animation: drawSquare 8s linear forwards;
-          animation: drawSquare 8s linear forwards;
+  -webkit-animation: drawSquare 8s linear infinite;
+          animation: drawSquare 8s linear infinite;
 }
 @-webkit-keyframes drawSquare {
   0% {
@@ -641,8 +660,8 @@ a {
           transform-origin: center;
   -webkit-transform: rotate(56deg);
           transform: rotate(56deg);
-  -webkit-animation: drawSquare 8s linear 2s forwards;
-          animation: drawSquare 8s linear 2s forwards;
+  -webkit-animation: drawSquare 8s linear 2s infinite;
+          animation: drawSquare 8s linear 2s infinite;
 }
 @keyframes drawSquare {
   0% {
@@ -664,9 +683,9 @@ a {
   margin-left: 2.5vw;
 }
 .news_page .col_2 {
-  background-color: rgba(32, 23, 22, 0.95);
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .news_page .col_2 .title_box {
   display: -webkit-box;
@@ -736,9 +755,9 @@ a {
   border-radius: var(--border-radius-img);
 }
 .news_page .col_3 {
-  background-color: rgba(32, 23, 22, 0.95);
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .news_page .col_3 .range {
   padding: 0 10vw;
@@ -791,9 +810,6 @@ a {
   width: 73.3%;
 }
 .news_page .btn_box {
-  background-color: rgba(32, 23, 22, 0.95);
-  width: 109%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -836,9 +852,9 @@ a {
   background-color: var(--pale--line);
 }
 .news_page .col_4 {
-  background-color: rgba(32, 23, 22, 0.95);
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 .news_page .col_4 .range {
   display: -webkit-box;
