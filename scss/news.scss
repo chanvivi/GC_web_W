@@ -17,7 +17,7 @@
     --pale--line: #dcb1782e; // var(--pale--line)
 
     //粗細 //
-    --line-height: 0.01vw; //var(--line-height)
+    --line-height: 0.1vw; //var(--line-height)
     // 長度
     --line-top-width: 74%; //var(--line-top-width)
     --line-bottom-width: 8vw; //var(--line-bottom-width)
@@ -189,6 +189,7 @@ a {
             align-items: center;
             justify-content: center;
             align-content: center;
+            padding: 1vw;
 
             .txt_box {
                 display: flex;

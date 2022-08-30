@@ -82,7 +82,6 @@ footer {
 .about {
     .col_1 {
         .bg {
-            background-image: url(../img/about/1x/banner1.jpg);
             position: fixed;
             width: 100%;
             height: 100vh;
@@ -201,6 +200,7 @@ footer {
             align-items: center;
             justify-content: center;
             align-content: center;
+            padding: 1vw;
 
             .txt_box {
                 display: flex;
