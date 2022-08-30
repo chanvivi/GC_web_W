@@ -828,12 +828,12 @@ a {
   padding-right: 2em;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  width: 8.5vw;
   z-index: 9;
 }
 .news_page .btn_box a .btn {
-  line-height: 2;
-  margin: 0 auto;
   color: #dcb078;
+  font-size: 16px;
 }
 .news_page .btn_box a:hover {
   background: #dcb078;

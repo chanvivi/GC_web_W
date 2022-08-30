@@ -517,12 +517,14 @@ a {
             padding-left: 2em;
             padding-right: 2em;
             transition: all 0.5s;
+            width: 8.5vw;
             z-index: 9;
 
             .btn {
-                line-height: 2;
-                margin: 0 auto;
+                // margin: 0 auto;
+                // width: 8.5vw;
                 color: $gold_color;
+                font-size: 16px;
             }
         }
 
