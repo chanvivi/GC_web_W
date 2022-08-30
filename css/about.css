@@ -626,6 +626,7 @@ footer {
 }
 .about .col_2 .txt_item .item .txt_box {
   margin: 5% 13.5% 0 6.7%;
+  margin: 5% 11.5% 0 6.7%;
 }
 .about .col_2 .txt_item .item .txt_box p:nth-child(2) {
   padding-top: 2.5vw;
