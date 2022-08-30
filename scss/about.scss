@@ -209,6 +209,7 @@ footer {
                 align-items: center;
                 // 對其
                 margin-left: 1.5%;
+                z-index: 2;
 
                 p {
                     margin-bottom: 0;
@@ -225,7 +226,7 @@ footer {
                 justify-content: center;
                 align-content: center;
                 align-items: center;
-
+                z-index: 2;
                 // 右邊線
                 .line_box {
                     display: flex;
@@ -269,6 +270,7 @@ footer {
         .txt_item {
             padding: 3% 0 1% 4%;
             position: relative;
+            z-index: 9;
 
             svg {
                 position: absolute;

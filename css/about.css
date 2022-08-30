@@ -322,6 +322,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin-left: 1.5%;
+  z-index: 2;
 }
 .about .col_1 .title_item .txt_box p {
   margin-bottom: 0;
@@ -341,6 +342,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 .about .col_1 .title_item .img_box .line_box {
   display: -webkit-box;
@@ -382,6 +384,7 @@ footer {
 .about .col_1 .txt_item {
   padding: 3% 0 1% 4%;
   position: relative;
+  z-index: 9;
 }
 .about .col_1 .txt_item svg {
   position: absolute;
