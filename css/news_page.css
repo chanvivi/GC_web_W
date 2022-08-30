@@ -820,16 +820,23 @@ a {
           justify-content: center;
   padding: 5vw 0;
   position: relative;
+  width: 100%;
 }
 .news_page .btn_box a {
   display: block;
   border: 1px solid rgba(180, 141, 83, 0.3333333333);
-  padding-left: 2em;
-  padding-right: 2em;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   width: 8.5vw;
   z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 .news_page .btn_box a .btn {
   color: #dcb078;

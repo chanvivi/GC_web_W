@@ -510,15 +510,19 @@ a {
         justify-content: center;
         padding: 5vw 0;
         position: relative;
+        width: 100%;
         // 回上一頁
         a {
             display: block;
             border: 1px solid #b48d5355;
-            padding-left: 2em;
-            padding-right: 2em;
+            // padding-left: 2em;
+            // padding-right: 2em;
             transition: all 0.5s;
             width: 8.5vw;
             z-index: 9;
+            display: flex;
+            justify-content: center;
+            align-content: center;
 
             .btn {
                 // margin: 0 auto;
