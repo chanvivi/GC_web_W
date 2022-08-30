@@ -726,26 +726,26 @@ footer {
                     }
 
                     // 動態
-                    .square_3D {
-                        svg {
-                            stroke-dashoffset: 2000;
-                            stroke-dasharray: 2000;
-                            transform-box: fill-box;
-                            transform-origin: center;
-                            animation: move 5s linear 1s forwards;
+                    // .square_3D {
+                    //     svg {
+                    //         stroke-dashoffset: 2000;
+                    //         stroke-dasharray: 2000;
+                    //         transform-box: fill-box;
+                    //         transform-origin: center;
+                    //         animation: move 5s linear 1s forwards;
 
-                            @keyframes move {
-                                0% {
-                                    stroke-dashoffset: 2000;
-                                    stroke-dasharray: 2000;
-                                }
+                    //         @keyframes move {
+                    //             0% {
+                    //                 stroke-dashoffset: 2000;
+                    //                 stroke-dasharray: 2000;
+                    //             }
 
-                                100% {
-                                    stroke-dashoffset: 0;
-                                }
-                            }
-                        }
-                    }
+                    //             100% {
+                    //                 stroke-dashoffset: 0;
+                    //             }
+                    //         }
+                    //     }
+                    // }
 
                     //四個字
                     // 共同部分//

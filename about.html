@@ -207,7 +207,7 @@
                         <div class="img_box">
                             <img class="hidden" src="img/about/SVG/3D_square.svg" alt="3D_square">
                         </div>
-                        <div class="square wow fadeIn" id="sq" data-wow-duration="2s">
+                        <div class="square" id="sq">
                             <svg id="_層_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360.54 418.46">
                                 <defs>
                                     <style>
@@ -269,25 +269,28 @@
         <span>TEL： 04-2380-1886</span>
     </footer>
     <!-- footer END -->
-    <script>
+    <!-- <script>
         new WOW().init();
 
-        let element = document.getElementById('sq');
-        let osHeight = document.getElementById("sq").offsetHeight;
-        let cHeight = document.getElementById("sq").offsetTop;
+        function line_img() {
+            let element = document.getElementById('sq');
+            let osHeight = document.getElementById("sq").offsetHeight;
+            let cHeight = document.getElementById("sq").offsetTop;
 
-        console.log("Offset Height is " + osHeight + "<br/>");
-        console.log("Client Height is " + cHeight);
+            console.log("Offset Height is " + osHeight + "<br/>");
+            console.log("Client Height is " + cHeight);
 
-        // $(document).ready(function(e){
-        //     let sq = document.getElementById(".sq");
-        //     let square_3D = document.querySelector(".square_3D");
+            $(document).ready(function (e) {
+                let sq = document.getElementById(".sq");
+                let square_3D = document.querySelector(".square_3D");
 
-        //     if (window.scrollY > 100) {
-        //         element.classList.add("square_3D");
-        //     }
-        // });
-    </script>
+                if (window.scrollY > 100) {
+                    element.classList.add("square_3D");
+                }
+            });
+        }
+        line_img()
+    </script> -->
 
     <!-- inner -->
     <script>
@@ -313,6 +316,23 @@
             }, "<")
         }
         IneerShow()
+
+        function line_svg() {
+            let t1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".col_3",
+                    start: "top center",
+                }
+            })
+            t1.fromTo("#sq svg", {
+                strokeDashoffset: 2000,
+                strokeDasharray: 2000
+            },{
+                strokeDashoffset: 500,
+                duration: 5,
+            }, "<")
+        }
+        line_svg()
     </script>
     <!-- 視差離場 -->
     <script>
