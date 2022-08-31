@@ -365,3 +365,23 @@ img {
         }
     }
 }
+// ===========手機版==============
+@media screen and (max-width:768px) {
+    .contact {
+        //  col_2 map
+        .col_2 {
+            .range {
+                flex-wrap: wrap;
+                align-content: center;
+                align-items: center;
+                .map_box{
+                height: 65vw;
+                width: 100%;}
+                .txt_item{
+                    width: 100%;
+                }
+            }
+        }
+        }
+
+    }
