@@ -387,6 +387,7 @@ footer {
         // opacity: 0.8;
         // 白樹定位
         position: relative;
+        padding: 3% 0;
 
         // 圖片
         .img_item {
@@ -438,9 +439,12 @@ footer {
 
             .item {
                 display: flex;
-                align-items: center;
+                align-items: flex-end;
                 justify-content: space-evenly;
                 // padding: 1vw 13vw 2vw 13vw;
+                padding: 2%;
+                width: 83%;
+                margin: auto;
 
                 // 線圖 菱形 --定位
                 svg {
@@ -538,7 +542,7 @@ footer {
                 // 內文
                 .txt_box {
                     width: 52%;
-                    padding-right: 13%;
+                    // padding-right: 13%;
 
                     p:nth-child(2) {
                         padding-top: 2.5vw;
