@@ -227,6 +227,7 @@ footer {
                 align-content: center;
                 align-items: center;
                 z-index: 2;
+
                 // 右邊線
                 .line_box {
                     display: flex;
@@ -537,6 +538,7 @@ footer {
                 // 內文
                 .txt_box {
                     width: 52%;
+                    padding-right: 13%;
 
                     p:nth-child(2) {
                         padding-top: 2.5vw;
