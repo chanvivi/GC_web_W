@@ -448,6 +448,7 @@ xl 桌機 1024 */
   --anm-delay--square_3D: 0s;
   --border-radius-img: 2vw 0 2vw 0;
   --card--width: 20vw;
+  --cel--card--width: 83vw;
   --cell-line-height: 0.3vw;
   --cell-line-top-width: 13vw;
   --cell-line-bottom-width: 20vw;
@@ -1350,4 +1351,51 @@ a {
   height: 100%;
   width: var(--line-height);
   background-color: var(--pale--line);
+}
+
+@media screen and (max-width: 768px) {
+  .news .col_2 .range .txt_item .txt_range {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+  }
+  .news .col_2 .range .txt_item .txt_range .txt_box p:nth-child(2) {
+    width: 100%;
+  }
+  .news .col_2 .range .txt_item .line_Box {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .news .col_3 .range .card {
+    height: 70vh;
+  }
+  .news .col_3 .range .card .card_img_item .card_img_box {
+    width: var(--cel--card--width);
+  }
+  .news .col_3 .range .card .txt_box {
+    height: 40vh;
+  }
+  .news .col_3 .range .card .txt_box .title_box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    height: 18vw;
+  }
+  .news .col_3 .range .card .txt_box .col_1_p {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 35vw;
+  }
 }/*# sourceMappingURL=news.css.map */

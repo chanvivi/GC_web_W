@@ -40,6 +40,7 @@
     // 圖片大小
     --card--width: 20vw; //var(--card--width)
     // ===========手機====
+    --cel--card--width: 83vw; //var(--cel--card--width)
 
     // 菱形線條 
 
@@ -927,6 +928,61 @@ a {
                     width: var(--line-height);
                     // 調整明度線太粗
                     background-color: var(--pale--line);
+                }
+            }
+        }
+    }
+}
+
+// ===========手機版==============
+@media screen and (max-width:768px) {
+    .news{
+        .col_2{
+            .range{
+                .txt_item{
+                    .txt_range{
+                        flex-wrap: wrap;
+                        margin: auto;
+                        .txt_box{
+                            p:nth-child(2) {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .line_Box{
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+        // 卡片式
+        .col_3{
+            .range{
+                .card{
+                    height: 70vh;
+                    .card_img_item{
+                        .card_img_box{
+                            width: var(--cel--card--width);
+                        }
+                    }
+                    .txt_box{
+                        height: 40vh;
+                        .title_box{
+                            justify-content: center;
+                            margin: 0;
+                                height: 18vw;
+                        }
+                        .col_1_p{
+                            max-width: 100%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            align-content: center;
+                            height: 35vw;
+                        }
+                    }
                 }
             }
         }

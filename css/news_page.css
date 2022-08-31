@@ -448,6 +448,7 @@ xl 桌機 1024 */
   --anm-delay--square_3D: 0s;
   --border-radius-img: 2vw 0 2vw 0;
   --card--width: 23vw;
+  --cel--card--width: 83vw;
   --cell-line-height: 0.3vw;
   --cell-line-top-width: 13vw;
   --cell-line-bottom-width: 20vw;
@@ -1214,4 +1215,64 @@ a {
   height: 100%;
   width: var(--line-height);
   background-color: var(--pale--line);
+}
+
+@media screen and (max-width: 768px) {
+  .news_page .col_3 .range .dt {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .news_page .col_3 .range .dt .img_item {
+    width: 100%;
+  }
+  .news_page .col_3 .range .dt .txt_item {
+    width: 100%;
+  }
+  .news_page .col_3 .range .dt .txt_item .txt_box {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .news_page .col_3 .range .dt:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .news_page .col_4 .range .card {
+    height: 70vh;
+  }
+  .news_page .col_4 .range .card .card_img_item .card_img_box {
+    width: var(--cel--card--width);
+  }
+  .news_page .col_4 .range .card .txt_box {
+    height: 40vh;
+  }
+  .news_page .col_4 .range .card .txt_box .title_box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    height: 18vw;
+  }
+  .news_page .col_4 .range .card .txt_box .col_1_p {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 35vw;
+  }
 }/*# sourceMappingURL=news_page.css.map */
