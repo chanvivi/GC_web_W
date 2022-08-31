@@ -206,7 +206,7 @@
                     </div>
                 </div>
                 <!-- 精工造藝 -->
-                <div class="img_item wow fadeIn">
+                <div class="img_item">
                     <div class="range_box">
                         <!-- 圖片 -->
                         <div class="img_box">
@@ -246,19 +246,19 @@
                             </svg>
                         </div>
                         <!-- 文字 --精工造藝-->
-                        <div class="ecma g1 news_blog">
+                        <div class="ecma g1 news_blog wow fadeIn"data-wow-offset="10">
                             <h3 class="title_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">精</h3>
                             <p class="p_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3.5s">EXQUISITE</p>
                         </div>
-                        <div class="ecma g2 banner_box">
+                        <div class="ecma g2 banner_box wow fadeIn"data-wow-offset="10">
                             <h3 class="title_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">工</h3>
                             <P class="p_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3.5s"> METHOD</P>
                         </div>
-                        <div class="ecma g3 banner_box">
+                        <div class="ecma g3 banner_box wow fadeIn"data-wow-offset="10">
                             <h3 class="title_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">造</h3>
                             <P class="p_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3.5s">CONSTRUCT</P>
                         </div>
-                        <div class="ecma g4 banner_box">
+                        <div class="ecma g4 banner_box wow fadeIn"data-wow-offset="10">
                             <h3 class="title_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">藝</h3>
                             <P class="p_font wow fadeIn" data-wow-duration="2s" data-wow-delay="3s">ART</P>
                         </div>
@@ -274,29 +274,11 @@
         <span>TEL： 04-2380-1886</span>
     </footer>
     <!-- footer END -->
-    <!-- <script>
+
+    <!-- wow -->
+    <script>
         new WOW().init();
-
-        function line_img() {
-            let element = document.getElementById('sq');
-            let osHeight = document.getElementById("sq").offsetHeight;
-            let cHeight = document.getElementById("sq").offsetTop;
-
-            console.log("Offset Height is " + osHeight + "<br/>");
-            console.log("Client Height is " + cHeight);
-
-            $(document).ready(function (e) {
-                let sq = document.getElementById(".sq");
-                let square_3D = document.querySelector(".square_3D");
-
-                if (window.scrollY > 100) {
-                    element.classList.add("square_3D");
-                }
-            });
-        }
-        line_img()
-    </script> -->
-
+    </script>
     <!-- inner -->
     <script>
         function IneerShow() {
@@ -334,7 +316,8 @@
                 strokeDasharray: 2000
             },{
                 strokeDashoffset: 500,
-                duration: 5,
+                duration: 6,
+                delay:0.5,
             }, "<")
         }
         line_svg()

@@ -152,7 +152,7 @@ footer span {
 }
 
 :root {
-  --square-line-width: 0.8vw;
+  --square-line-width: 0.5vw;
   --line: #dcb17873;
   --line-height: 0.01vw;
   --line-top-width: 74%;
@@ -317,6 +317,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 2;
 }
 .contact .col_1 .title_item .txt_box p {
   margin-bottom: 0;
@@ -331,6 +332,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  z-index: 2;
 }
 .contact .col_1 .title_item .img_box .line_box {
   display: -webkit-box;
@@ -400,11 +402,11 @@ img {
 }
 .contact .col_2 .range .txt_item .form-box .txt_box p {
   color: #dcb078;
-  letter-spacing: 1em;
   font-family: "Noto Serif TC", serif;
 }
 .contact .col_2 .range .txt_item .form-box .input_box {
   width: 80%;
+  padding-left: 1vw;
 }
 .contact .col_2 .range .txt_item .form-box .input_box .message textarea {
   width: 100%;
@@ -414,7 +416,7 @@ img {
   color: #dcb078;
   outline: none;
   line-height: 3;
-  margin-top: 3.5vw;
+  margin-top: 17%;
   overflow: visible;
 }
 .contact .col_2 .range .txt_item .form-box .input_box input {

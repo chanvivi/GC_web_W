@@ -343,7 +343,7 @@ xl 桌機 1024 */
   }
 }
 :root {
-  --square-line-width: 0.8vw;
+  --square-line-width: 0.5vw;
   --line: #dcb17873;
   --pale--line: #dcb1782e;
   --line-height: 0.1vw;
