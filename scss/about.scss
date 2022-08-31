@@ -935,81 +935,38 @@ footer {
 }
 
 
-// ===========手機版==============//
-// @media screen and (max-width:768px) {
-//     .about {
+// ===========手機版==============
+@media screen and (max-width:768px) {
+    .about {
+        //  col_2 第2卡
+        .col_2 {
+            // AESTHETIC LIFE
+            .txt_item {
+                .item {
+                    flex-wrap: wrap;
+                    // 內文
+                    .txt_box {
+                        width: 100%;
+                    }
+                }
+            }
+        }
 
-//         // col_1 第一卡大banner
-//         .col_1 {
-//             // 暫時用記得拿掉調畫面
-//             // height: 100vh;
+        // col_3 精工造藝
+        .col_3 {
+            .range {
+                flex-wrap: wrap;
+                justify-content: center;
 
-//             // 咖啡色塊文字
-//             .txt_box:nth-child(1) {
-//                 width: 60vw;
-//                 // 讓畫面滿版
-//                 margin: 74vw auto;
+                // 文字區 --CRIFT
+                .txt_item {
+                    width: 100%;
+                        //內文
+                        .txt_box {
+                        }
+                    }
+                }
+            }
+        }
 
-//                 // 菱形區塊
-//                 .square_line_box {
-//                     margin: 1vw 0;
-
-//                     // 右邊線
-//                     .box {
-
-//                         // 上線
-//                         .line:nth-child(1) {
-//                             width: var(--cell-line-top-width);
-//                             height: var(--cell-line-height);
-//                         }
-
-//                         // 下線
-//                         .line:nth-child(2) {
-//                             width: var(--cell-line-bottom-width);
-//                             height: var(--cell-line-height);
-//                         }
-//                     }
-//                 }
-//             }
-
-//             // CLASSIC ART
-//             .txt_box:nth-child(2) {
-//                 margin-bottom: 2vw;
-
-//                 // 線圖 菱形
-//                 .img_box {
-
-//                     // 第一圖
-//                     .box:nth-child(1) {
-//                         top: -9vw;
-//                         right: 19vw;
-
-//                     }
-
-//                     // 第二圖 
-//                     .box:nth-child(2) {
-//                         right: 19vw;
-//                         top: -9vw;
-//                     }
-
-//                 }
-
-//                 // 文字
-//                 .box {
-
-//                     // 跟菱形對齊
-//                     h1 {
-//                         font-size: var(--line-top-width);
-//                         margin-left: 6.5vw;
-//                     }
-
-//                     p {
-//                         font-size: 12px;
-//                         margin-left: 6.5vw;
-//                     }
-//                 }
-//             }
-//         }
-
-//     }
-// }
+    }

@@ -1092,4 +1092,24 @@ footer {
     opacity: 1;
     height: 30%;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .about .col_2 .txt_item .item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about .col_2 .txt_item .item .txt_box {
+    width: 100%;
+  }
+  .about .col_3 .range {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about .col_3 .range .txt_item {
+    width: 100%;
+  }
 }/*# sourceMappingURL=about.css.map */
