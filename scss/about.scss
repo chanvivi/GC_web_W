@@ -438,7 +438,8 @@ footer {
             .item {
                 display: flex;
                 align-items: center;
-                padding: 1vw 13vw 2vw 13vw;
+                justify-content: space-evenly;
+                // padding: 1vw 13vw 2vw 13vw;
 
                 // 線圖 菱形 --定位
                 svg {
@@ -520,8 +521,8 @@ footer {
                 // 英文文字
                 .box {
                     // margin-left: 2vw;
-                    padding-left: 4%;
-                    padding-top: 3vw;
+                    // padding-left: 4%;
+                    // padding-top: 3vw;
 
                     // 跟菱形對齊
                     h2 {
@@ -535,8 +536,7 @@ footer {
 
                 // 內文
                 .txt_box {
-                    margin: 5% 13.5% 0 6.7%;
-                    margin: 5% 11% 0 6.7%;
+                    width: 52%;
 
                     p:nth-child(2) {
                         padding-top: 2.5vw;
