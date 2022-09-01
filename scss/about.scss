@@ -167,6 +167,8 @@ footer {
     .col_1 {
         width: 100%;
         height: 50vw;
+        // height: 60vw;
+        height: 100vh;
         position: relative;
 
         // 咖啡色塊文字
@@ -257,7 +259,7 @@ footer {
             bottom: 1%;
             // position: relative;
             z-index: 9;
-            // bottom: 2vw;
+            padding: 1vw;
 
             svg {
                 position: absolute;
@@ -920,13 +922,12 @@ footer {
 // 平板
 @media screen and (max-width:1024px) {
     .about {
-
         //  col_1 第一卡大banner
         .col_1 {
-
+            // height: 76vw;
             // 咖啡色塊文字
             .title_item {
-                // margin: 26.5vw auto 0;
+                // transform: translateX(20%);
 
                 .txt_box {}
 
@@ -959,7 +960,7 @@ footer {
 @media screen and (max-width:768px) {
     .about {
         .col_1 {
-            height: 217vw;
+            // height: 217vw;
 
             .title_item {
                 width: 50vw;
