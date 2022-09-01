@@ -254,6 +254,22 @@ footer span {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .banner_box .en_title_font {
+    font-size: 2.8vw;
+  }
+  .title_top .en_txt {
+    font-size: 8vw;
+  }
+  .title_top .ch_txt {
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner_box .en_title_font {
+    font-size: 6vw;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1115,11 +1131,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .about .col_1 .txt_item .txt_box h2 {
-    font-size: 2.8vw;
-  }
-}
 @media screen and (max-width: 768px) {
   .about .col_1 {
     height: 217vw;
@@ -1140,8 +1151,8 @@ footer {
   }
   .about .col_1 .txt_item svg {
     left: 0%;
-    bottom: -24%;
-    width: 37%;
+    bottom: 14%;
+    width: 40%;
   }
   .about .col_2 {
     display: -webkit-box;
@@ -1172,8 +1183,8 @@ footer {
     width: 90%;
   }
   .about .col_2 .txt_item .item svg {
-    left: 27.5%;
-    top: -13%;
+    left: 15.5%;
+    top: -7%;
     width: 40%;
   }
   .about .col_2 .txt_item .item .box {
@@ -1198,7 +1209,7 @@ footer {
   .about .col_3 .range .txt_item .range_box .item svg {
     left: 29%;
     width: 40%;
-    bottom: 56%;
+    bottom: 68%;
   }
   .about .col_3 .range .img_item .range_box .img_box:nth-child(1) {
     width: 100%;
