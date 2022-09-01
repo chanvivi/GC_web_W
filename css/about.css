@@ -1230,6 +1230,9 @@ footer {
     left: 36%;
     top: 0%;
   }
+  .about .col_3 .range .img_item .range_box .g1::after {
+    left: 50%;
+  }
   .about .col_3 .range .img_item .range_box .g4 {
     left: 47%;
     bottom: 0%;
