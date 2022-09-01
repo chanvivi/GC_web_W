@@ -32,8 +32,8 @@
     --anm-delay--square_3D: 0s; //var(--anm-delay--square_3D)
     //精工造藝 中文 字體大小
     --ecma-ch-h3: 2.3vw; //var(--ecma-ch-h3)
-    --cel--ecma-ch-h3: 5.3vw;//var(--cel--ecma-ch-h3)
-    --cel--ecma-ch-p: 2vw;//var(--cel--ecma-ch-p)
+    --cel--ecma-ch-h3: 5.3vw; //var(--cel--ecma-ch-h3)
+    --cel--ecma-ch-p: 2vw; //var(--cel--ecma-ch-p)
     // }
 
     //卡片式
@@ -922,8 +922,10 @@ footer {
 // 平板
 @media screen and (max-width:1024px) {
     .about {
+
         //  col_1 第一卡大banner
         .col_1 {
+
             // height: 76vw;
             // 咖啡色塊文字
             .title_item {
@@ -946,8 +948,7 @@ footer {
                 .txt_box {
 
                     // 跟菱形對齊
-                    h2 {
-                    }
+                    h2 {}
 
                     p {}
                 }
@@ -971,6 +972,7 @@ footer {
                     .square {
                         width: var(--cel--square-line-width);
                     }
+
                     .line_box {
                         .line:nth-child(1) {
                             height: var(--cel--line-height);
@@ -1038,10 +1040,12 @@ footer {
                     }
                 }
             }
-            .tree_img_box{
+
+            .tree_img_box {
                 bottom: 0;
             }
-            .tree_img_box:nth-child(4){
+
+            .tree_img_box:nth-child(4) {
                 bottom: 0;
             }
         }
@@ -1077,14 +1081,17 @@ footer {
                         .img_box:nth-child(1) {
                             width: 100%;
                         }
-                        .ecma{
-                            h3:nth-child(1){
+
+                        .ecma {
+                            h3:nth-child(1) {
                                 font-size: var(--cel--ecma-ch-h3);
                             }
-                            p:nth-child(2){
+
+                            p:nth-child(2) {
                                 font-size: var(--cel--ecma-ch-p);
                             }
                         }
+
                         .square {
                             width: 55%;
                             left: 19%;
@@ -1099,6 +1106,10 @@ footer {
                             left: 50%;
                         }
 
+                        .g2 {
+                            right: 3%;
+                        }
+
                         .g4 {
                             left: 43%;
                             bottom: 0%;
@@ -1107,6 +1118,10 @@ footer {
                                 margin-top: 15px;
                             }
 
+                        }
+
+                        .g4::after {
+                            left: 49%;
                         }
                     }
                 }
