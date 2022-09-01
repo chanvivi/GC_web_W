@@ -1,12 +1,12 @@
 @mixin tablet {
   @media (max-width: 800px) {
-      @content;
+    @content;
   }
 }
 
 @mixin mobile {
   @media (max-width: 500px) {
-      @content;
+    @content;
   }
 }
 
@@ -21,11 +21,13 @@ $content_bg_color: rgb(32 23 22 / 95%);
 $footer_color: #270F06;
 
 //-- 標題字體粗細：300, 400, 500 --
-$title_font_family: 'Noto Serif TC', serif;
+$title_font_family: 'Noto Serif TC',
+serif;
 //-- 內文字體粗細：400, 500 --
 $content_font_family: 'Microsoft JhengHei';
 //-- 英文字體粗細：400, 500 --
-$en_font_family:'Playfair Display', serif;
+$en_font_family:'Playfair Display',
+serif;
 
 //-- 大字字級(中文) --
 $big_font_size: 42px;
@@ -36,18 +38,22 @@ $big_font_size: 53px;
 //-- 內文字級 --
 $content_font_size: 15px;
 
-body{
+body {
   margin: 0;
 }
 
 //-- 標題 --
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: $title_font_family;
   color: $gold_color;
 }
 
 //-- 內文 --
-p{
+p {
   font-family: $content_font_family;
   font-size: $content_font_size;
   font-weight: 400;
@@ -56,58 +62,64 @@ p{
   color: $white_color;
 }
 
-.w-100{
+.w-100 {
   width: 100%;
 }
 
 
 //-- 英文字型 --
-.en_family{
+.en_family {
   font-family: $en_font_family;
 }
 
 //-- menu  --
-.menu_box{
-    box-sizing: border-box;
-    position: fixed;
-    display: flex;
-    width: 100%;
-    padding: 2vw 5vw 0vw 5vw;
-    justify-content: space-between;
+.menu_box {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  padding: 2vw 5vw 0vw 5vw;
+  justify-content: space-between;
 
-    .hamburger{
-      display: none;
+  .hamburger {
+    display: none;
 
-      .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+      background-color: #fff;
+    }
+
+    &.is-active {
+
+      .hamburger-inner,
+      .hamburger-inner:after,
+      .hamburger-inner:before {
         background-color: #fff;
       }
-      &.is-active{
-        .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before{
-          background-color: #fff;
-        }
-      }
     }
+  }
 
-    .logo_box{
-      img{
-        width: 165px;
-      }
+  .logo_box {
+    img {
+      width: 165px;
     }
+  }
 
-    .list_box{
-      display: flex;
+  .list_box {
+    display: flex;
 
-      a.ch_text{
-        color: $white_color;
-        writing-mode: tb;
-        font-size: 18px;
-        letter-spacing: 0.3vw;
-        text-decoration: none;
-        padding: 0 0.9vw;
-        font-family: $title_font_family;
-        font-weight: 300;
-  
-       .en_text{
+    a.ch_text {
+      color: $white_color;
+      writing-mode: tb;
+      font-size: 18px;
+      letter-spacing: 0.3vw;
+      text-decoration: none;
+      padding: 0 0.9vw;
+      font-family: $title_font_family;
+      font-weight: 300;
+
+      .en_text {
         font-family: monospace;
         color: $white_color;
         writing-mode: tb;
@@ -115,18 +127,19 @@ p{
         letter-spacing: 0.1vw;
         font-weight: 200;
         display: block;
-       }
-     }
+      }
     }
-   
-   @include tablet{
+  }
+
+  @include tablet {
     align-items: center;
 
-     .hamburger{
-       display: inline-block;
-       z-index: 110;
-     }
-     .list_box{
+    .hamburger {
+      display: inline-block;
+      z-index: 110;
+    }
+
+    .list_box {
       position: fixed;
       width: 100%;
       height: 100%;
@@ -140,65 +153,67 @@ p{
       //transition: all 1s;
 
 
-       a.ch_text{
+      a.ch_text {
         font-size: 22px;
         letter-spacing: .5vw;
         padding: 0 3vw;
-       }
-     }
-   }
-
-   .logo_box{
-      img{
-        width: 150px;
       }
     }
+  }
 
-   @include mobile{
-     padding: 4vw 5vw 0vw 5vw;
+  .logo_box {
+    img {
+      width: 150px;
+    }
+  }
 
-     .list_box{
-      a.ch_text{
+  @include mobile {
+    padding: 4vw 5vw 0vw 5vw;
+
+    .list_box {
+      a.ch_text {
         font-size: 16px;
         letter-spacing: 1vw;
         padding: 0 3vw;
-       }
-     }
+      }
+    }
 
-     .logo_box{
-      img{
+    .logo_box {
+      img {
         width: 110px;
       }
-     }
+    }
 
-     .hamburger{
-       padding: 5px;
+    .hamburger {
+      padding: 5px;
 
-       .hamburger-box{
+      .hamburger-box {
         width: 25px;
         height: 20px;
-       }
+      }
 
-       &-inner, &-inner:after, &-inner:before{
+      &-inner,
+      &-inner:after,
+      &-inner:before {
         width: 25px;
         height: 2px;
-       }
+      }
 
-       &-inner:before{
-         top: -7px;
-       }
+      &-inner:before {
+        top: -7px;
+      }
 
-       &-inner:after{
+      &-inner:after {
         bottom: -7px;
       }
-     }
-   }
+    }
+  }
 }
 
 
 //-- banner 文字 --
-.banner_box{
-  .ch_title_font{
+.banner_box {
+  .ch_title_font {
     font-family: $title_font_family;
     font-size: 42px;
     color: $white_color;
@@ -206,7 +221,7 @@ p{
     letter-spacing: 12px;
   }
 
-  .en_title_font{
+  .en_title_font {
     color: $white_color;
     font-family: $en_font_family;
     font-weight: 500;
@@ -214,7 +229,7 @@ p{
     letter-spacing: 7px;
   }
 
-  .p_font{
+  .p_font {
     font-size: 16px;
     letter-spacing: 3px;
     line-height: 2.1;
@@ -222,8 +237,8 @@ p{
 }
 
 //-- top_title --
-.title_top{
-  .en_txt{
+.title_top {
+  .en_txt {
     font-family: $en_font_family;
     font-weight: 500;
     font-size: 45px;
@@ -231,7 +246,8 @@ p{
     letter-spacing: 5px;
     color: $gold_color;
   }
-  .ch_txt{
+
+  .ch_txt {
     font-family: $title_font_family;
     font-weight: 500;
     font-size: 18px;
@@ -241,10 +257,10 @@ p{
 }
 
 //-- 最新消息 & 鉅璽札記 --
-.news_blog{
+.news_blog {
 
   //-- 小主標 --
-  .title_font{
+  .title_font {
     font-family: $title_font_family;
     font-weight: 500;
     font-size: 21px;
@@ -253,20 +269,20 @@ p{
   }
 
   //-- 內文 --
-  .p_font{
+  .p_font {
     font-size: 15px;
     letter-spacing: 4px;
     line-height: 2;
   }
 
   //-- 小字 --
-  .small_p_font{
+  .small_p_font {
     font-size: 14px;
     color: $gold_color;
   }
 
   //-- 列表選單字 --
-  .menu_font{
+  .menu_font {
     font-family: $title_font_family;
     font-size: 16px;
     letter-spacing: 4px;
@@ -274,18 +290,18 @@ p{
   }
 
   //-- 內容主標 --
-  .dt_title_font{
+  .dt_title_font {
     font-family: $title_font_family;
     font-weight: 500;
     font-size: 30px;
     letter-spacing: 5px;
     color: $gold_color;
   }
-  
+
 }
 
 //-- read More --
-.readmore_word{
+.readmore_word {
   font-family: $en_font_family;
   font-weight: 300;
   font-size: 15px;
@@ -293,31 +309,96 @@ p{
 }
 
 
-footer{
+footer {
   text-align: center;
   padding: 30px 0;
   background-color: $footer_color;
   color: $gold_color;
 
-  span{
+  span {
     font-family: $content_font_family;
     letter-spacing: 2px;
     padding: 0 10px;
     font-size: 15px;
   }
 
-  @include tablet{
+  @include tablet {
     padding: 25px 0;
-    span{
+
+    span {
       display: block;
       padding: 4px;
       font-size: 2vw;
     }
   }
 
-  @include mobile{
-    span{
+  @include mobile {
+    span {
       font-size: 3vw;
     }
   }
 }
+
+// 平板
+@media screen and (max-width:1024px) {
+
+  //-- banner 文字 --
+  .banner_box {
+    .en_title_font {
+      font-size: 2.8vw;
+    }
+
+    .p_font {
+      font-size: 1vw;
+    }
+  }
+
+  //-- top_title --
+  .title_top {
+    .en_txt {
+      // font-size: 2.5vw;
+    }
+
+    .ch_txt {
+      // font-size: 1vw;
+    }
+  }
+}
+
+//-- 最新消息 & 鉅璽札記 --
+.news_blog {
+
+  //-- 小主標 --
+  .title_font {
+    font-size: 21px;
+  }
+
+  //-- 內文 --
+  .p_font {
+    font-size: 15px;
+  }
+
+  //-- 小字 --
+  .small_p_font {
+    font-size: 14px;
+  }
+
+  //-- 列表選單字 --
+  .menu_font {
+    font-size: 16px;
+  }
+
+  //-- 內容主標 --
+  .dt_title_font {
+    font-size: 30px;
+  }
+
+}
+
+//-- read More --
+.readmore_word {
+  font-size: 15px;
+}
+
+// ===========手機版==============
+@media screen and (max-width:768px) {}

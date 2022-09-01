@@ -1,4 +1,5 @@
 @import 'all';
+@import 'reset';
 
 // 全區css
 :root {
@@ -912,28 +913,34 @@ footer {
 // 平板
 @media screen and (max-width:1024px) {
     .about {
+
         //  col_1 第一卡大banner
         .col_1 {
 
             // 咖啡色塊文字
             .title_item {
                 margin: 39.5vw auto 0;
+
                 .txt_box {}
-                    // 菱形
-                    .square {}
-                    // 左邊線
-                    .line_box:nth-child(3) {}
-                }
+
+                // 菱形
+                .square {}
+
+                // 左邊線
+                .line_box:nth-child(3) {}
             }
 
             // CLASSIC ART
             .txt_item {
                 padding: 8% 0 0% 4%;
+
                 // 文字
                 .txt_box {
 
                     // 跟菱形對齊
-                    h2 {}
+                    h2 {
+                        font-size: 2.8vw;
+                    }
 
                     p {}
                 }
@@ -945,15 +952,52 @@ footer {
 // ===========手機版==============
 @media screen and (max-width:768px) {
     .about {
+        .col_1 {
+            height: 100vh;
+
+            .txt_item {
+                margin: 90.5vw auto;
+
+                svg {
+                    width: 40%;
+                }
+            }
+        }
 
         //  col_2 第2卡
         .col_2 {
+            // height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img_item {
+                width: 90%;
+                margin: 0 auto;
+                .img_box {
+                    margin: 0 auto;
+                    width: 90vw;
+                }
+
+                .txt_box {
+                    right: 3%;
+                }
+            }
 
             // AESTHETIC LIFE
             .txt_item {
                 .item {
                     flex-wrap: wrap;
-
+                    width: 90%;
+                    svg {
+                        left: 27.5%;
+                        top: -13%;
+                        width: 40%;
+                    }
+                    // 英文
+                    .box{
+                        padding: 15vw 0;
+                    }
                     // 內文
                     .txt_box {
                         width: 100%;
@@ -973,7 +1017,44 @@ footer {
                     width: 100%;
 
                     //內文
-                    .txt_box {}
+                    .txt_box {
+                        padding: 15vw 0;
+                    }
+
+                    .range_box {
+                        .item {
+                            svg {
+                                left: 29%;
+                                width: 40%;
+                                bottom: 56%;
+                            }
+                        }
+                    }
+                }
+                .img_item{
+                    .range_box{
+
+                        .square{
+                            width: 55%;
+                            left: 23%;
+                        }
+                        .ecma{
+                        .g1{
+                            left: 35%;
+                        }
+                        .g1::after{
+                            left: 48%;
+                        }
+                        
+                        .g4{
+                            left: 47%;
+                            bottom: 12%;
+                            h3{
+                                margin-top: 15px;
+                            }
+                            
+                        }}
+                    }
                 }
             }
         }
