@@ -261,6 +261,12 @@ footer span {
   .banner_box .p_font {
     font-size: 1vw;
   }
+  .title_top .en_txt {
+    font-size: 8vw;
+  }
+  .title_top .ch_txt {
+    font-size: 1vw;
+  }
 }
 .news_blog .title_font {
   font-size: 21px;
@@ -304,8 +310,10 @@ time, mark, audio, video {
 
 :root {
   --square-line-width: 0.5vw;
+  --cel--square-line-width: 1.8vw;
   --line: #dcb17873;
   --line-height: 0.01vw;
+  --cel--line-height: 0.1vw;
   --line-top-width: 74%;
   --line-bottom-width: 8vw;
   --square_3D--line: 38%;
@@ -1154,6 +1162,15 @@ footer {
     width: 50vw;
     margin-top: -58.28px;
     margin-left: -103.5px;
+  }
+  .about .col_1 .title_item .img_box .square {
+    width: var(--cel--square-line-width);
+  }
+  .about .col_1 .title_item .img_box .line_box .line:nth-child(1) {
+    height: var(--cel--line-height);
+  }
+  .about .col_1 .title_item .img_box .line_box .line:nth-child(2) {
+    height: var(--cel--line-height);
   }
   .about .col_1 .txt_item svg {
     left: 0%;

@@ -261,6 +261,12 @@ footer span {
   .banner_box .p_font {
     font-size: 1vw;
   }
+  .title_top .en_txt {
+    font-size: 8vw;
+  }
+  .title_top .ch_txt {
+    font-size: 1vw;
+  }
 }
 .news_blog .title_font {
   font-size: 21px;
