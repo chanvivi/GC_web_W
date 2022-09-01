@@ -151,38 +151,13 @@ footer {
 }
 
 .about {
-    // background-image: url(../img/about/1x/banner1.jpg);
-    // background-size: cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
     display: flex;
     align-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    // width: 100vw;
-    // 檢查滿版
-    // height: 100vh;
     display: flex;
     flex-direction: column;
-    // animation: mini 10s ease-out forwards;
-    // @keyframes mini {
-    //     0% {
-    //         opacity: 0;
-    //         background-size: 130% auto;
-    //     }
-
-    //     30% {
-    //         opacity: 1;
-    //     }
-
-    //     100% {
-    //         opacity: 1;
-    //         background-size: 100% auto;
-    //     }
-
-    // }
 
     //  col_1 第一卡大banner
     .col_1 {
@@ -934,16 +909,51 @@ footer {
     }
 }
 
+// 平板
+@media screen and (max-width:1024px) {
+    .about {
+        //  col_1 第一卡大banner
+        .col_1 {
+
+            // 咖啡色塊文字
+            .title_item {
+                margin: 39.5vw auto 0;
+                .txt_box {}
+                    // 菱形
+                    .square {}
+                    // 左邊線
+                    .line_box:nth-child(3) {}
+                }
+            }
+
+            // CLASSIC ART
+            .txt_item {
+                padding: 8% 0 0% 4%;
+                // 文字
+                .txt_box {
+
+                    // 跟菱形對齊
+                    h2 {}
+
+                    p {}
+                }
+            }
+        }
+    }
+}
 
 // ===========手機版==============
 @media screen and (max-width:768px) {
     .about {
+
         //  col_2 第2卡
         .col_2 {
+
             // AESTHETIC LIFE
             .txt_item {
                 .item {
                     flex-wrap: wrap;
+
                     // 內文
                     .txt_box {
                         width: 100%;
@@ -961,12 +971,12 @@ footer {
                 // 文字區 --CRIFT
                 .txt_item {
                     width: 100%;
-                        //內文
-                        .txt_box {
-                        }
-                    }
+
+                    //內文
+                    .txt_box {}
                 }
             }
         }
-
     }
+
+}

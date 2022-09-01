@@ -1094,6 +1094,14 @@ footer {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .about .col_1 .title_item {
+    margin: 39.5vw auto 0;
+  }
+  .about .col_1 .txt_item {
+    padding: 8% 0 0% 4%;
+  }
+}
 @media screen and (max-width: 768px) {
   .about .col_2 .txt_item .item {
     -ms-flex-wrap: wrap;
