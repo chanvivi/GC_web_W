@@ -1152,7 +1152,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
   .about .col_1 .title_item {
-    margin: 39.5vw auto 0;
+    margin: 26.5vw auto 0;
   }
   .about .col_1 .txt_item {
     padding: 8% 0 0% 4%;
@@ -1228,21 +1228,25 @@ footer {
     width: 40%;
     bottom: 56%;
   }
+  .about .col_3 .range .img_item .range_box .img_box:nth-child(1) {
+    width: 100%;
+  }
   .about .col_3 .range .img_item .range_box .square {
     width: 55%;
     left: 23%;
   }
-  .about .col_3 .range .img_item .range_box .ecma .g1 {
-    left: 35%;
+  .about .col_3 .range .img_item .range_box .g1 {
+    left: 36%;
+    top: 0%;
   }
-  .about .col_3 .range .img_item .range_box .ecma .g1::after {
+  .about .col_3 .range .img_item .range_box .g1::after {
     left: 48%;
   }
-  .about .col_3 .range .img_item .range_box .ecma .g4 {
+  .about .col_3 .range .img_item .range_box .g4 {
     left: 47%;
-    bottom: 12%;
+    bottom: 4%;
   }
-  .about .col_3 .range .img_item .range_box .ecma .g4 h3 {
+  .about .col_3 .range .img_item .range_box .g4 h3 {
     margin-top: 15px;
   }
 }/*# sourceMappingURL=about.css.map */

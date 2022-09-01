@@ -919,7 +919,7 @@ footer {
 
             // 咖啡色塊文字
             .title_item {
-                margin: 39.5vw auto 0;
+                margin: 26.5vw auto 0;
 
                 .txt_box {}
 
@@ -974,6 +974,7 @@ footer {
             .img_item {
                 width: 90%;
                 margin: 0 auto;
+
                 .img_box {
                     margin: 0 auto;
                     width: 90vw;
@@ -989,15 +990,18 @@ footer {
                 .item {
                     flex-wrap: wrap;
                     width: 90%;
+
                     svg {
                         left: 27.5%;
                         top: -13%;
                         width: 40%;
                     }
+
                     // 英文
-                    .box{
+                    .box {
                         padding: 15vw 0;
                     }
+
                     // 內文
                     .txt_box {
                         width: 100%;
@@ -1031,29 +1035,36 @@ footer {
                         }
                     }
                 }
-                .img_item{
-                    .range_box{
 
-                        .square{
+                .img_item {
+                    .range_box {
+                        .img_box:nth-child(1) {
+                            width: 100%;
+                        }
+
+                        .square {
                             width: 55%;
                             left: 23%;
                         }
-                        .ecma{
-                        .g1{
-                            left: 35%;
+
+                        .g1 {
+                            left: 36%;
+                            top: 0%;
                         }
-                        .g1::after{
+
+                        .g1::after {
                             left: 48%;
                         }
-                        
-                        .g4{
+
+                        .g4 {
                             left: 47%;
-                            bottom: 12%;
-                            h3{
+                            bottom: 4%;
+
+                            h3 {
                                 margin-top: 15px;
                             }
-                            
-                        }}
+
+                        }
                     }
                 }
             }
