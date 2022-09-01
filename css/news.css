@@ -1394,6 +1394,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .news .col_1 {
+    height: 100vh;
+  }
   .news .col_2 .range .txt_item .txt_range {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

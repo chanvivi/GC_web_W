@@ -1259,6 +1259,9 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .news_page .col_1 {
+    height: 100vh;
+  }
   .news_page .col_3 .range .dt {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;

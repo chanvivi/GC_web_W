@@ -611,6 +611,9 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .contact .col_1 {
+    height: 100vh;
+  }
   .contact .col_2 .range {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

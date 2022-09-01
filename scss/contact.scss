@@ -368,6 +368,9 @@ img {
 // ===========手機版==============
 @media screen and (max-width:768px) {
     .contact {
+        .col_1{
+            height: 100vh;
+        }
         //  col_2 map
         .col_2 {
             .range {
