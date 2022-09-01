@@ -1195,6 +1195,12 @@ footer {
   .about .col_2 .txt_item .item .txt_box {
     width: 100%;
   }
+  .about .col_2 .tree_img_box {
+    bottom: 0;
+  }
+  .about .col_2 .tree_img_box:nth-child(4) {
+    bottom: 0;
+  }
   .about .col_3 .range {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
