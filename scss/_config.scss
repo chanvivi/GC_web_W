@@ -345,60 +345,60 @@ footer {
   //-- banner 文字 --
   .banner_box {
     .en_title_font {
-      font-size: 2.8vw;
+      // font-size: 2.8vw;
     }
 
     .p_font {
-      font-size: 1vw;
+      // font-size: 1vw;
     }
   }
 
   //-- top_title --
   .title_top {
     .en_txt {
-      font-size: 8vw;
+      // font-size: 8vw;
     }
 
     .ch_txt {
-      font-size: 1vw;
+      // font-size: 1vw;
     }
   }
 }
 
 //-- 最新消息 & 鉅璽札記 --
-.news_blog {
+// .news_blog {
 
-  //-- 小主標 --
-  .title_font {
-    font-size: 21px;
-  }
+//   //-- 小主標 --
+//   .title_font {
+//     font-size: 21px;
+//   }
 
-  //-- 內文 --
-  .p_font {
-    font-size: 15px;
-  }
+//   //-- 內文 --
+//   .p_font {
+//     font-size: 15px;
+//   }
 
-  //-- 小字 --
-  .small_p_font {
-    font-size: 14px;
-  }
+//   //-- 小字 --
+//   .small_p_font {
+//     font-size: 14px;
+//   }
 
-  //-- 列表選單字 --
-  .menu_font {
-    font-size: 16px;
-  }
+//   //-- 列表選單字 --
+//   .menu_font {
+//     font-size: 16px;
+//   }
 
-  //-- 內容主標 --
-  .dt_title_font {
-    font-size: 30px;
-  }
+//   //-- 內容主標 --
+//   .dt_title_font {
+//     font-size: 30px;
+//   }
 
-}
+// }
 
-//-- read More --
-.readmore_word {
-  font-size: 15px;
-}
+// //-- read More --
+// .readmore_word {
+//   font-size: 15px;
+// }
 
 // ===========手機版==============
 @media screen and (max-width:768px) {}

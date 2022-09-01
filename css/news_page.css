@@ -254,40 +254,6 @@ footer span {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .banner_box .en_title_font {
-    font-size: 2.8vw;
-  }
-  .banner_box .p_font {
-    font-size: 1vw;
-  }
-  .title_top .en_txt {
-    font-size: 8vw;
-  }
-  .title_top .ch_txt {
-    font-size: 1vw;
-  }
-}
-.news_blog .title_font {
-  font-size: 21px;
-}
-.news_blog .p_font {
-  font-size: 15px;
-}
-.news_blog .small_p_font {
-  font-size: 14px;
-}
-.news_blog .menu_font {
-  font-size: 16px;
-}
-.news_blog .dt_title_font {
-  font-size: 30px;
-}
-
-.readmore_word {
-  font-size: 15px;
-}
-
 .container {
   /* 最大寬度到1200 */
   max-width: 1920px;
