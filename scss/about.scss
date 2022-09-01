@@ -163,6 +163,8 @@ footer {
     //  col_1 第一卡大banner
     .col_1 {
         width: 100%;
+        height: 50vw;
+        position: relative;
 
         // 咖啡色塊文字
         .title_item {
@@ -170,13 +172,15 @@ footer {
             background-color: $banner_bg_color;
             color: $gold_color;
             // 讓畫面滿版
-            margin: 20.5vw auto;
-            margin-bottom: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+            position: absolute;
+            top: 50%;
+            /*距離上方的位置*/
+            left: 50%;
+            /*距離左方的位置*/
+            margin-top: -92.17px;
+            /*上方邊界*/
+            margin-left: -240px;
+            /*左方邊界*/
             padding: 1vw;
 
             .txt_box {
@@ -245,17 +249,18 @@ footer {
 
         // CLASSIC ART
         .txt_item {
-            padding: 3% 0 0% 4%;
-            position: relative;
+            position: absolute;
+            left: 1%;
+            bottom: 1%;
+            // position: relative;
             z-index: 9;
-            bottom: 2vw;
+            // bottom: 2vw;
 
             svg {
                 position: absolute;
-                left: -3%;
-                bottom: 20%;
-                width: 22%;
-                height: 91%;
+                left: -12%;
+                bottom: 34%;
+                width: 100%;
 
                 // 線圖 菱形
                 .box {
@@ -339,7 +344,6 @@ footer {
 
             // 文字
             .txt_box {
-                width: 40%;
 
                 // 跟菱形對齊
                 h2 {
@@ -919,7 +923,7 @@ footer {
 
             // 咖啡色塊文字
             .title_item {
-                margin: 26.5vw auto 0;
+                // margin: 26.5vw auto 0;
 
                 .txt_box {}
 
@@ -932,7 +936,7 @@ footer {
 
             // CLASSIC ART
             .txt_item {
-                padding: 8% 0 0% 4%;
+                // padding: 8% 0 0% 4%;
 
                 // 文字
                 .txt_box {
@@ -953,13 +957,20 @@ footer {
 @media screen and (max-width:768px) {
     .about {
         .col_1 {
-            height: 100vh;
+            height: 217vw;
+            .title_item {
+                width: 50vw;
+                margin-top: -58.28px;
+                margin-left: -103.5px;
+            }
 
             .txt_item {
-                margin: 90.5vw auto;
+                // margin: 90.5vw auto;
 
                 svg {
-                    width: 40%;
+                    left: 0%;
+                    bottom: -24%;
+                    width: 37%;
                 }
             }
         }
