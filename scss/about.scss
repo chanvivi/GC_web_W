@@ -31,7 +31,9 @@
     // 線條動畫延遲
     --anm-delay--square_3D: 0s; //var(--anm-delay--square_3D)
     //精工造藝 中文 字體大小
-    --ecma-ch-p: 2.3vw; //var(--ecma-ch-p)
+    --ecma-ch-h3: 2.3vw; //var(--ecma-ch-h3)
+    --cel--ecma-ch-h3: 5.3vw;//var(--cel--ecma-ch-h3)
+    --cel--ecma-ch-p: 2vw;//var(--cel--ecma-ch-p)
     // }
 
     //卡片式
@@ -746,7 +748,7 @@ footer {
 
                         h3:nth-child(1) {
                             margin: 0;
-                            font-size: var(--ecma-ch-p);
+                            font-size: var(--ecma-ch-h3);
                             font-weight: 500;
 
                         }
@@ -1068,7 +1070,14 @@ footer {
                         .img_box:nth-child(1) {
                             width: 100%;
                         }
-
+                        .ecma{
+                            h3:nth-child(1){
+                                font-size: var(--cel--ecma-ch-h3);
+                            }
+                            p:nth-child(2){
+                                font-size: var(--cel--ecma-ch-p);
+                            }
+                        }
                         .square {
                             width: 55%;
                             left: 23%;
@@ -1085,7 +1094,7 @@ footer {
 
                         .g4 {
                             left: 47%;
-                            bottom: 4%;
+                            bottom: 0%;
 
                             h3 {
                                 margin-top: 15px;
