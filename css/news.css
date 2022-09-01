@@ -562,8 +562,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: mini 10s ease-out forwards;
-          animation: mini 10s ease-out forwards;
 }
 .news .col_1 {
   width: 100%;
