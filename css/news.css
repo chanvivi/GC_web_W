@@ -954,6 +954,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  top: 1vw;
 }
 .news .col_2 .range .txt_item .txt_range .txt_box .title_box {
   display: -webkit-box;
