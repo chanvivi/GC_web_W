@@ -903,7 +903,8 @@ footer {
   font-weight: "Microsoft JhengHei";
 }
 .about .col_3 .range .txt_item .range_box .txt_box {
-  margin: 5vw 4vw 5vw;
+  margin: 0 auto;
+  width: 90%;
 }
 .about .col_3 .range .txt_item .range_box .txt_box P::nth-child(1) {
   margin-bottom: 10%;
