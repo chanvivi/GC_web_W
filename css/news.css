@@ -1491,10 +1491,17 @@ a {
   .news .col_3 .range .card .txt_box p:nth-child(2) {
     width: 90%;
   }
+  .news .col_3 .range .card .txt_box .more {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .news .col_3 .range .card .txt_box .more a {
+    width: 40%;
+  }
   .news .col_3 .range .card .txt_box .more a .as_box .arrow {
     width: var(--cel-arrow-width);
     left: -34%;
-    top: 0%;
+    top: 22%;
   }
   .news .col_3 .range .card .txt_box .more a .as_box .square {
     width: var(--cel-min-square-width);
