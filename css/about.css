@@ -1188,7 +1188,7 @@ footer {
   }
   .about .col_2 .range .txt_item .item svg {
     left: 15.5%;
-    top: 0%;
+    top: -4%;
     width: 40%;
   }
   .about .col_2 .range .txt_item .item .box {
@@ -1225,7 +1225,7 @@ footer {
     margin-bottom: 5%;
   }
   .about .col_3 .range .img_item .range_box {
-    padding: 22% 17%;
+    padding: 25% 17%;
   }
   .about .col_3 .range .img_item .range_box .img_box:nth-child(1) {
     width: 72.4%;
@@ -1237,12 +1237,12 @@ footer {
     font-size: var(--cel--ecma-ch-p);
   }
   .about .col_3 .range .img_item .range_box .square {
-    width: 48%;
+    width: 47%;
     left: 26%;
     top: 22%;
   }
   .about .col_3 .range .img_item .range_box .g1 {
-    left: 39%;
+    left: 37%;
     top: 0%;
   }
   .about .col_3 .range .img_item .range_box .g1::after {
