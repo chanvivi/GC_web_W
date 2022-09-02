@@ -1079,7 +1079,7 @@ footer {
                 .img_item {
                     .range_box {
                         .img_box:nth-child(1) {
-                            width: 100%;
+                            width: 83.4%;
                         }
 
                         .ecma {
@@ -1093,17 +1093,19 @@ footer {
                         }
 
                         .square {
-                            width: 55%;
-                            left: 19%;
+                            width: 52%;
+                            left: 24%;
+                            top: 21%;
                         }
 
                         .g1 {
-                            left: 36%;
-                            top: 0%;
+                            left: 39%;
+                            top: -3%;
                         }
 
                         .g1::after {
                             left: 50%;
+                            top: 81%;
                         }
 
                         .g2 {
@@ -1111,8 +1113,8 @@ footer {
                         }
 
                         .g4 {
-                            left: 43%;
-                            bottom: 0%;
+                            left: 46%;
+                            bottom: -3%;
 
                             h3 {
                                 margin-top: 15px;
