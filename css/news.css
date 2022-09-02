@@ -266,6 +266,9 @@ footer span {
   .banner_box .en_title_font {
     font-size: 6vw;
   }
+  .news_blog .dt_title_font {
+    font-size: 4vw;
+  }
 }
 .container {
   /* 最大寬度到1200 */

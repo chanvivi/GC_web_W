@@ -266,6 +266,9 @@ footer span {
   .banner_box .en_title_font {
     font-size: 6vw;
   }
+  .news_blog .dt_title_font {
+    font-size: 4vw;
+  }
 }
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

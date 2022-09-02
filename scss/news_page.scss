@@ -22,6 +22,10 @@
     --line-top-width: 74%; //var(--line-top-width)
     --line-bottom-width: 8vw; //var(--line-bottom-width)
 
+    // 選項more裡面菱形的大小
+    --min-square-width: 2vw; //var(--min-square-width)
+    --cel-min-square-width: 6vw; //var(--cel-min-square-width)
+    --cel-arrow-width: 6vw; //var(--cel-arrow-width)
     // }
 
     // 六角菱形{
@@ -84,6 +88,7 @@ a {
     right: 0;
     // z-index: 999;
 }
+
 .news_page {
     .col_1 {
         .bg {
@@ -122,6 +127,7 @@ a {
         }
     }
 }
+
 // 下陰影
 .news_page {
     .col_1 {
@@ -169,6 +175,7 @@ a {
         width: 100%;
         height: 100vh;
         position: relative;
+
         // 咖啡色塊文字
         .title_item {
             width: 25vw;
@@ -250,6 +257,7 @@ a {
                 }
             }
         }
+
         // CLASSIC ART
         .txt_item {
             position: absolute;
@@ -261,10 +269,9 @@ a {
 
             svg {
                 position: absolute;
-                left: -3%;
-                bottom: 20%;
-                width: 22%;
-                height: 91%;
+                left: -12%;
+                bottom: 34%;
+                width: 100%;
 
                 // 線圖 菱形
                 .box {
@@ -348,7 +355,7 @@ a {
 
             // 文字
             .txt_box {
-                width: 40%;
+                // width: 40%;
 
                 // 跟菱形對齊
                 h2 {
@@ -370,6 +377,7 @@ a {
         width: 100%;
         height: 100%;
         z-index: 1;
+
         // title 小標題 相即美學
         .title_box {
             display: flex;
@@ -440,6 +448,7 @@ a {
         width: 100%;
         height: 100%;
         z-index: 1;
+
         .range {
             padding: 0 10vw;
             margin: 0 auto;
@@ -453,14 +462,16 @@ a {
                 .img_item {
                     width: 55%;
                     margin: auto;
+
                     .img_box {
                         // width: 59vw;
                     }
                 }
 
-                .txt_item { 
+                .txt_item {
                     width: 45%;
                     margin: auto;
+
                     .txt_box {
                         width: 73%;
                         margin: auto;
@@ -506,6 +517,7 @@ a {
         padding: 5vw 0;
         position: relative;
         width: 100%;
+
         // 回上一頁
         a {
             display: block;
@@ -513,7 +525,7 @@ a {
             // padding-left: 2em;
             // padding-right: 2em;
             transition: all 0.5s;
-            width: 8.5vw;
+            // padding: 1vw;
             z-index: 9;
             display: flex;
             justify-content: center;
@@ -524,6 +536,9 @@ a {
                 // width: 8.5vw;
                 color: $gold_color;
                 font-size: 16px;
+                p{
+                    padding: 0 1vw;
+                }
             }
         }
 
@@ -585,18 +600,23 @@ a {
                     align-content: center;
 
                     .card_img_box {
-                        width: var(--card--width);
+                        // width: var(--card--width);
                         border-radius: var(--border-radius-img);
                         transition: .5s;
+                        width: 100%;
+                        height: 100%;
                         overflow: hidden;
+
                         img {
                             border-radius: var(--border-radius-img);
                             transition: .5s;
                         }
                     }
-                    .card_img_box:hover{
+
+                    .card_img_box:hover {
                         opacity: 0.8;
                         transform: scale(0.9);
+
                         img {
                             border-radius: var(--border-radius-img);
                             transform: scale(1.2);
@@ -720,7 +740,7 @@ a {
                                 }
 
                                 .square {
-                                    width: 2vw;
+                                    width: var(--min-square-width);
                                     margin-right: 0.5vw;
                                     margin-top: 0.5vw;
                                 }
@@ -783,7 +803,7 @@ a {
 
 // ===========手機版==============
 @media screen and (max-width:768px) {
-    .news_page{
+    .news_page {
         .col_1 {
             height: 100vh;
 
@@ -810,8 +830,9 @@ a {
             }
 
             .txt_item {
+
                 // margin: 90.5vw auto;
-                .txt_box{
+                .txt_box {
                     width: 100%;
                 }
 
@@ -822,22 +843,47 @@ a {
                 }
             }
         }
-        .col_3{
-            .range{
-                .dt{
+
+        .col_2 {
+            .title_box {
+                width: 90%;
+                margin: 0 auto;
+
+                .img_box {
+                    .line_box {
+                        .line:nth-child(1) {
+                            height: var(--cel--line-height);
+                        }
+                    }
+
+                    .square {
+                        width: var(--cel--square-line-width);
+                        margin: 0 4vw;
+                    }
+                }
+            }
+        }
+
+        .col_3 {
+            .range {
+                .dt {
                     flex-direction: column-reverse;
-                    .img_item{
+
+                    .img_item {
                         width: 100%;
                     }
-                    .txt_item{
+
+                    .txt_item {
                         width: 100%;
-                        .txt_box{
+
+                        .txt_box {
                             width: 100%;
                             align-items: center;
                             align-content: center;
                         }
                     }
                 }
+
                 .dt:nth-child(even) {
                     flex-direction: column-reverse;
                 }
@@ -845,29 +891,59 @@ a {
         }
 
         // 卡片式
-        .col_4{
-            .range{
-                .card{
-                    height: 70vh;
-                    .card_img_item{
-                        .card_img_box{
-                            width: var(--cel--card--width);
-                        }
-                    }
-                    .txt_box{
+        .col_4 {
+            .range {
+                .card {
+                    height: 100vh;
+
+                    .card_img_item {
                         height: 40vh;
-                        .title_box{
-                            justify-content: center;
-                            margin: 0;
-                                height: 18vw;
+                    }
+
+                    .txt_box {
+                        .title_box {
+                            height: 10vh;
+
+                            .img_box {
+                                .line_box {
+                                    .line:nth-child(1) {
+                                        height: var(--cel--line-height);
+                                        width: 24vw;
+                                    }
+                                }
+
+                                .square {
+                                    width: var(--cel--square-line-width);
+                                }
+                            }
                         }
-                        .col_1_p{
-                            max-width: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            align-content: center;
-                            height: 35vw;
+
+                        .col_1_p {
+                            max-width: 90%;
+                        }
+
+                        p:nth-child(2) {
+                            width: 90%;
+                        }
+
+                        .more {
+                            justify-content: space-around;
+
+                            a {
+                                width: 40%;
+
+                                .as_box {
+                                    .arrow {
+                                        width: var(--cel-arrow-width);
+                                        left: -34%;
+                                        top: 22%;
+                                    }
+
+                                    .square {
+                                        width: var(--cel-min-square-width);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
