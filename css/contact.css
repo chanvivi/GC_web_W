@@ -649,6 +649,9 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .contact .col_2 .range .map_box {
     height: 65vw;
