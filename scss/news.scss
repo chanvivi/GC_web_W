@@ -25,6 +25,7 @@
     // 選項more裡面菱形的大小
     --min-square-width: 2vw; //var(--min-square-width)
     --cel-min-square-width: 4vw; //var(--min-square-width)
+    --cel-arrow-width: 4vw; //var(--cel-arrow-width)
     // }
 
     // 六角菱形{
@@ -1006,6 +1007,12 @@ a {
                             .more {
                                 a {
                                     .as_box {
+                                        .arrow {
+                                            width: var(--cel-arrow-width);
+                                            left: -30%;
+                                            top: 0%;
+                                        }
+
                                         .square {
                                             width: 4vw;
                                         }
@@ -1028,7 +1035,7 @@ a {
         .col_3 {
             .range {
                 .card {
-                    height: 70vh;
+                    height: 80vh;
 
                     .card_img_item {
                         .card_img_box {
@@ -1058,6 +1065,12 @@ a {
                         .more {
                             a {
                                 .as_box {
+                                    .arrow {
+                                        width: var(--cel-arrow-width);
+                                        left: -30%;
+                                        top: 0%;
+                                    }
+
                                     .square {
                                         width: 4vw;
                                     }

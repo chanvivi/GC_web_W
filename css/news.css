@@ -487,6 +487,7 @@ time, mark, audio, video {
   --line-bottom-width: 8vw;
   --min-square-width: 2vw;
   --cel-min-square-width: 4vw;
+  --cel-arrow-width: 4vw;
   --square_3D--line: 38%;
   --anm-duration--square_3D: 7s;
   --anm-delay--square_3D: 0s;
@@ -1436,6 +1437,11 @@ a {
   .news .col_2 .range .txt_item .txt_range .txt_box p:nth-child(2) {
     width: 90%;
   }
+  .news .col_2 .range .txt_item .txt_range .txt_box .more a .as_box .arrow {
+    width: var(--cel-arrow-width);
+    left: -30%;
+    top: 0%;
+  }
   .news .col_2 .range .txt_item .txt_range .txt_box .more a .as_box .square {
     width: 4vw;
   }
@@ -1445,7 +1451,7 @@ a {
     top: 0;
   }
   .news .col_3 .range .card {
-    height: 70vh;
+    height: 80vh;
   }
   .news .col_3 .range .card .card_img_item .card_img_box {
     width: var(--cel--card--width);
@@ -1458,6 +1464,11 @@ a {
   }
   .news .col_3 .range .card .txt_box p:nth-child(2) {
     width: 90%;
+  }
+  .news .col_3 .range .card .txt_box .more a .as_box .arrow {
+    width: var(--cel-arrow-width);
+    left: -30%;
+    top: 0%;
   }
   .news .col_3 .range .card .txt_box .more a .as_box .square {
     width: 4vw;
