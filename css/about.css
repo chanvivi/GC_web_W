@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -435,18 +434,15 @@ footer {
 }
 .about .col_1 .title_item {
   width: 25vw;
+  height: 10vw;
   background-color: rgba(39, 28, 27, 0.8784313725);
   color: #dcb078;
   position: absolute;
-  top: 50%;
-  /*距離上方的位置*/
-  left: 50%;
-  /*距離左方的位置*/
-  margin-top: -92.17px;
-  /*上方邊界*/
-  margin-left: -240px;
-  /*左方邊界*/
-  padding: 1vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 .about .col_1 .title_item .txt_box {
   display: -webkit-box;
@@ -1138,8 +1134,7 @@ footer {
 @media screen and (max-width: 768px) {
   .about .col_1 .title_item {
     width: 50vw;
-    margin-top: -58.28px;
-    margin-left: -103.5px;
+    height: 25vw;
   }
   .about .col_1 .title_item .img_box .square {
     width: var(--cel--square-line-width);
