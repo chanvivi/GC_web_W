@@ -24,8 +24,8 @@
 
     // 選項more裡面菱形的大小
     --min-square-width: 2vw; //var(--min-square-width)
-    --cel-min-square-width: 4vw; //var(--min-square-width)
-    --cel-arrow-width: 4vw; //var(--cel-arrow-width)
+    --cel-min-square-width: 6vw; //var(--cel-min-square-width)
+    --cel-arrow-width: 6vw; //var(--cel-arrow-width)
     // }
 
     // 六角菱形{
@@ -262,10 +262,9 @@ a {
 
             svg {
                 position: absolute;
-                left: -3%;
-                bottom: 20%;
-                width: 22%;
-                height: 91%;
+                left: -12%;
+                bottom: 34%;
+                width: 100%;
 
                 // 線圖 菱形
                 .box {
@@ -349,7 +348,7 @@ a {
 
             // 文字
             .txt_box {
-                width: 40%;
+                // width: 40%;
 
                 // 跟菱形對齊
                 h2 {
@@ -621,74 +620,82 @@ a {
                             justify-content: center;
                             padding-top: 2vw;
                             position: relative;
+
                             // width: 67%;
-
-                            p {
-                                color: $gold_color;
-                                position: relative;
-                                // 對其內文
-                                margin-left: 0;
-                                margin-right: 0.5vw;
-                            }
-
-                            a {
+                            .more_range {
+                                width: 45%;
                                 display: flex;
                                 align-items: center;
-
-                                // 對其
-                                // width: 42%;
-                                // justify-content: space-around;
-
-                                .as_box {
-                                    position: relative;
-                                    margin: 0 1vw;
-
-                                    .arrow {
-                                        position: absolute;
-                                        width: 2vw;
-                                        left: -32%;
-                                        top: 24%;
-                                    }
-
-                                    .square {
-                                        width: var(--min-square-width);
-                                    }
-                                }
+                                justify-content: center;
+                                align-content: center;
 
                                 p {
-                                    margin: 0;
-                                    padding: 0;
-                                    width: 100%;
+                                    color: $gold_color;
+                                    position: relative;
+                                    // 對其內文
+                                    margin-left: 0;
+                                    margin-right: 0.5vw;
                                 }
-                            }
 
-                            // 箭頭效果
-                            a:hover {
-                                .arrow {
-                                    animation: arrow .8s linear infinite;
+                                a {
+                                    display: flex;
+                                    align-items: center;
 
-                                    @keyframes arrow {
-                                        0% {
-                                            transform: translateX(0);
+                                    // 對其
+                                    // width: 42%;
+                                    // justify-content: space-around;
+
+                                    .as_box {
+                                        position: relative;
+                                        margin: 0 1vw;
+
+                                        .arrow {
+                                            position: absolute;
+                                            width: 2vw;
+                                            left: -32%;
+                                            top: 24%;
                                         }
 
-                                        25% {
-                                            transform: translateX(-5px);
-
+                                        .square {
+                                            width: var(--min-square-width);
                                         }
+                                    }
 
-                                        50% {
-                                            transform: translateX(0);
+                                    p {
+                                        margin: 0;
+                                        padding: 0;
+                                        width: 100%;
+                                    }
+                                }
 
-                                        }
+                                // 箭頭效果
+                                a:hover {
+                                    .arrow {
+                                        animation: arrow .8s linear infinite;
 
-                                        75% {
-                                            transform: translateX(5px);
+                                        @keyframes arrow {
+                                            0% {
+                                                transform: translateX(0);
+                                            }
 
-                                        }
+                                            25% {
+                                                transform: translateX(-5px);
 
-                                        100% {
-                                            transform: translateX(0);
+                                            }
+
+                                            50% {
+                                                transform: translateX(0);
+
+                                            }
+
+                                            75% {
+                                                transform: translateX(5px);
+
+                                            }
+
+                                            100% {
+                                                transform: translateX(0);
+                                            }
                                         }
                                     }
                                 }
@@ -736,9 +743,11 @@ a {
                     align-content: center;
 
                     .card_img_box {
-                        width: var(--card--width);
+                        // width: var(--card--width);
                         border-radius: var(--border-radius-img);
                         transition: .5s;
+                        width: 100%;
+                        height: 100%;
                         overflow: hidden;
 
                         img {
@@ -991,6 +1000,7 @@ a {
                                     .line_box {
                                         .line:nth-child(1) {
                                             height: var(--cel--line-height);
+                                            width: 18.5vw;
                                         }
                                     }
 
@@ -1005,16 +1015,21 @@ a {
                             }
 
                             .more {
-                                a {
-                                    .as_box {
-                                        .arrow {
-                                            width: var(--cel-arrow-width);
-                                            left: -30%;
-                                            top: 0%;
-                                        }
+                                .more_range {
+                                    width: 90%;
+                                    justify-content: space-between;
+                                    a {
+                                        .as_box {
+                                            .arrow {
+                                                width: var(--cel-arrow-width);
+                                                left: 13%;
+                                                top: 13%;
+                                            }
 
-                                        .square {
-                                            width: 4vw;
+                                            .square {
+                                                width: var(--cel-min-square-width);
+                                                margin: 0 4vw;
+                                            }
                                         }
                                     }
                                 }
@@ -1035,20 +1050,21 @@ a {
         .col_3 {
             .range {
                 .card {
-                    height: 80vh;
+                    height: 100vh;
 
                     .card_img_item {
-                        .card_img_box {
-                            width: var(--cel--card--width);
-                        }
+                        height: 40vh;
                     }
 
                     .txt_box {
                         .title_box {
+                            height: 10vh;
+
                             .img_box {
                                 .line_box {
                                     .line:nth-child(1) {
                                         height: var(--cel--line-height);
+                                        width: 24vw;
                                     }
                                 }
 
@@ -1056,6 +1072,10 @@ a {
                                     width: var(--cel--square-line-width);
                                 }
                             }
+                        }
+
+                        .col_1_p {
+                            max-width: 90%;
                         }
 
                         p:nth-child(2) {
@@ -1067,12 +1087,12 @@ a {
                                 .as_box {
                                     .arrow {
                                         width: var(--cel-arrow-width);
-                                        left: -30%;
+                                        left: -34%;
                                         top: 0%;
                                     }
 
                                     .square {
-                                        width: 4vw;
+                                        width: var(--cel-min-square-width);
                                     }
                                 }
                             }
