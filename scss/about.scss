@@ -997,12 +997,13 @@ footer {
         }
 
         //  col_2 第2卡
-        .col_2 {
-            // height: 100vh;
+        .col_2 {            
+            // // height: 100vh;
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            .range{
+            margin: 0 0 6vw;
             .img_item {
                 width: 90%;
                 margin: 0 auto;
@@ -1025,7 +1026,7 @@ footer {
 
                     svg {
                         left: 15.5%;
-                        top: -7%;
+                        top: 0%;
                         width: 40%;
                     }
 
@@ -1048,6 +1049,7 @@ footer {
             .tree_img_box:nth-child(4) {
                 bottom: 0;
             }
+        }
         }
 
         // col_3 精工造藝
@@ -1080,7 +1082,7 @@ footer {
                     margin-bottom: 5%;
                     .range_box {
                         padding: 22% 17%;
-                        margin-left: 2%;
+                        // margin-left: 2%;
                         .img_box:nth-child(1) {
                             width: 72.4%;
                         }
