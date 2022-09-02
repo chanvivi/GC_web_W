@@ -11,36 +11,40 @@
 
     //菱形大小
     --square-line-width: 0.5vw; //var(--square-line-width)
-
+    --cel--square-line-width: 1.8vw; //var(--cel--square-line-width)
     // 色塊顏色//
     --line: #dcb17873; // var(--line)
-    --pale--line: #dcb1782e; // var(--pale--line)
 
     //粗細 //
-    --line-height: 0.1vw; //var(--line-height)
+    --line-height: 0.01vw; //var(--line-height)
+    --cel--line-height: 0.1vw; //var(--cel--line-height)
     // 長度
     --line-top-width: 74%; //var(--line-top-width)
     --line-bottom-width: 8vw; //var(--line-bottom-width)
 
+    // 選項more裡面菱形的大小
+    --min-square-width: 2vw; //var(--min-square-width)
+    --cel-min-square-width: 4vw; //var(--min-square-width)
     // }
 
     // 六角菱形{
     // 橫線 造&工  //直線 精&藝
     --square_3D--line: 38%; //var(--square_3D--line)
     // 線條動畫
-    --anm-duration--square_3D: 3.8s; //var(--anm-duration--square_3D)
+    --anm-duration--square_3D: 7s; //var(--anm-duration--square_3D)
     // 線條動畫延遲
     --anm-delay--square_3D: 0s; //var(--anm-delay--square_3D)
+    //精工造藝 中文 字體大小
+    --ecma-ch-h3: 2.3vw; //var(--ecma-ch-h3)
+    --cel--ecma-ch-h3: 4.3vw; //var(--cel--ecma-ch-h3)
+    --cel--ecma-ch-p: 2vw; //var(--cel--ecma-ch-p)
     // }
-
-    // 圖片圓角
-    --border-radius-img: 2vw 0 2vw 0; //var(--border-radius-img)
 
     //卡片式
     // 圖片大小
-    --card--width: 20vw; //var(--card--width)
+    --card--width: 25vw; //var(--card--width)
+
     // ===========手機====
-    --cel--card--width: 83vw; //var(--cel--card--width)
 
     // 菱形線條 
 
@@ -157,9 +161,12 @@ a {
 .news {
     display: flex;
     flex-direction: column;
+
     //  col_1 第一卡大banner
     .col_1 {
         width: 100%;
+        height: 100vh;
+        position: relative;
 
         // 咖啡色塊文字
         .title_item {
@@ -167,13 +174,18 @@ a {
             background-color: $banner_bg_color;
             color: $gold_color;
             // 讓畫面滿版
-            margin: 20.5vw auto;
             margin-bottom: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
+            padding: 1vw;
+            // 讓畫面滿版
+            position: absolute;
+            top: 50%;
+            /*距離上方的位置*/
+            left: 50%;
+            /*距離左方的位置*/
+            margin-top: -92.17px;
+            /*上方邊界*/
+            margin-left: -240px;
+            /*左方邊界*/
             padding: 1vw;
 
             .txt_box {
@@ -240,8 +252,12 @@ a {
 
         // CLASSIC ART
         .txt_item {
-            padding: 3% 0 3% 4%;
-            position: relative;
+            position: absolute;
+            left: 1%;
+            bottom: 1%;
+            // position: relative;
+            z-index: 9;
+            padding: 1vw;
 
             svg {
                 position: absolute;
@@ -634,7 +650,7 @@ a {
                                     }
 
                                     .square {
-                                        width: 2vw;
+                                        width: var(--min-square-width);
                                     }
                                 }
 
@@ -723,14 +739,17 @@ a {
                         border-radius: var(--border-radius-img);
                         transition: .5s;
                         overflow: hidden;
+
                         img {
                             border-radius: var(--border-radius-img);
                             transition: .5s;
                         }
                     }
-                    .card_img_box:hover{
+
+                    .card_img_box:hover {
                         opacity: 0.8;
                         transform: scale(0.9);
+
                         img {
                             border-radius: var(--border-radius-img);
                             transform: scale(1.2);
@@ -854,7 +873,7 @@ a {
                                 }
 
                                 .square {
-                                    width: 2vw;
+                                    width: var(--min-square-width);
                                     margin-right: 0.5vw;
                                     margin-top: 0.5vw;
                                 }
@@ -917,23 +936,86 @@ a {
 
 // ===========手機版==============
 @media screen and (max-width:768px) {
-    .news{
-        .col_1{
+    .news {
+        .col_1 {
             height: 100vh;
+
+            .title_item {
+                width: 50vw;
+                margin-top: -58.28px;
+                margin-left: -103.5px;
+
+                .img_box {
+                    .square {
+                        width: var(--cel--square-line-width);
+                    }
+
+                    .line_box {
+                        .line:nth-child(1) {
+                            height: var(--cel--line-height);
+                        }
+
+                        .line:nth-child(2) {
+                            height: var(--cel--line-height);
+                        }
+                    }
+                }
+            }
+
+            .txt_item {
+
+                // margin: 90.5vw auto;
+                .txt_box {
+                    width: 100%;
+                }
+
+                svg {
+                    left: 0%;
+                    bottom: 14%;
+                    width: 40%;
+                }
+            }
         }
-        .col_2{
-            .range{
-                .txt_item{
-                    .txt_range{
+
+        .col_2 {
+            .range {
+                .txt_item {
+                    .txt_range {
                         flex-wrap: wrap;
                         margin: auto;
-                        .txt_box{
+
+                        .txt_box {
+                            .title_box {
+                                .img_box {
+                                    .line_box {
+                                        .line:nth-child(1) {
+                                            height: var(--cel--line-height);
+                                        }
+                                    }
+
+                                    .square {
+                                        width: var(--cel--square-line-width);
+                                    }
+                                }
+                            }
+
                             p:nth-child(2) {
-                                width: 100%;
+                                width: 90%;
+                            }
+
+                            .more {
+                                a {
+                                    .as_box {
+                                        .square {
+                                            width: 4vw;
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
-                    .line_Box{
+
+                    .line_Box {
                         width: 100%;
                         left: 0;
                         top: 0;
@@ -941,30 +1023,46 @@ a {
                 }
             }
         }
+
         // 卡片式
-        .col_3{
-            .range{
-                .card{
+        .col_3 {
+            .range {
+                .card {
                     height: 70vh;
-                    .card_img_item{
-                        .card_img_box{
+
+                    .card_img_item {
+                        .card_img_box {
                             width: var(--cel--card--width);
                         }
                     }
-                    .txt_box{
-                        height: 40vh;
-                        .title_box{
-                            justify-content: center;
-                            margin: 0;
-                                height: 18vw;
+
+                    .txt_box {
+                        .title_box {
+                            .img_box {
+                                .line_box {
+                                    .line:nth-child(1) {
+                                        height: var(--cel--line-height);
+                                    }
+                                }
+
+                                .square {
+                                    width: var(--cel--square-line-width);
+                                }
+                            }
                         }
-                        .col_1_p{
-                            max-width: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            align-content: center;
-                            height: 35vw;
+
+                        p:nth-child(2) {
+                            width: 90%;
+                        }
+
+                        .more {
+                            a {
+                                .as_box {
+                                    .square {
+                                        width: 4vw;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
