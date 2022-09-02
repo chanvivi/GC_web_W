@@ -1217,6 +1217,7 @@ footer {
   }
   .about .col_3 .range .img_item .range_box {
     padding: 22% 17%;
+    margin-left: 2%;
   }
   .about .col_3 .range .img_item .range_box .img_box:nth-child(1) {
     width: 72.4%;
