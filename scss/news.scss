@@ -553,7 +553,7 @@ a {
                         // padding: 2.3vw 6vw 4vw 16vw;
                         // margin-right: 6vw;
                         position: relative;
-                        top: 1vw;
+                        top: 3vw;
 
                         .title_box {
                             display: flex;
@@ -607,10 +607,10 @@ a {
                         }
 
                         // 內文
-                        p:nth-child(2) {
+                        .p_box {
+                            width: 42%;
                             // 文字與上面標題對其
-                            margin-left: 0.4vw;
-                            width: 44%;
+                            padding-left: 0.4vw;
                         }
 
                         .more {
@@ -1010,14 +1010,17 @@ a {
                                 }
                             }
 
-                            p:nth-child(2) {
-                                width: 90%;
+                            .p_box {
+                                p:nth-child(2) {
+                                    width: 90%;
+                                }
                             }
 
                             .more {
                                 .more_range {
                                     width: 90%;
                                     justify-content: space-between;
+
                                     a {
                                         .as_box {
                                             .arrow {
@@ -1084,8 +1087,10 @@ a {
 
                         .more {
                             justify-content: space-around;
+
                             a {
                                 width: 40%;
+
                                 .as_box {
                                     .arrow {
                                         width: var(--cel-arrow-width);
