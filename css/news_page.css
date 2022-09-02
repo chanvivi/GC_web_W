@@ -979,8 +979,6 @@ a {
 .news_page .btn_box a .btn {
   color: #dcb078;
   font-size: 16px;
-}
-.news_page .btn_box a .btn p {
   padding: 0 1vw;
 }
 .news_page .btn_box a:hover {
