@@ -547,154 +547,156 @@ a {
 
                     .txt_box {
                         width: 100%;
-                        align-items: center;
-                        display: flex;
-                        flex-direction: column;
-                        // padding: 2.3vw 6vw 4vw 16vw;
-                        // margin-right: 6vw;
                         position: relative;
                         top: 3vw;
 
-                        .title_box {
+                        .txt_range {
                             display: flex;
-                            flex-direction: column;
                             align-items: center;
-                            justify-content: center;
+                            flex-direction: column;
+                            width: 52%;
+                            width: 45%;
+                            margin: 0 auto;
 
-                            h4 {
-                                margin-bottom: 0;
-                            }
-
-                            // 設定區塊
-                            .img_box {
+                            .title_box {
                                 display: flex;
+                                flex-direction: column;
+                                align-items: center;
                                 justify-content: center;
-                                // 對其
-                                margin-left: 0.5vw;
 
-                                // 右邊線
-                                .line_box {
+                                h4 {
+                                    margin-bottom: 0;
+                                }
+
+                                // 設定區塊
+                                .img_box {
                                     display: flex;
-                                    flex-direction: column;
                                     justify-content: center;
-                                    align-items: flex-end;
-                                    margin: 1vw;
+                                    // 對其
+                                    margin-left: 0.5vw;
 
-                                    // 上線
-                                    .line:nth-child(1) {
-                                        width: 6.5vw;
-                                        height: var(--line-height);
-                                        background: var(--line);
-                                        margin: 0 0 0.2vw 0;
+                                    // 右邊線
+                                    .line_box {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        align-items: flex-end;
+                                        margin: 1vw;
+
+                                        // 上線
+                                        .line:nth-child(1) {
+                                            width: 6.5vw;
+                                            height: var(--line-height);
+                                            background: var(--line);
+                                            margin: 0 0 0.2vw 0;
+                                        }
+                                    }
+
+                                    // 菱形
+                                    .square {
+                                        // 菱形大小
+                                        padding: 1vw 0;
+                                        width: 0.5vw;
+                                    }
+
+                                    // 左邊線
+                                    .line_box:nth-child(3) {
+                                        align-items: flex-start;
+
+                                        // 上線
+                                        .line:nth-child(1) {}
                                     }
                                 }
-
-                                // 菱形
-                                .square {
-                                    // 菱形大小
-                                    padding: 1vw 0;
-                                    width: 0.5vw;
-                                }
-
-                                // 左邊線
-                                .line_box:nth-child(3) {
-                                    align-items: flex-start;
-
-                                    // 上線
-                                    .line:nth-child(1) {}
-                                }
                             }
-                        }
 
-                        // 內文
-                        .p_box {
-                            width: 42%;
-                            // 文字與上面標題對其
-                            padding-left: 0.4vw;
-                        }
+                            // 內文
+                            .p_box {
+                                // width: 42%;
+                                // 文字與上面標題對其
+                                padding-left: 0.4vw;
+                            }
 
-                        .more {
-                            width: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            padding-top: 2vw;
-                            position: relative;
-
-                            // width: 67%;
-                            .more_range {
-                                width: 45%;
+                            .more {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                align-content: center;
+                                // padding-top: 2vw;
+                                position: relative;
 
-                                p {
-                                    color: $gold_color;
-                                    position: relative;
-                                    // 對其內文
-                                    margin-left: 0;
-                                    margin-right: 0.5vw;
-                                }
-
-                                a {
+                                // width: 67%;
+                                .more_range {
                                     display: flex;
                                     align-items: center;
-
-                                    // 對其
-                                    // width: 42%;
-                                    // justify-content: space-around;
-
-                                    .as_box {
-                                        position: relative;
-                                        margin: 0 1vw;
-
-                                        .arrow {
-                                            position: absolute;
-                                            width: 2vw;
-                                            left: -32%;
-                                            top: 24%;
-                                        }
-
-                                        .square {
-                                            width: var(--min-square-width);
-                                        }
-                                    }
+                                    justify-content: center;
+                                    align-content: center;
 
                                     p {
-                                        margin: 0;
-                                        padding: 0;
-                                        width: 100%;
+                                        color: $gold_color;
+                                        position: relative;
+                                        // 對其內文
+                                        margin-left: 0;
+                                        margin-right: 0.5vw;
                                     }
-                                }
 
-                                // 箭頭效果
-                                a:hover {
-                                    .arrow {
-                                        animation: arrow .8s linear infinite;
+                                    a {
+                                        display: flex;
+                                        align-items: center;
 
-                                        @keyframes arrow {
-                                            0% {
-                                                transform: translateX(0);
+                                        // 對其
+                                        // width: 42%;
+                                        // justify-content: space-around;
+
+                                        .as_box {
+                                            position: relative;
+                                            margin: 0 1vw;
+
+                                            .arrow {
+                                                position: absolute;
+                                                width: 2vw;
+                                                left: -32%;
+                                                top: 24%;
                                             }
 
-                                            25% {
-                                                transform: translateX(-5px);
-
+                                            .square {
+                                                width: var(--min-square-width);
                                             }
+                                        }
 
-                                            50% {
-                                                transform: translateX(0);
+                                        p {
+                                            margin: 0;
+                                            padding: 0;
+                                            width: 100%;
+                                        }
+                                    }
 
-                                            }
+                                    // 箭頭效果
+                                    a:hover {
+                                        .arrow {
+                                            animation: arrow .8s linear infinite;
 
-                                            75% {
-                                                transform: translateX(5px);
+                                            @keyframes arrow {
+                                                0% {
+                                                    transform: translateX(0);
+                                                }
 
-                                            }
+                                                25% {
+                                                    transform: translateX(-5px);
 
-                                            100% {
-                                                transform: translateX(0);
+                                                }
+
+                                                50% {
+                                                    transform: translateX(0);
+
+                                                }
+
+                                                75% {
+                                                    transform: translateX(5px);
+
+                                                }
+
+                                                100% {
+                                                    transform: translateX(0);
+                                                }
                                             }
                                         }
                                     }
@@ -995,43 +997,43 @@ a {
                         margin: auto;
 
                         .txt_box {
-                            .title_box {
-                                .img_box {
-                                    .line_box {
-                                        .line:nth-child(1) {
-                                            height: var(--cel--line-height);
-                                            width: 18.5vw;
+                            .txt_range {
+                                width: 100%;
+                                .title_box {
+                                    .img_box {
+                                        .line_box {
+                                            .line:nth-child(1) {
+                                                height: var(--cel--line-height);
+                                                width: 18.5vw;
+                                            }
+                                        }
+
+                                        .square {
+                                            width: var(--cel--square-line-width);
                                         }
                                     }
-
-                                    .square {
-                                        width: var(--cel--square-line-width);
-                                    }
                                 }
-                            }
 
-                            .p_box {
-                                p:nth-child(2) {
-                                    width: 90%;
+                                .p_box {
                                 }
-                            }
 
-                            .more {
-                                .more_range {
-                                    width: 90%;
-                                    justify-content: space-between;
+                                .more {
+                                    .more_range {
+                                        justify-content: space-between;
 
-                                    a {
-                                        .as_box {
-                                            .arrow {
-                                                width: var(--cel-arrow-width);
-                                                left: 13%;
-                                                top: 13%;
-                                            }
+                                        a {
+                                            .as_box {
+                                                margin: 0;
+                                                .arrow {
+                                                    width: var(--cel-arrow-width);
+                                                    left: 13%;
+                                                    top: 13%;
+                                                }
 
-                                            .square {
-                                                width: var(--cel-min-square-width);
-                                                margin: 0 4vw;
+                                                .square {
+                                                    width: var(--cel-min-square-width);
+                                                    margin: 0 4vw;
+                                                }
                                             }
                                         }
                                     }

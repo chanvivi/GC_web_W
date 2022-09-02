@@ -984,20 +984,25 @@ a {
 }
 .news .col_2 .range .txt_item .txt_range .txt_box {
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  position: relative;
+  top: 3vw;
+}
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  top: 3vw;
+  width: 52%;
+  width: 45%;
+  margin: 0 auto;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .title_box {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1012,10 +1017,10 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .title_box h4 {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box h4 {
   margin-bottom: 0;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .title_box .img_box {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1024,7 +1029,7 @@ a {
           justify-content: center;
   margin-left: 0.5vw;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .title_box .img_box .line_box {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box .line_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1040,27 +1045,25 @@ a {
           align-items: flex-end;
   margin: 1vw;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .title_box .img_box .line_box .line:nth-child(1) {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box .line_box .line:nth-child(1) {
   width: 6.5vw;
   height: var(--line-height);
   background: var(--line);
   margin: 0 0 0.2vw 0;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .title_box .img_box .square {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box .square {
   padding: 1vw 0;
   width: 0.5vw;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .title_box .img_box .line_box:nth-child(3) {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box .line_box:nth-child(3) {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .p_box {
-  width: 42%;
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .p_box {
   padding-left: 0.4vw;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more {
-  width: 100%;
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1070,11 +1073,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 2vw;
   position: relative;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range {
-  width: 45%;
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1087,13 +1088,13 @@ a {
   -ms-flex-line-pack: center;
       align-content: center;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range p {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range p {
   color: #dcb078;
   position: relative;
   margin-left: 0;
   margin-right: 0.5vw;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1101,25 +1102,25 @@ a {
       -ms-flex-align: center;
           align-items: center;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a .as_box {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box {
   position: relative;
   margin: 0 1vw;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a .as_box .arrow {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .arrow {
   position: absolute;
   width: 2vw;
   left: -32%;
   top: 24%;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a .as_box .square {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .square {
   width: var(--min-square-width);
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a p {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a p {
   margin: 0;
   padding: 0;
   width: 100%;
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a:hover .arrow {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a:hover .arrow {
   -webkit-animation: arrow 0.8s linear infinite;
           animation: arrow 0.8s linear infinite;
 }
@@ -1439,28 +1440,30 @@ a {
         flex-wrap: wrap;
     margin: auto;
   }
-  .news .col_2 .range .txt_item .txt_range .txt_box .title_box .img_box .line_box .line:nth-child(1) {
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range {
+    width: 100%;
+  }
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box .line_box .line:nth-child(1) {
     height: var(--cel--line-height);
     width: 18.5vw;
   }
-  .news .col_2 .range .txt_item .txt_range .txt_box .title_box .img_box .square {
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box .square {
     width: var(--cel--square-line-width);
   }
-  .news .col_2 .range .txt_item .txt_range .txt_box .p_box p:nth-child(2) {
-    width: 90%;
-  }
-  .news .col_2 .range .txt_item .txt_range .txt_box .more .more_range {
-    width: 90%;
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a .as_box .arrow {
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box {
+    margin: 0;
+  }
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .arrow {
     width: var(--cel-arrow-width);
     left: 13%;
     top: 13%;
   }
-  .news .col_2 .range .txt_item .txt_range .txt_box .more .more_range a .as_box .square {
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .square {
     width: var(--cel-min-square-width);
     margin: 0 4vw;
   }
