@@ -32,7 +32,7 @@
     --anm-delay--square_3D: 0s; //var(--anm-delay--square_3D)
     //精工造藝 中文 字體大小
     --ecma-ch-h3: 2.3vw; //var(--ecma-ch-h3)
-    --cel--ecma-ch-h3: 5.3vw; //var(--cel--ecma-ch-h3)
+    --cel--ecma-ch-h3: 4.3vw; //var(--cel--ecma-ch-h3)
     --cel--ecma-ch-p: 2vw; //var(--cel--ecma-ch-p)
     // }
 
@@ -1078,8 +1078,9 @@ footer {
 
                 .img_item {
                     .range_box {
+                        padding: 22% 17%;
                         .img_box:nth-child(1) {
-                            width: 83.4%;
+                            width: 72.4%;
                         }
 
                         .ecma {
@@ -1093,14 +1094,14 @@ footer {
                         }
 
                         .square {
-                            width: 52%;
-                            left: 24%;
-                            top: 21%;
+                            width: 48%;
+                            left: 26%;
+                            top: 22%;
                         }
 
                         .g1 {
                             left: 39%;
-                            top: -3%;
+                            top: 0%;
                         }
 
                         .g1::after {
@@ -1109,12 +1110,14 @@ footer {
                         }
 
                         .g2 {
-                            right: 3%;
+                            right: 6%;
                         }
-
+                        .g3 {
+                            left: 0;
+                        }
                         .g4 {
                             left: 46%;
-                            bottom: -3%;
+                            bottom: 0%;
 
                             h3 {
                                 margin-top: 15px;
