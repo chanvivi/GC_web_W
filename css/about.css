@@ -477,6 +477,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   z-index: 2;
+  padding-top: 1vw;
 }
 .about .col_1 .title_item .img_box .line_box {
   display: -webkit-box;
@@ -1134,7 +1135,7 @@ footer {
 @media screen and (max-width: 768px) {
   .about .col_1 .title_item {
     width: 50vw;
-    height: 25vw;
+    height: 29vw;
   }
   .about .col_1 .title_item .img_box .square {
     width: var(--cel--square-line-width);
