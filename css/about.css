@@ -1133,7 +1133,10 @@ footer {
 @media screen and (max-width: 768px) {
   .about .col_1 .title_item {
     width: 50vw;
-    height: 29vw;
+    height: 35vw;
+  }
+  .about .col_1 .title_item .img_box {
+    padding-top: 2vw;
   }
   .about .col_1 .title_item .img_box .square {
     width: var(--cel--square-line-width);
@@ -1222,7 +1225,7 @@ footer {
     padding: 25% 17%;
   }
   .about .col_3 .range .img_item .range_box .img_box:nth-child(1) {
-    width: 72.4%;
+    width: 61.4%;
   }
   .about .col_3 .range .img_item .range_box .ecma h3:nth-child(1) {
     font-size: var(--cel--ecma-ch-h3);
@@ -1231,9 +1234,9 @@ footer {
     font-size: var(--cel--ecma-ch-p);
   }
   .about .col_3 .range .img_item .range_box .square {
-    width: 47%;
-    left: 26%;
-    top: 22%;
+    width: 40%;
+    left: 31%;
+    top: 26%;
   }
   .about .col_3 .range .img_item .range_box .g1 {
     left: 37%;

@@ -954,13 +954,12 @@ footer {
 @media screen and (max-width:768px) {
     .about {
         .col_1 {
-            // height: 217vw;
-
             .title_item {
                 width: 50vw;
-                height: 29vw;
+                height: 35vw;
 
                 .img_box {
+                    padding-top: 2vw;
                     .square {
                         width: var(--cel--square-line-width);
                     }
@@ -978,8 +977,6 @@ footer {
             }
 
             .txt_item {
-                // margin: 90.5vw auto;
-
                 svg {
                     left: 0%;
                     bottom: 14%;
@@ -1076,7 +1073,7 @@ footer {
                         padding: 25% 17%;
                         // margin-left: 2%;
                         .img_box:nth-child(1) {
-                            width: 72.4%;
+                            width: 61.4%;
                         }
 
                         .ecma {
@@ -1090,9 +1087,9 @@ footer {
                         }
 
                         .square {
-                            width: 47%;
-                            left: 26%;
-                            top: 22%;
+                            width: 40%;
+                            left: 31%;
+                            top: 26%;
                         }
 
                         .g1 {
