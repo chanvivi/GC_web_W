@@ -176,32 +176,25 @@ img {
         // 咖啡色塊文字
         .title_item {
             width: 25vw;
+            height: 10vw;
             background-color: $banner_bg_color;
             color: $gold_color;
             // 讓畫面滿版
-            margin-bottom: 0;
-            padding: 1vw;
-            // 讓畫面滿版
             position: absolute;
-            top: 50%;
-            /*距離上方的位置*/
-            left: 50%;
-            /*距離左方的位置*/
-            margin-top: -92.17px;
-            /*上方邊界*/
-            margin-left: -240px;
-            /*左方邊界*/
-            padding: 1vw;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            margin:auto;
 
             .txt_box {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
-                p {
-                    margin-bottom: 0;
-                }
-
+                // 對其
+                margin-left: 1.5%;
+                z-index: 2;
+                padding-top: 0.5vw;
                 h1 {
                     margin: 0;
                 }
@@ -211,10 +204,10 @@ img {
             .img_box {
                 display: flex;
                 justify-content: center;
-                align-items: center;
                 align-content: center;
-                // 對其
-                margin-right: 2%;
+                align-items: center;
+                z-index: 2;
+                // padding-top: 1vw;
 
                 // 右邊線
                 .line_box {
