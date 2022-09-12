@@ -1467,7 +1467,7 @@ a {
   }
   .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .arrow {
     width: var(--cel-arrow-width);
-    left: 13%;
+    left: 3%;
     top: 13%;
   }
   .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .square {
@@ -1525,7 +1525,7 @@ a {
   }
   .news .col_3 .range .card .txt_box .more a .as_box .arrow {
     width: var(--cel-arrow-width);
-    left: -34%;
+    left: -41%;
     top: 22%;
   }
   .news .col_3 .range .card .txt_box .more a .as_box .square {
