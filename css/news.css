@@ -1114,10 +1114,13 @@ a {
 .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .square {
   width: var(--min-square-width);
 }
-.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a p {
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .readmore_word {
   margin: 0;
   padding: 0;
   width: 100%;
+}
+.news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .readmore_word:nth-child(3) {
+  display: none;
 }
 .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a:hover .arrow {
   -webkit-animation: arrow 0.8s linear infinite;
@@ -1216,7 +1219,6 @@ a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 100%;
-  height: 100%;
   overflow: hidden;
 }
 .news .col_3 .range .card .card_img_item .card_img_box img {
@@ -1369,9 +1371,12 @@ a {
   margin-right: 0.5vw;
   margin-top: 0.5vw;
 }
-.news .col_3 .range .card .txt_box .more a p {
+.news .col_3 .range .card .txt_box .more a .readmore_word {
   color: #dcb078;
   padding: 0;
+}
+.news .col_3 .range .card .txt_box .more a .readmore_word:nth-child(3) {
+  display: none;
 }
 .news .col_3 .range .card .txt_box .more a:hover .arrow {
   -webkit-animation: arrow 0.8s linear infinite;
@@ -1409,13 +1414,12 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-  .news .col_1 {
-    height: 100vh;
-  }
   .news .col_1 .title_item {
     width: 50vw;
-    margin-top: -58.28px;
-    margin-left: -103.5px;
+    height: 35vw;
+  }
+  .news .col_1 .title_item .img_box {
+    padding-top: 2vw;
   }
   .news .col_1 .title_item .img_box .square {
     width: var(--cel--square-line-width);
@@ -1425,9 +1429,6 @@ a {
   }
   .news .col_1 .title_item .img_box .line_box .line:nth-child(2) {
     height: var(--cel--line-height);
-  }
-  .news .col_1 .txt_item .txt_box {
-    width: 100%;
   }
   .news .col_1 .txt_item svg {
     left: 0%;
@@ -1439,8 +1440,11 @@ a {
         flex-wrap: wrap;
     margin: auto;
   }
+  .news .col_2 .range .txt_item .txt_range .con_img_box {
+    left: 0%;
+  }
   .news .col_2 .range .txt_item .txt_range .txt_box .txt_range {
-    width: 100%;
+    width: 90%;
   }
   .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .title_box .img_box .line_box .line:nth-child(1) {
     height: var(--cel--line-height);
@@ -1466,19 +1470,24 @@ a {
     width: var(--cel-min-square-width);
     margin: 0 4vw;
   }
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .readmore_word:nth-child(2) {
+    display: none;
+  }
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .readmore_word:nth-child(3) {
+    display: block;
+  }
   .news .col_2 .range .txt_item .line_Box {
-    width: 100%;
-    left: 0;
-    top: 0;
+    display: none;
   }
   .news .col_3 .range .card {
-    height: 100vh;
+    height: 100%;
   }
-  .news .col_3 .range .card .card_img_item {
-    height: 40vh;
+  .news .col_3 .range .card .card_img_item .card_img_box {
+    width: 90%;
   }
   .news .col_3 .range .card .txt_box .title_box {
-    height: 10vh;
+    height: 15vh;
+    width: 90%;
   }
   .news .col_3 .range .card .txt_box .title_box .img_box .line_box .line:nth-child(1) {
     height: var(--cel--line-height);
@@ -1496,9 +1505,19 @@ a {
   .news .col_3 .range .card .txt_box .more {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    width: 90%;
   }
   .news .col_3 .range .card .txt_box .more a {
     width: 40%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .news .col_3 .range .card .txt_box .more a .readmore_word:nth-child(2) {
+    display: none;
+  }
+  .news .col_3 .range .card .txt_box .more a .readmore_word:nth-child(3) {
+    display: block;
   }
   .news .col_3 .range .card .txt_box .more a .as_box .arrow {
     width: var(--cel-arrow-width);
