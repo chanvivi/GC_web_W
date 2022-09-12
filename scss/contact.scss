@@ -1,7 +1,6 @@
 @import 'all';
 @import 'reset';
 
-// 全區css
 :root {
     // ===========電腦====
 
@@ -13,18 +12,15 @@
     --cel--square-line-width: 1.8vw; //var(--cel--square-line-width)
     // 色塊顏色//
     --line: #dcb17873; // var(--line)
-
+    --pale--line:#dcb17873; //var(--pale--line)
+    --min-square-width:2vw;//var(--min-square-width)
     //粗細 //
-    --line-height: 0.01vw; //var(--line-height)
+    --line-height: 0.02vw; //var(--line-height)
     --cel--line-height: 0.1vw; //var(--cel--line-height)
     // 長度
     --line-top-width: 74%; //var(--line-top-width)
     --line-bottom-width: 8vw; //var(--line-bottom-width)
 
-    // 選項more裡面菱形的大小
-    --min-square-width: 2vw; //var(--min-square-width)
-    --cel-min-square-width: 6vw; //var(--cel-min-square-width)
-    --cel-arrow-width: 6vw; //var(--cel-arrow-width)
     // }
 
     // 六角菱形{
@@ -43,6 +39,7 @@
     //卡片式
     // 圖片大小
     --card--width: 25vw; //var(--card--width)
+    --border-radius-img:1vw;//var(--border-radius-img)
 
     // ===========手機====
 

@@ -293,7 +293,9 @@ time, mark, audio, video {
   --square-line-width: 0.5vw;
   --cel--square-line-width: 1.8vw;
   --line: #dcb17873;
-  --line-height: 0.01vw;
+  --pale--line:#dcb17873;
+  --min-square-width:2vw;
+  --line-height: 0.02vw;
   --cel--line-height: 0.1vw;
   --line-top-width: 74%;
   --line-bottom-width: 8vw;
@@ -304,6 +306,7 @@ time, mark, audio, video {
   --cel--ecma-ch-h3: 4.3vw;
   --cel--ecma-ch-p: 2vw;
   --card--width: 25vw;
+  --border-radius-img:1vw;
   --cell-line-height: 0.3vw;
   --cell-line-top-width: 13vw;
   --cell-line-bottom-width: 20vw;
