@@ -657,5 +657,10 @@ img {
   }
   .contact .col_2 .range .txt_item {
     width: 100%;
+    margin-left: 7vw;
+    padding-bottom: 5vw;
+  }
+  .contact .col_2 .range .txt_item .form-box .input_box {
+    width: 70%;
   }
 }/*# sourceMappingURL=contact.css.map */

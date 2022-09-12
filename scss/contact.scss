@@ -408,6 +408,13 @@ img {
 
                 .txt_item {
                     width: 100%;
+                    margin-left: 7vw;
+                    padding-bottom: 5vw;
+                    .form-box{
+                        .input_box{
+                            width: 70%;
+                        }
+                    }
                 }
             }
         }
