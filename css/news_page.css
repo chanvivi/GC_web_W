@@ -1326,11 +1326,14 @@ a {
   .news_page .col_4 .range .card {
     height: 100%;
   }
+  .news_page .col_4 .range .card .card_img_item {
+    height: 23vh;
+  }
   .news_page .col_4 .range .card .card_img_item .card_img_box {
     width: 90%;
   }
   .news_page .col_4 .range .card .txt_box .title_box {
-    height: 15vh;
+    height: 7vh;
     width: 90%;
   }
   .news_page .col_4 .range .card .txt_box .title_box .img_box .line_box .line:nth-child(1) {
@@ -1342,6 +1345,7 @@ a {
   }
   .news_page .col_4 .range .card .txt_box .col_1_p {
     max-width: 90%;
+    height: 20vh;
   }
   .news_page .col_4 .range .card .txt_box p:nth-child(2) {
     width: 90%;
@@ -1350,6 +1354,7 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 90%;
+    height: 10vh;
   }
   .news_page .col_4 .range .card .txt_box .more a {
     width: 40%;

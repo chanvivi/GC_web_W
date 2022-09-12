@@ -1439,6 +1439,9 @@ a {
     bottom: 14%;
     width: 40%;
   }
+  .news .col_2 .range {
+    padding-bottom: 5vw;
+  }
   .news .col_2 .range .txt_item .txt_range {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1486,11 +1489,14 @@ a {
   .news .col_3 .range .card {
     height: 100%;
   }
+  .news .col_3 .range .card .card_img_item {
+    height: 23vh;
+  }
   .news .col_3 .range .card .card_img_item .card_img_box {
     width: 90%;
   }
   .news .col_3 .range .card .txt_box .title_box {
-    height: 15vh;
+    height: 7vh;
     width: 90%;
   }
   .news .col_3 .range .card .txt_box .title_box .img_box .line_box .line:nth-child(1) {
@@ -1502,6 +1508,7 @@ a {
   }
   .news .col_3 .range .card .txt_box .col_1_p {
     max-width: 90%;
+    height: 20vh;
   }
   .news .col_3 .range .card .txt_box p:nth-child(2) {
     width: 90%;
@@ -1510,6 +1517,7 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     width: 90%;
+    height: 10vh;
   }
   .news .col_3 .range .card .txt_box .more a {
     width: 40%;

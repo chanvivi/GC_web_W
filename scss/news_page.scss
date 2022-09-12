@@ -882,7 +882,7 @@ a {
                     height: 100%;
 
                     .card_img_item {
-                        // height: 40vh;
+                        height: 23vh;
                         .card_img_box{
                             width: 90%;
                         }
@@ -890,7 +890,7 @@ a {
 
                     .txt_box {
                         .title_box {
-                            height: 15vh;
+                            height: 7vh;
                             width: 90%;
                             .img_box {
                                 .line_box {
@@ -908,6 +908,7 @@ a {
 
                         .col_1_p {
                             max-width: 90%;
+                            height: 20vh;
                         }
 
                         p:nth-child(2) {
@@ -917,6 +918,7 @@ a {
                         .more {
                             justify-content: space-around;
                             width: 90%;
+                            height: 10vh;
 
                             a {
                                 width: 40%;
