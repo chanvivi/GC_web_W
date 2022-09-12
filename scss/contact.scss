@@ -366,14 +366,12 @@ img {
 @media screen and (max-width:768px) {
     .contact {
         .col_1 {
-            height: 100vh;
-
             .title_item {
                 width: 50vw;
-                margin-top: -58.28px;
-                margin-left: -103.5px;
+                height: 35vw;
 
                 .img_box {
+                    padding-top: 2vw;
                     .square {
                         width: var(--cel--square-line-width);
                     }
@@ -400,6 +398,8 @@ img {
                 padding: 0;
                 width: 90%;
                 margin: 0 auto;
+                flex-direction: column-reverse;
+                padding-bottom: 10vw;
 
                 .map_box {
                     height: 65vw;
