@@ -490,6 +490,8 @@ time, mark, audio, video {
   --cel--line-height: 0.1vw;
   --line-top-width: 74%;
   --line-bottom-width: 8vw;
+  --cel-arrow-width:8vw;
+  --cel-min-square-width:8vw;
   --square_3D--line: 38%;
   --anm-duration--square_3D: 7s;
   --anm-delay--square_3D: 0s;
