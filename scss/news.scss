@@ -962,6 +962,18 @@ a {
                         .txt_box{
                             .txt_range{
                                 width: 60%;
+                                .more{
+                                    .more_range{
+                                        a{
+                                            .as_box{
+                                                .arrow{
+                                                    left: -44%;
+                                                    top: 7%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -974,6 +986,23 @@ a {
                     .card_img_item{
                         .card_img_box{
                             width: 90%;
+                        }
+                    }
+                    .txt_box{
+                        .title_box{
+                            width: 90%;
+                        }
+                        .col_1_p{
+                            max-width: 90%;
+                        }
+                        .more{
+                            a{
+                                .as_box{
+                                    .arrow{
+                                        top: 24%;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

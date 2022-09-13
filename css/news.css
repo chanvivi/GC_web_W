@@ -1424,8 +1424,21 @@ a {
   .news .col_2 .range .txt_item .txt_range .txt_box .txt_range {
     width: 60%;
   }
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range .more .more_range a .as_box .arrow {
+    left: -44%;
+    top: 7%;
+  }
   .news .col_3 .range .card .card_img_item .card_img_box {
     width: 90%;
+  }
+  .news .col_3 .range .card .txt_box .title_box {
+    width: 90%;
+  }
+  .news .col_3 .range .card .txt_box .col_1_p {
+    max-width: 90%;
+  }
+  .news .col_3 .range .card .txt_box .more a .as_box .arrow {
+    top: 24%;
   }
 }
 @media screen and (max-width: 768px) {
