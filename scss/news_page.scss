@@ -802,6 +802,34 @@ a {
                 height: 14vw;
             }
         }
+        .col_4{
+            .range{
+                .card{
+                    .card_img_item{
+                        .card_img_box{
+                            width: 90%;
+                        }
+                    }
+                    .txt_box{
+                        .title_box{
+                            width: 90%;
+                        }
+                        .col_1_p{
+                            max-width: 90%;
+                        }
+                        .more{
+                            a{
+                                .as_box{
+                                    .arrow{
+                                        top: 24%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // ===========手機版==============

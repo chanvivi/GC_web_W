@@ -1268,6 +1268,18 @@ a {
   .news_page .col_1 .title_item {
     height: 14vw;
   }
+  .news_page .col_4 .range .card .card_img_item .card_img_box {
+    width: 90%;
+  }
+  .news_page .col_4 .range .card .txt_box .title_box {
+    width: 90%;
+  }
+  .news_page .col_4 .range .card .txt_box .col_1_p {
+    max-width: 90%;
+  }
+  .news_page .col_4 .range .card .txt_box .more a .as_box .arrow {
+    top: 24%;
+  }
 }
 @media screen and (max-width: 768px) {
   .news_page .col_1 .title_item {
