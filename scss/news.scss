@@ -955,6 +955,30 @@ a {
                 height: 14vw;
             }
         }
+        .col_2{
+            .range{
+                .txt_item{
+                    .txt_range{
+                        .txt_box{
+                            .txt_range{
+                                width: 60%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col_3{
+            .range{
+                .card{
+                    .card_img_item{
+                        .card_img_box{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // ===========手機版==============

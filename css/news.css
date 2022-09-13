@@ -1421,6 +1421,12 @@ a {
   .news .col_1 .title_item {
     height: 14vw;
   }
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range {
+    width: 60%;
+  }
+  .news .col_3 .range .card .card_img_item .card_img_box {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 768px) {
   .news .col_1 .title_item {
