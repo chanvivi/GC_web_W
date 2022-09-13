@@ -258,9 +258,6 @@ footer span {
   .banner_box .en_title_font {
     font-size: 2.8vw;
   }
-  .title_top .en_txt {
-    font-size: 8vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .banner_box .en_title_font {
@@ -1439,6 +1436,20 @@ a {
   }
   .news .col_3 .range .card .txt_box .more a .as_box .arrow {
     top: 24%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news .col_1 .title_item {
+    height: 16vw;
+  }
+  .news .col_2 .range .txt_item .txt_range .txt_box .txt_range {
+    width: 72%;
+  }
+  .news .col_3 .range .card .txt_box .more a .readmore_word:nth-child(2) {
+    display: none;
+  }
+  .news .col_3 .range .card .txt_box .more a .readmore_word:nth-child(3) {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {

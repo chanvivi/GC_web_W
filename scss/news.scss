@@ -948,25 +948,28 @@ a {
         }
     }
 }
-@media screen and (max-width:1280px){
-    .news{
-        .col_1{
-            .title_item{
+
+@media screen and (max-width:1280px) {
+    .news {
+        .col_1 {
+            .title_item {
                 height: 14vw;
             }
         }
-        .col_2{
-            .range{
-                .txt_item{
-                    .txt_range{
-                        .txt_box{
-                            .txt_range{
+
+        .col_2 {
+            .range {
+                .txt_item {
+                    .txt_range {
+                        .txt_box {
+                            .txt_range {
                                 width: 60%;
-                                .more{
-                                    .more_range{
-                                        a{
-                                            .as_box{
-                                                .arrow{
+
+                                .more {
+                                    .more_range {
+                                        a {
+                                            .as_box {
+                                                .arrow {
                                                     left: -44%;
                                                     top: 7%;
                                                 }
@@ -980,25 +983,29 @@ a {
                 }
             }
         }
-        .col_3{
-            .range{
-                .card{
-                    .card_img_item{
-                        .card_img_box{
+
+        .col_3 {
+            .range {
+                .card {
+                    .card_img_item {
+                        .card_img_box {
                             width: 90%;
                         }
                     }
-                    .txt_box{
-                        .title_box{
+
+                    .txt_box {
+                        .title_box {
                             width: 90%;
                         }
-                        .col_1_p{
+
+                        .col_1_p {
                             max-width: 90%;
                         }
-                        .more{
-                            a{
-                                .as_box{
-                                    .arrow{
+
+                        .more {
+                            a {
+                                .as_box {
+                                    .arrow {
                                         top: 24%;
                                     }
                                 }
@@ -1010,6 +1017,50 @@ a {
         }
     }
 }
+
+@media screen and (max-width:1024px) {
+    .news {
+        //  col_1 第一卡大banner
+        .col_1 {
+            // 咖啡色塊文字
+            .title_item {
+                height: 16vw;
+            }
+        }
+        .col_2 {
+            .range {
+                .txt_item {
+                    .txt_range {
+                        .txt_box {
+                            .txt_range {
+                                width: 72%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col_3{
+            .range{
+                .card{
+                    .txt_box{
+                        .more{
+                            a{
+                                .readmore_word:nth-child(2){
+                                    display: none;
+                                }
+                                .readmore_word:nth-child(3){
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // ===========手機版==============
 @media screen and (max-width:768px) {
     .news {

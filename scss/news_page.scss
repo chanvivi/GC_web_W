@@ -832,6 +832,41 @@ a {
         }
     }
 }
+@media screen and (max-width:1024px) {
+    .news_page {
+        //  col_1 第一卡大banner
+        .col_1 {
+            // 咖啡色塊文字
+            .title_item {
+                height: 16vw;
+            }
+        }
+        .col_2{
+            .title_box{
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        .col_4{
+            .range{
+                .card{
+                    .txt_box{
+                        .more{
+                            a{
+                                .readmore_word:nth-child(2){
+                                    display: none;
+                                }
+                                .readmore_word:nth-child(3){
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 // ===========手機版==============
 @media screen and (max-width:768px) {
     .news_page {

@@ -258,9 +258,6 @@ footer span {
   .banner_box .en_title_font {
     font-size: 2.8vw;
   }
-  .title_top .en_txt {
-    font-size: 8vw;
-  }
 }
 @media screen and (max-width: 768px) {
   .banner_box .en_title_font {
@@ -1279,6 +1276,21 @@ a {
   }
   .news_page .col_4 .range .card .txt_box .more a .as_box .arrow {
     top: 24%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .news_page .col_1 .title_item {
+    height: 16vw;
+  }
+  .news_page .col_2 .title_box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .news_page .col_4 .range .card .txt_box .more a .readmore_word:nth-child(2) {
+    display: none;
+  }
+  .news_page .col_4 .range .card .txt_box .more a .readmore_word:nth-child(3) {
+    display: block;
   }
 }
 @media screen and (max-width: 768px) {

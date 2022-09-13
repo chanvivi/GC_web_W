@@ -941,35 +941,30 @@ footer {
 // 平板
 @media screen and (max-width:1024px) {
     .about {
-
         //  col_1 第一卡大banner
         .col_1 {
-
-            // height: 76vw;
             // 咖啡色塊文字
             .title_item {
-                // transform: translateX(20%);
-
-                .txt_box {}
-
-                // 菱形
-                .square {}
-
-                // 左邊線
-                .line_box:nth-child(3) {}
+                height: 16vw;
             }
-
-            // CLASSIC ART
-            .txt_item {
-                // padding: 8% 0 0% 4%;
-
-                // 文字
-                .txt_box {
-
-                    // 跟菱形對齊
-                    h2 {}
-
-                    p {}
+        }
+        .col_2{
+            .txt_item{
+                .item{
+                    align-items: center;
+                }
+            }
+        }
+        .col_3{
+            .range{
+                .txt_item{
+                    .range_box{
+                        .item{
+                            svg{
+                                left: 16%;
+                            }
+                        }
+                    }
                 }
             }
         }

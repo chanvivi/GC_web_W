@@ -12,8 +12,8 @@
     --cel--square-line-width: 1.8vw; //var(--cel--square-line-width)
     // 色塊顏色//
     --line: #dcb17873; // var(--line)
-    --pale--line:#dcb17873; //var(--pale--line)
-    --min-square-width:2vw;//var(--min-square-width)
+    --pale--line: #dcb17873; //var(--pale--line)
+    --min-square-width: 2vw; //var(--min-square-width)
     //粗細 //
     --line-height: 0.02vw; //var(--line-height)
     --cel--line-height: 0.1vw; //var(--cel--line-height)
@@ -21,8 +21,8 @@
     --line-top-width: 74%; //var(--line-top-width)
     --line-bottom-width: 8vw; //var(--line-bottom-width)
     // more
-    --cel-arrow-width:8vw;//var(--cel-arrow-width)
-    --cel-min-square-width:8vw;//var(--cel-min-square-width)
+    --cel-arrow-width: 8vw; //var(--cel-arrow-width)
+    --cel-min-square-width: 8vw; //var(--cel-min-square-width)
 
     // }
 
@@ -42,7 +42,7 @@
     //卡片式
     // 圖片大小
     --card--width: 25vw; //var(--card--width)
-    --border-radius-img:1vw;//var(--border-radius-img)
+    --border-radius-img: 1vw; //var(--border-radius-img)
 
     // ===========手機====
 
@@ -182,11 +182,11 @@ img {
             color: $gold_color;
             // 讓畫面滿版
             position: absolute;
-            top:0;
-            right:0;
-            bottom:0;
-            left:0;
-            margin:auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
 
             .txt_box {
                 display: flex;
@@ -196,6 +196,7 @@ img {
                 margin-left: 1.5%;
                 z-index: 2;
                 padding-top: 0.5vw;
+
                 h1 {
                     margin: 0;
                 }
@@ -362,22 +363,47 @@ img {
         }
     }
 }
-@media screen and (max-width:1280px){
-    .contact{
-        .col_1{
-            .title_item{
+
+@media screen and (max-width:1280px) {
+    .contact {
+        .col_1 {
+            .title_item {
                 height: 14vw;
             }
         }
-        .col_2{
-            .range{
-                .txt_item{
+
+        .col_2 {
+            .range {
+                .txt_item {
                     width: 35%;
                 }
             }
         }
     }
 }
+
+@media screen and (max-width:1024px) {
+    .contact {
+
+        //  col_1 第一卡大banner
+        .col_1 {
+
+            // 咖啡色塊文字
+            .title_item {
+                height: 16vw;
+            }
+        }
+
+        .col_2 {
+            .range {
+                .txt_item {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
 // ===========手機版==============
 @media screen and (max-width:768px) {
     .contact {
@@ -388,6 +414,7 @@ img {
 
                 .img_box {
                     padding-top: 2vw;
+
                     .square {
                         width: var(--cel--square-line-width);
                     }
@@ -426,8 +453,9 @@ img {
                     width: 100%;
                     margin-left: 7vw;
                     padding-bottom: 5vw;
-                    .form-box{
-                        .input_box{
+
+                    .form-box {
+                        .input_box {
                             width: 70%;
                         }
                     }
