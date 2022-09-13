@@ -484,14 +484,14 @@ time, mark, audio, video {
   --square-line-width: 0.5vw;
   --cel--square-line-width: 1.8vw;
   --line: #dcb17873;
-  --pale--line:#dcb17873;
-  --min-square-width:2vw;
+  --pale--line: #dcb17873;
+  --min-square-width: 2vw;
   --line-height: 0.02vw;
   --cel--line-height: 0.1vw;
   --line-top-width: 74%;
   --line-bottom-width: 8vw;
-  --cel-arrow-width:8vw;
-  --cel-min-square-width:8vw;
+  --cel-arrow-width: 8vw;
+  --cel-min-square-width: 8vw;
   --square_3D--line: 38%;
   --anm-duration--square_3D: 7s;
   --anm-delay--square_3D: 0s;
@@ -499,7 +499,7 @@ time, mark, audio, video {
   --cel--ecma-ch-h3: 4.3vw;
   --cel--ecma-ch-p: 2vw;
   --card--width: 25vw;
-  --border-radius-img:3vw;
+  --border-radius-img: 3vw;
   --cell-line-height: 0.3vw;
   --cell-line-top-width: 13vw;
   --cell-line-bottom-width: 20vw;
@@ -1375,5 +1375,8 @@ a {
   }
   .news_page .col_4 .range .card .txt_box .more a .as_box .square {
     width: var(--cel-min-square-width);
+  }
+  .news_page .col_4 .range .card .dt_line {
+    display: none;
   }
 }/*# sourceMappingURL=news_page.css.map */
