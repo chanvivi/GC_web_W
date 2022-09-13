@@ -625,6 +625,9 @@ img {
   .contact .col_1 .title_item {
     height: 14vw;
   }
+  .contact .col_2 .range .txt_item {
+    width: 35%;
+  }
 }
 @media screen and (max-width: 768px) {
   .contact .col_1 .title_item {
