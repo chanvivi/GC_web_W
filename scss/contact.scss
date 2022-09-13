@@ -362,7 +362,15 @@ img {
         }
     }
 }
-
+@media screen and (max-width:1280px){
+    .contact{
+        .col_1{
+            .title_item{
+                height: 14vw;
+            }
+        }
+    }
+}
 // ===========手機版==============
 @media screen and (max-width:768px) {
     .contact {

@@ -621,6 +621,11 @@ img {
   margin: 0 1.5vw 0 3vw;
 }
 
+@media screen and (max-width: 1280px) {
+  .contact .col_1 .title_item {
+    height: 14vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .contact .col_1 .title_item {
     width: 50vw;
